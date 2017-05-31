@@ -26,4 +26,7 @@ pt:
     op3: "PArceiros"
     op4: "FAQ"
     op5: "Reservas"
+  footer:
+    made: "Feito com"
+    by: "por"
 

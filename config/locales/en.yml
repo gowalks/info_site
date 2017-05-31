@@ -26,4 +26,7 @@ en:
     op3: "Partners"
     op4: "FAQ"
     op5: "Reservations"
+  footer:
+    made: "Made with"
+    by: "by"
 

@@ -20,9 +20,129 @@
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
-<body id="index" data-spy="scroll" data-target="#navigationbar" data-offset="50">
+<body data-spy="scroll" data-target="#navigationbar" data-offset="50">
+
+<% available_languages = [
+	{language: "English", dim: :en},
+	{language: "Português", dim: :pt},
+] %>
+
+<% content_for :language_option do %>
+	<li role="presentation" class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i>  <span class="uppercaseText"><%=I18n.locale%></span> <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<% available_languages.each do |option| %>
+				<% if I18n.locale == option[:dim] %>
+				<li>
+					<%= link_to url_for(locale: option[:dim]) do %>
+					<%= option[:language] %> <i class="fa fa-check" aria-hidden="true"></i>
+					<% end %>
+				</li>
+				<% else %>
+					<li><%= link_to option[:language], url_for(locale: option[:dim]) %></li>
+				<% end %>   
+			<% end %>
+		</ul>
+	</li>
+<% end %>
+
+
+<!--NAVIGATION-->
+<nav id="navigationbar" class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="navHome" href="#cover">GOwalksportugal</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="navOption"><a class="page-scroll" href="#about">
+					<%= t('menu.op1') %>
+				</a></li>
+				<li class="navOption"><a class="page-scroll" href="#tours">
+					<%= t('menu.op2') %>
+				</a></li>
+				<li class="navOption"><a class="page-scroll" href="#">
+					<%= t('menu.op3') %>
+				</a></li>
+				<li class="navOption"><a class="page-scroll" href="#">
+					<%= t('menu.op4') %>
+				</a></li>
+				<li class="navOption"><a class="page-scroll" href="#reservations">
+					<%= t('menu.op5') %>
+				</a></li>
+				<%= yield :language_option %>
+			</ul>
+
+		</div>
+		<!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
 
 <%= yield %>
+
+<!-- Footer -->
+<footer class="text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by <a href="http://www.inescoelho.info/">Inês Coelho</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        checkScroll();
+
+        $(".dropdown-toggle").dropdown();
+    })
+
+	$(function() {
+	    $("#navHome").click(function() {
+	        // remove classes from all
+	        $("li").removeClass("active");
+	    });
+
+	    $(".navOption").click(function() {
+	        // remove classes from all
+	        $(".navOption").removeClass("active");
+	        // add class to the one we clicked
+	        $(this).addClass("active");
+	    });
+	  
+	});
+
+	/**
+	 * Listen to scroll to change header opacity class
+	 */
+	function checkScroll(){
+	    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+	    if($(window).scrollTop() > startY){
+	        $('.navbar').addClass("scrolled");
+	    }else{
+	        $('.navbar').removeClass("scrolled");
+	    }
+	}
+
+	if($('.navbar').length > 0){
+	    $(window).on("scroll load resize", function(){
+	        checkScroll();
+	    });
+}
+</script>
 
 </body>
 </html>
