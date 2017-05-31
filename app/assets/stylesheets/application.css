@@ -35,7 +35,8 @@ hr.dark {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 36px;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 50px;
 }
@@ -43,7 +44,7 @@ h2 {
 	text-transform: uppercase;
 }
 p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -58,6 +59,16 @@ body {
 
 section {
   padding: 100px 0;
+}
+
+@media (min-width: 768px) {
+	h2 {
+	  font-size: 40px;
+	}
+
+  p {
+    font-size: 24px;
+  }
 }
 
 /*NAVBAR*/
@@ -138,7 +149,7 @@ footer {
 }
 
 footer a,
-footer .glyphicon
+footer .fa
 {
 	color: #f96909;
 }

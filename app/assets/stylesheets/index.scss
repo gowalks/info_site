@@ -6,7 +6,7 @@
 header {
 	position: relative;
 	width: 100%;
-	min-height: auto;
+	min-height: 100%;
 	background-size: cover;
 	background-position: center;
 	background-image: url('/images/header.png');
@@ -16,30 +16,40 @@ header {
 header .header-text {
 	position: relative;
 	text-align: center;
-	padding: 250px 100px 200px 100px;
+	padding: 150px 30px 100px 30px;
 	width: 100%;
 }
-header .header-content .header-text h1 {
+header .header-text h1 {
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 80px;
+	font-size: 60px;
 }
 
-header .header-content .header-text p {
+header .header-text p {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 50px;
   color: #7a4407;
   background: rgba(255, 255, 255, 0.6);
 }
 @media (min-width: 768px) {
-  header {
-    min-height: 100%;
+  header .header-text {
+	padding: 250px 100px 200px 100px;
   }
- }
+
+  header .header-text h1 {
+	font-weight: 800;
+	font-size: 80px;
+}
+
+	header .header-text p {
+	  font-weight: 500;
+	  font-size: 24px;
+	}
+}
 
 /*Tours*/
 
@@ -72,6 +82,19 @@ header .header-content .header-text p {
 .btn-default.active,.btn-default:active,.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-default,.open>.dropdown-toggle.btn-primary{background-image:none}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content{width:100%;text-align:center;position:absolute;top:50%;transform:translateY(-50%)}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;padding:0 15px}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{text-transform:uppercase;font-weight:600;font-size:14px}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size:18px}.portfolio-box:hover .portfolio-box-caption{opacity:1}.portfolio-box:focus{outline:0}@media (min-width:768px){.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{font-size:16px}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size:22px}}
 
 /*CONTACTS*/
+#reservations h3 {
+	-ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for webkit */
+     word-break: break-word;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
 #reservations h3 a{
 	color: white;
 }
@@ -79,3 +102,5 @@ header .header-content .header-text p {
 .social-media {
 	margin-top: 50px;
 }
+
+.social-link {text-align:center;margin-bottom:25px; }
