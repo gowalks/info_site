@@ -26,6 +26,10 @@ en:
     op3: "Partners"
     op4: "FAQ"
     op5: "Reservations"
+  tours:
+    t1: "Coimbra"
+    t2: "Around Coimbra"
+    t3: "Tailored Walks"
   footer:
     made: "Made with"
     by: "by"

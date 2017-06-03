@@ -23,8 +23,8 @@ header .header-text h1 {
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 60px;
+	margin-bottom: 30px;
+	font-size: 48px;
 }
 
 header .header-text p {
@@ -37,7 +37,7 @@ header .header-text p {
 }
 @media (min-width: 768px) {
   header .header-text {
-	padding: 250px 100px 200px 100px;
+	padding: 200px 100px 200px 100px;
   }
 
   header .header-text h1 {

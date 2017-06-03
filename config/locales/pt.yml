@@ -26,6 +26,10 @@ pt:
     op3: "Parceiros"
     op4: "FAQ"
     op5: "Reservas"
+  tours:
+    t1: "Coimbra"
+    t2: "Em torno de Coimbra"
+    t3: "Percursos Personalizados"
   footer:
     made: "Feito com"
     by: "por"
