@@ -30,6 +30,9 @@ pt:
     t1: "Coimbra"
     t2: "Em torno de Coimbra"
     t3: "Percursos Personalizados"
+  reservations:
+    title: "Reservas"
+    text: "Para reservar um percurso, por favor contacte-nos através de:"
   footer:
     made: "Feito com"
     by: "por"

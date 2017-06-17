@@ -30,6 +30,9 @@ en:
     t1: "Coimbra"
     t2: "Around Coimbra"
     t3: "Tailored Walks"
+  reservations:
+    title: "Reservations"
+    text: "To reserve a Walk, please contact us:"
   footer:
     made: "Made with"
     by: "by"

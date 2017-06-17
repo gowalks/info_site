@@ -52,6 +52,9 @@ p {
 }
 
 /*BACKGROUND*/
+.lighterBG {
+	background-color: #ffc796;
+}
 .lightBG {
 	background-color: #ffac63;
 }
@@ -137,7 +140,6 @@ hr.dark {
 	    color: white;
 	}
 }
-
 @media (min-width: 768px) {
 	.navbar {
 		background: transparent;
