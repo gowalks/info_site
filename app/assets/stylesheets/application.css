@@ -172,3 +172,34 @@ footer .fa
 {
 	color: #f96909;
 }
+
+#top-link-block a {
+	//display:block;
+	height:51px;
+	width:51px;
+	//line-height:40px;
+	font-size:28px;
+	border-radius:100%;
+	color:white;
+	background-color: #f96909;
+	//padding-left: 11px;
+}
+#top-link-block a:hover{
+	//background-color: #ffac63;
+	//color: #7a4407;
+	//border: 2px solid #f96909;
+
+	background-color: white;
+	color: #f96909;
+	//border: 2px solid #f96909;
+}
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 6px; /* padding from the right side of the window */
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 6px; /* height of link element */
+    right: 6px; /* padding from the right side of the window */
+}

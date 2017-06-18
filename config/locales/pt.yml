@@ -27,8 +27,8 @@ pt:
     op4: "FAQ"
     op5: "Reservas"
   tours:
-    t1: "Coimbra"
-    t2: "Em torno de Coimbra"
+    t1: "Coimbra Walks"
+    t2: "Tours desde Coimbra"
     t3: "Percursos Personalizados"
   reservations:
     title: "Reservas"

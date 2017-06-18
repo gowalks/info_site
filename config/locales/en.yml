@@ -27,9 +27,9 @@ en:
     op4: "FAQ"
     op5: "Reservations"
   tours:
-    t1: "Coimbra"
-    t2: "Around Coimbra"
-    t3: "Tailored Walks"
+    t1: "Coimbra Walks"
+    t2: "Tours Around Coimbra"
+    t3: "Tailored Tours"
   reservations:
     title: "Reservations"
     text: "To reserve a Walk, please contact us:"

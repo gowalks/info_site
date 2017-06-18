@@ -141,6 +141,13 @@
 	</div>
 </footer>
 
+<!-- Back to the top -->
+<span id="top-link-block" class="hidden">
+	<a href="#top" id ="backToTopBtn" class="btn" role="button">
+        <i class="glyphicon glyphicon-chevron-up"></i>
+    </a>
+</span><!-- /top-link-block -->
+
 <script type="text/javascript">
     $( document ).ready(function() {
         checkScroll();
@@ -179,6 +186,19 @@
 	} else {
 	    $('.dropdown-open').removeClass('open');
 	}
+
+	//back to the top button
+	// Only enable if the document has a long scroll bar
+	// Note the window height + offset
+	if ( ($(window).height() + 100) < $(document).height() ) {
+	    $('#top-link-block').removeClass('hidden').affix({
+	        // how far to scroll down before link "slides" into view
+	        offset: {top:100}
+	    });
+	}
+	$('#backToTopBtn').click(function(){
+        $('html,body').animate({scrollTop:0},'slow');return false;
+    });
 }
 </script>
 
