@@ -58,7 +58,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="pull-left" id="navHome" href="#cover">
+			<a class="pull-left" id="navHome" href="/#cover">
 				<img src="/images/gowalks_logo_mini.png" class="img-responsive" width="70" height="70" alt="Go!Walks logo">
 			</a>
 		</div>
@@ -67,15 +67,15 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 			<ul class="nav navbar-nav navbar-right">
-				<li class="navOption"><a class="page-scroll" href="#about" data-turbolinks="false">
+				<li class="navOption"><a class="page-scroll" href="/#about" data-turbolinks="false">
 					<%= t('menu.op1') %>
 				</a></li>
 				<li class="navOption dropdown dropdown-open">
-					<a class="page-scroll" href="#tours_intro" data-turbolinks="false"><%= t('menu.op2') %></a>
+					<a class="page-scroll" href="/#tours_intro" data-turbolinks="false"><%= t('menu.op2') %></a>
 						<ul class="dropdown-menu">
-							<li><%= link_to t('tours.t1'), url_for(locale: I18n.locale) %></li>
-							<li><%= link_to t('tours.t2'), url_for(locale: I18n.locale) %></li>
-							<li><%= link_to t('tours.t3'), url_for(locale: I18n.locale) %></li>
+							<li><%= link_to t('tours.t1'), url_for(tour_coimbra_path(locale: I18n.locale))  %></li>
+							<li><%= link_to t('tours.t2'), url_for(tour_around_path(locale: I18n.locale)) %></li>
+							<li><%= link_to t('tours.t3'), url_for(tour_tailored_path(locale: I18n.locale)) %></li>
 						</ul>
 					
 				</li>

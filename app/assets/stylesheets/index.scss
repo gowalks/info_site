@@ -3,15 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*HEADER*/
+#cover {
+	background-image: url('/images/header.png');
+	color: #f96909;
+	}
 header {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
 	background-size: cover;
 	background-position: center;
-	background-image: url('/images/header.png');
 	text-align: center;
-	color: #f96909;
 	}
 header .header-text {
 	position: relative;
@@ -26,7 +28,6 @@ header .header-text h1 {
 	margin-bottom: 30px;
 	font-size: 48px;
 }
-
 header .header-text p {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
