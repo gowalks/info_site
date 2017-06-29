@@ -7,18 +7,6 @@
 	background-image: url('/images/header.png');
 	color: #f96909;
 	}
-#coimbra-tour {
-	background-image: url('/images/index/cbr_2.JPG');
-	color: #f96909;
-}
-#around-coimbra-tour {
-	background-image: url('/images/index/around.jpg');
-	color: #f96909;
-}
-#tailored-tour {
-	background-image: url('/images/index/tailored.jpg');
-	color: #f96909;
-}
 .cover-background {
 	position: relative;
 	width: 100%;
@@ -65,7 +53,7 @@ header .header-text p {
 }
 
 /*Tours*/
-
+/*
 #tours_intro {
 	padding-top: 70px;
 	padding-bottom: 0px;
@@ -131,6 +119,51 @@ header .header-text p {
 	//border-top: .2em solid #7a4407;
 	padding-left: 15px;
 	padding-right: 5px;
+}*/
+
+/*TOUR*/
+#coimbra-tour {
+	background-image: url('/images/index/cbr_2.JPG');
+}
+#around-coimbra-tour {
+	background-image: url('/images/index/around2.jpg');
+}
+#tailored-tour {
+	background-image: url('/images/index/nazare.jpg');
+}
+#coimbra-tour .cover-text{
+	position: absolute;
+	color: #333;
+	width: 50%;
+	right: 50px;
+}
+#around-coimbra-tour .cover-text{
+	position: absolute;
+	color: white;
+	width: 50%;
+	left: 50px;
+	background: rgba(0, 0, 0, 0.6);
+}
+#tailored-tour .cover-text{
+	position: absolute;
+	color: #333;
+	width: 50%;
+	right: 50px;
+}
+
+.cover-tour h1 {
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 48px;
+}
+.cover-tour p {
+  font-weight: 500;
+  //color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  margin-bottom: 50px;
+  //background: rgba(255, 255, 255, 0.6);
 }
 
 /*CONTACTS*/
