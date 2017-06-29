@@ -1,3 +1,76 @@
 // Place all the styles related to the tour controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#coimbra_cover {
+	background-image: url('/images/index/cbr_2.JPG');
+	color: #f96909;
+	}
+
+.tour-item-wrapper{
+	padding: 25px;	
+}
+.photo-item {
+	text-align: center;
+	overflow: hidden;
+	//padding-bottom: 20px;
+}
+.tour-image {
+	opacity: 1;
+  	//display: block;
+  	//width: 100%;
+  	//height: auto;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+  	width:100%;
+	height:100%;
+}
+
+.photo-item img {
+	//display: block;
+	//height: auto;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	transition: all 500ms;
+	//max-width: 100%;
+}
+
+.photo-item:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.overlay-info {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.tour-item:hover .tour-image {
+  opacity: 0.6;
+}
+
+.tour-item:hover .overlay-info {
+  opacity: 1;
+}
+
+.description{  
+	text-align: center;
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+    bottom:45px; /* position will be on bottom */  
+    background-color:black;  
+    font-size:15px;  
+    color:white;  
+    opacity:0.6; /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */
+    padding: 0px 10px 0px 10px;
+} 
+.description p{ 
+	padding: 0px;
+	margin: 5px 0 5px 0;
+} 
