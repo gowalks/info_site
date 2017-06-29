@@ -18,7 +18,9 @@
 			<div class="col-lg-8 col-lg-offset-2 text-center">
 				<img src="\images\gowalks_logo_mini.png" class="img-responsive center-block" alt="GOwalks logo">
 				<p>Searching for authentic experiences in Portugal? We have the answers you're looking for! Guided Tours, Theme and Personalized Tours, Workshops and other leisure activities inspired in Portuguese Culture and Heritage... runned by locals!</p>
-                <p><i class="fa fa-angle-down fa-5x"></i></p>
+                <a class="page-scroll" href="/#coimbra-tour" data-turbolinks="false">
+                    <p><i class="fa fa-angle-down fa-5x"></i></p>
+                </a></li>
 			</div>
 		</div>
 	</div>
@@ -30,7 +32,7 @@
             <div>
                 <h1>Coimbra Walks</h1>
                 <p>Fall in love – step by step – with the most charming city in Portugal: Coimbra!</p>
-                <button type="button" class="btn btn-warning btn-lg">More Information</button>
+                <%= link_to 'More Information', url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn btn-lg btn-warning"%>
             </div>
         </div>
     </div>
@@ -41,7 +43,7 @@
             <div>
                 <h1>Tours Around Coimbra</h1>
                 <p>Enjoy unique cultural moments in central Portugal. Castles and Palaces, Schist or Medieval Villages, Roman Sites… and much more!</p>
-                <button type="button" class="btn btn-warning btn-lg">More Information</button>
+                <%= link_to 'More Information', url_for(tour_around_path(locale: I18n.locale)), class: "btn btn-lg btn-warning"%>
             </div>
         </div>
     </div>
@@ -52,7 +54,7 @@
             <div>
                 <h1>Tailored Tours</h1>
                 <p>Didn't find what you were looking for? We will help you build a tailored route throughout Lusitania Lands that you'll remember forever!</p>
-                <button type="button" class="btn btn-warning btn-lg">More Information</button>
+                <%= link_to 'More Information', url_for(tour_tailored_path(locale: I18n.locale)), class: "btn btn-lg btn-warning"%>
             </div>
         </div>
     </div>
