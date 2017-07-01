@@ -5,7 +5,7 @@
 #coimbra_cover {
 	background-image: url('/images/index/cbr_2.JPG');
 	color: #f96909;
-	}
+}
 
 .tour-item-wrapper{
 	padding: 25px;	
@@ -17,22 +17,16 @@
 }
 .tour-image {
 	opacity: 1;
-  	//display: block;
-  	//width: 100%;
-  	//height: auto;
-  	transition: .5s ease;
-  	backface-visibility: hidden;
-  	width:100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width:100%;
 	height:100%;
 }
 
 .photo-item img {
-	//display: block;
-	//height: auto;
 	-webkit-transition: all 500ms;
 	-moz-transition: all 500ms;
 	transition: all 500ms;
-	//max-width: 100%;
 }
 
 .photo-item:hover img {

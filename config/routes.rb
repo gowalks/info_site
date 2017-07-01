@@ -2,13 +2,25 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /en|pt|es/ do
 
-      get 'tour/coimbra'
+    get 'coimbra/unesco'
 
-      get 'tour/around'
+    get 'coimbra/fado'
 
-      get 'tour/tailored'
+    get 'coimbra/gastronomy'
 
-      get 'index/cover'
+    get 'coimbra/jewish'
+
+    get 'coimbra/moonlight'
+
+    get 'coimbra/riverside'
+
+    get 'tour/coimbra'
+
+    get 'tour/around'
+
+    get 'tour/tailored'
+
+    get 'index/cover'
 
     # The priority is based upon order of creation: first created -> highest priority.
     # See how all your routes lay out with "rake routes".
