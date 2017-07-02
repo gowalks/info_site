@@ -92,6 +92,44 @@
 
 <%= yield %>
 
+<section class="lightBG" id="reservations">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading"><%= t('reservations.title') %></h2>
+                <hr class="dark">
+                
+                <p><%= t('reservations.text') %></p>
+
+                <h3>
+                    <a href="mailto:booking@gowalksportugal.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> booking@gowalksportugal.com</a>
+                </h3>
+                <h3>
+                    <a href="tel:00351910163118"><i class="fa fa-phone" aria-hidden="true"></i> +351 910 163 118</a>
+                </h3>
+            </div>
+
+            <div class="col-lg-8 col-lg-offset-2 text-center social-media">
+                <div class="row">
+
+                <ul class="list-inline banner-social-buttons">
+                    <li class="social-link">
+                        <a href="https://www.facebook.com/pg/GOwalks" class="btn btn-customize btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://www.instagram.com/gowalksportugal/" class="btn btn-customize btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://www.tripadvisor.com.br/Attraction_Review-g189143-d3326794-Reviews-GOwalksportugal-Coimbra_Coimbra_District_Central_Portugal.html" class="btn btn-customize btn-lg"><i class="fa fa-tripadvisor fa-fw"></i> <span class="network-name">Tripadvisor</span></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <!-- Footer -->
 <footer class="text-center">
 	<div class="container">
@@ -104,7 +142,7 @@
 </footer>
 
 <!-- Back to the top -->
-<span id="top-link-block" class="hidden">
+<span id="back-to-top-button" class="hidden">
 	<a href="#top" id ="backToTopBtn" class="btn" role="button">
         <i class="fa fa-angle-up fa-3x"></i><span class="sr-only">Go to top</span>
     </a>
@@ -153,7 +191,7 @@
 	// Only enable if the document has a long scroll bar
 	// Note the window height + offset
 	if ( ($(window).height() + 100) < $(document).height() ) {
-	    $('#top-link-block').removeClass('hidden').affix({
+	    $('#back-to-top-button').removeClass('hidden').affix({
 	        // how far to scroll down before link "slides" into view
 	        offset: {top:100}
 	    });

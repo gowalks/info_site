@@ -166,39 +166,3 @@ header .header-text p {
   //background: rgba(255, 255, 255, 0.6);
 }
 
-/*CONTACTS*/
-#reservations h3 {
-	font-size:20px;
-	-ms-word-break: break-all;
-    word-break: break-all;
-
- /* Non standard for webkit */
-     word-break: break-word;
-
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
-}
-
-#reservations h3 a{
-	color: white;
-}
-
-.social-media {
-	margin-top: 50px;
-}
-
-.social-link {text-align:center;margin-bottom:25px; }
-
-@media (min-width:768px){
-	#reservations h3{
-		font-size:24px
-	}
-}
-
-@media only screen and (max-width: 382px) and (orientation:portrait) {
-	#reservations h3{
-		font-size:16px
-	}
-}
