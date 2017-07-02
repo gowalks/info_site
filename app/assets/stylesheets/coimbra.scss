@@ -6,17 +6,41 @@
 	background-image: url('/images/coimbra/cover/unesco.jpg');
 	color: white;
 }
-
 #unesco-cover .text-with-BG {
 	background: rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+  #unesco-cover .header-text h1 {
+	font-weight: 800;
+	font-size: 40px;
+  }
+	#unesco-cover .header-text h2 {
+	  font-size: 28px;
+	}
+}
 
-
+#unesco-info a {
+	color: #333;
+}
+#unesco-info a:link,
+#unesco-info a:hover, 
+#unesco-info a:visited, 
+#unesco-info a:active {
+    text-decoration: none;
+}
 #unesco-details p{
 	font-size:18px;
 }
+@media (min-width: 768px) {
+  #unesco-details h3 {
+	text-align: left;
+  }
+}
+#unesco-descricao p {
+	font-size:18px;
+}
 
-#unesco-POI li {
+#unesco-info li {
 	font-size:18px;
 }
 

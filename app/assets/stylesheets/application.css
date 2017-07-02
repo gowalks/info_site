@@ -27,6 +27,9 @@ section {
 }
 
 /*TEXT*/
+h1 {
+	line-height: 1.2;
+}
 h2 {
   font-size: 36px;
   font-weight: 600;
@@ -74,6 +77,11 @@ hr.dark {
   border-color: #333;
 }
 
+/*AUX*/
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 
 /*NAVBAR*/
 .navbar-default { /*default color*/
