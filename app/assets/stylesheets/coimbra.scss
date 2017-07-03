@@ -23,7 +23,7 @@
 .tour-info h3,
 .tour-info h4,
 .tour-info p{
-	text-align: justify;
+	text-align: left;
 }
 .tour-info a,
 .tour-info button {
@@ -53,6 +53,14 @@
 }
 .tour-description {
 	display: none;
+}
+@media (min-width: 768px) {
+	.tour-info h2,
+	.tour-info h3,
+	.tour-info h4,
+	.tour-info p{
+		text-align: justify;
+	}
 }
 
 /*Tour details*/

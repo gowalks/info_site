@@ -58,9 +58,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="pull-left" id="navHome" href="/#cover">
-				<img src="/images/gowalks_logo_mini.png" class="img-responsive" width="70" height="70" alt="Go!Walks logo">
-			</a>
+			<%= link_to image_tag('/images/gowalks_logo_mini.png', :size => "65x50"), url_for(root_path(locale: I18n.locale))  %>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -142,7 +140,7 @@
 </footer>
 
 <!-- Back to the top -->
-<span id="back-to-top-button" class="hidden">
+<span id="back-to-top-button" class="position-button hidden">
 	<a href="#top" id ="backToTopBtn" class="btn" role="button">
         <i class="fa fa-angle-up fa-3x"></i><span class="sr-only">Go to top</span>
     </a>

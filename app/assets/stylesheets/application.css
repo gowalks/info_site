@@ -234,16 +234,18 @@ footer .fa
 }
 
 /*BUTTON BACK TO TOP*/
-#back-to-top-button a {
+.position-button a {
 	height: 50px;
 	width: 50px;
 	border-radius:100%;
 	color:white;
 	background-color: #b24c07;
 }
-#back-to-top-button a:hover{
+.position-button a:link {
+	color: white;
+	}
+.position-button a:hover{
 	background-color: #e26e1f;
-	//color: #b24c07;
 }
 #back-to-top-button.affix-top {
     position: absolute; /* allows it to "slide" up into view */
@@ -256,12 +258,12 @@ footer .fa
     right: 5px; /* padding from the right side of the window */
 }
 @media (max-width: 768px) {
-	#back-to-top-button a {
+	.position-button a {
 		font-size: 11px;
 	}
 }
 @media (min-width: 768px) {
-	#back-to-top-button a {
+	.position-button a {
 		height: 60px;
 		width:60px;
 	}
