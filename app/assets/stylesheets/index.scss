@@ -52,6 +52,14 @@ header .header-text p {
 	}
 }
 
+/*ABOUT*/
+#about .page-scroll{
+	color: #b24c07;
+}
+#about .page-scroll:hover{
+	color: #e26e1f;
+}
+
 /*TOUR*/
 #coimbra-tour {
 	background-image: url('/images/index/cbr_2.JPG');
@@ -74,6 +82,7 @@ header .header-text p {
 	left: 50px;
 	color: white;
 	background: rgba(0, 0, 0, 0.6);
+	padding-bottom: 10px;
 }
 #tailored-tour .cover-text{
 	position: absolute;

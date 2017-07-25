@@ -66,6 +66,9 @@ hr {
   max-width: 200px;
   padding-top: 20px;
 }
+hr.orange {
+  border-color: #f96909;
+}
 hr.dark {
   border-color: #333;
 }
