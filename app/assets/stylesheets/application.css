@@ -72,6 +72,9 @@ hr.orange {
 hr.dark {
   border-color: #333;
 }
+hr.black {
+  border-color: black;
+}
 
 .vertical-align {
     display: flex;
@@ -182,6 +185,9 @@ hr.dark {
 }
 
 /*CONTACTS*/
+#reservations {
+	color: black;
+}
 #reservations h3 {
 	font-size:20px;
 	-ms-word-break: break-all;
@@ -197,7 +203,7 @@ hr.dark {
 }
 
 #reservations h3 a{
-	color: #333;
+	color: black;
 }
 #reservations h3 a:hover{
 	color: #b24c07;
