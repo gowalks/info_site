@@ -30,6 +30,23 @@ en:
     t1: "Coimbra Walks"
     t2: "Tours Around Coimbra"
     t3: "Tailored Tours"
+  index:
+    hello: "HI! LET'S WALK?"
+    intro: "Combining the passion of walking while enjoying Portuguese culture, with a knowledgeable and enthusiastic inhabitant, we’ll guide you in an exciting journey through “Lusitania Lands” you’ll want to remember forever!"
+    gowalks: "Searching for authentic experiences in Portugal? We have the answers you're looking for! Guided Tours, Theme and Personalized Tours, Workshops and other leisure activities inspired in Portuguese Culture and Heritage... runned by locals!"
+    coimbra: "Fall in love – step by step – with the most charming city in Portugal: Coimbra!"
+    around: "Enjoy unique cultural moments in central Portugal. Castles and Palaces, Schist or Medieval Villages, Roman Sites… and much more!"
+    tailored: "Didn't find what you were looking for? We will help you build a tailored route throughout Lusitania Lands that you'll remember forever!"
+    button: "More Information"
+  coimbra:
+    title: "Our Walking Tours"
+    intro: "???"
+    t1: "UNESCO World Heritage"
+    t2: "Fado"
+    t3: "Gastronomic Whims"
+    t4: "Jewish Coimbra"
+    t5: "Moonlight"
+    t6: "Riverside and Tales of Love"
   reservations:
     title: "Reservations"
     text: "To reserve a Walk, please contact us:"

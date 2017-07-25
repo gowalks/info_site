@@ -30,6 +30,23 @@ pt:
     t1: "Coimbra Walks"
     t2: "Tours desde Coimbra"
     t3: "Percursos Personalizados"
+  index:
+    hello: "OLÁ! VAMOS CAMINHAR?"
+    intro: "Combinando a paixão de caminhar com o desfrutar da cultura Portuguesa, pela mão de um habitante conhecedor e entusiasta, vamos guiar-te numa jornada excitante por terras Lusitânias, que vais querer lembrar para sempre!"
+    gowalks: "Procuras experiências autênticas em Portugal? Nós temos a solução! Visitas guiadas, Percursos Temáticos e Personalizados, Workshops e outras actividades de lazer inspiradas na Cultura e Património Portugueses... geridas por habitantes locais!"
+    coimbra: "Apaixone-se - passo a passo - pela cidade mais charmosa de Portugal: Coimbra!"
+    around: "Aprecie momentos culturais únicos no Centro de Portugal. Castelos e Palácios, Aldeias de Xisto ou Vilas Medievais, Vestígios Romanos e muito mais!"
+    tailored: "Não encontrou o que procurava? Nós ajudamo-lo a construir um roteiro único por “Terras Lusas” que vai recordar para sempre!"
+    button: "Mais informação"
+  coimbra:
+    title: "As nossas Tours a pé"
+    intro: 'Construímos várias rotas temáticas para que possa usufruir do melhor da "cidade do conhecimento"! Conheça aqui todos os detalhes e reserve uma visita na nossa companhia: teremos o maior gosto em recebê-lo na nossa cidade!'
+    t1: "Património Mundial da Humanidade"
+    t2:
+    t3:
+    t4:
+    t5:
+    t6:
   reservations:
     title: "Reservas"
     text: "Para reservar um percurso, por favor contacte-nos através de:"

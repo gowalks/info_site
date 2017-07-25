@@ -1,0 +1,62 @@
+<!--COVER-->
+<header id="cover" class="cover-background">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header-text">
+				<h1 id="homeHeading">
+					<%= t('index.hello') %>
+				</h1>
+					<p><%= t('index.intro') %></p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<img src="\images\gowalks_logo_mini.png" class="img-responsive center-block" alt="GOwalks logo">
+				<p><%= t('index.gowalks') %></p>
+                <a class="page-scroll" href="#coimbra-tour" data-turbolinks="false">
+                    <p><i class="fa fa-angle-down fa-5x"></i></p>
+                </a></li>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="coimbra-tour" class="cover-background cover-tour">
+    <div class="container-fluid">
+        <div class="row cover-text">
+            <div>
+                <h1>Coimbra Walks</h1>
+                <p><%= t('index.coimbra') %></p>
+                <%= link_to t('index.button'), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="around-coimbra-tour" class="cover-background cover-tour">
+    <div class="container-fluid">
+        <div class="row cover-text">
+            <div>
+                <h1>Tours Around Coimbra</h1>
+                <p><%= t('index.around') %></p>
+                <%= link_to t('index.button'), url_for(tour_around_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="tailored-tour" class="cover-background cover-tour">
+    <div class="container-fluid">
+        <div class="row cover-text">
+            <div>
+                <h1>Tailored Tours</h1>
+                <p><%= t('index.tailored') %></p>
+                <%= link_to t('index.button'), url_for(tour_tailored_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
+            </div>
+        </div>
+    </div>
+</section>
+
