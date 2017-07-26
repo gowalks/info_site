@@ -10,14 +10,6 @@ Address: Rua do Sargento Mor nrs. 2-6, Casa Medieval. 3000-382 Coimbra SEE MAP H
 Coimbra is much more than its historical centre: it’s territory is vast, as is one that extends beyond its regional lines that – despite this – have an undeniable connection to this city. It is the historical and cultural result of various people and personalities who lived here. For this reason we suggest you visiting the following enigmatic places in Portugal, not too far from Coimbra!
 Coimbra é muito mais do que o centro histórico: o seu território é vasto, assim como é aquele que se estende para lá das linhas do concelho e que – apesar disso – tem uma ligação inegável a esta cidade. Ela é o resultado histórico e cultural de vários povos e personalidades que por aqui passaram. É por esta razão que lhe propomos visitas a lugares enigmáticos em Portugal na nossa companhia, não muito distantes de Coimbra!
 
-TOURS PRIVADAS, À SUA MEDIDA!
-
-	Somos especialistas em Lazer e Património no território Português! Não hesite contactar-nos se tenciona programar as suas férias ou apenas um dia ou um fim-de-semana descontraído, seja sozinha/o ou acompanhada/o, em Portugal.	Damos-lhe as melhores sugestões, ajudamo-lo a construir um roteiro único por "Terras Lusas"!
-
-	Se já consultou as nossas visitas temáticas e não encontrou o que pretendia, gostaria de alterar o roteiro, adicionar outros locais e/ou experiências ou simplesmente ter 100% da nossa atenção… contacte-nos e diga-nos quando virá visitar Portugal, quantas pessoas virão, nacionalidade e os seus gostos pessoais… e adaptaremos o roteiro para que possa viver momentos únicos em Portugal!
-
-	Entre sítios inesquecíveis e actividades imperdíveis, conheça algumas das nossas sugestões de Norte a Sul do País... consulte-nos e teremos o maior gosto em ajudá-lo a programar a sua viagem!
-
 
 FAQ e Parceiros -> buscar ao archives
 Parceiros -> abrir noutra janela
@@ -26,3 +18,13 @@ Parceiros -> abrir noutra janela
 <span id="back-to-coimbra-menu" class="position-button">
         <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn", id: "backToCoimbraMenu"%>
 </span>
+
+
+-------------
+
+Sara Steel
+talvez, pensei que na parte do About se meta um icone com a "team" e outro com o "vehicle" 😀
+Inês
+Só os ícones, por baixo do texto?
+Sara Steel
+sim acho que ficava melhor com ícones e depois se as pessoas tivessem curiosidade iam lá carregar

@@ -1,6 +1,19 @@
 Rails.application.routes.draw do
 
   scope "(:locale)", locale: /en|pt|es/ do
+    get 'around/arte'
+
+    get 'around/castelos'
+
+    get 'around/centro'
+
+    get 'around/palacio'
+
+    get 'around/peregrinacao'
+
+    get 'around/templarios'
+
+    get 'around/xisto'
 
     get 'coimbra/unesco'
 

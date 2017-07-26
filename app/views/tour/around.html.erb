@@ -1,2 +1,125 @@
-<h1>Tour#around</h1>
-<p>Find me in app/views/tour/around.html.erb</p>
+<!--COVER-->
+<header id="around_cover" class="cover-background">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header-text">
+				<h1><%= t('tours.t1') %></h1>
+                <hr class="orange">
+				<p><%= t('index.coimbra') %></p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="around_page_information">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">			
+				<h1><%= t('coimbra.title') %></h1>
+                <hr class="dark">
+                <p><%= t('coimbra.intro') %></p>
+			</div>
+		</div>
+
+        <div class="row">
+            
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/coimbra/unesco.jpg" class="tour-image" alt="goat">
+                            <div class='description'>  
+                                <p class='description_content'><p><%= t('coimbra.t1') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/coimbra/fado.jpg" class="tour-image" alt="goat">
+                            <div class='description'>  
+                                <p class='description_content'><%= t('coimbra.t2') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/coimbra/gastronomic.jpg" class="tour-image" alt="goat">
+                            <div class='description'>  
+                                <p class='description_content'><%= t('coimbra.t3') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+            
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/coimbra/jewish.jpg" class="tour-image" alt="goat">
+                            <div class='description'>  
+                                <p class='description_content'><%= t('coimbra.t4') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/coimbra/moonlight.jpg" class="tour-image" alt="goat">
+                            <div class='description'>  
+                                <p class='description_content'><%= t('coimbra.t5') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/coimbra/riverside.jpg" class="tour-image" alt="goat">
+                            <div class='description'>  
+                                <p class='description_content'><%= t('coimbra.t6') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
