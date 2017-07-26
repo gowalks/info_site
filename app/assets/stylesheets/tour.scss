@@ -16,33 +16,57 @@
 }
 
 @media (max-width: 420px) {
-  header .header-text {
+  #tailored_cover  .header-text {
     padding-top: 150px;
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  header .header-text h1 {
+  #tailored_cover  .header-text h1 {
   font-size: 32px;
   }
 
-  header .header-text p {
+  #tailored_cover .header-text p {
     font-size: 18px;
   }
 }
+#around_cover .header-text,
+#tailored_cover .header-text {
+  padding-top: 150px;
+}
 @media (min-width: 420px ) and (max-width: 500px) {
-  header .header-text {
+  #tailored_cover .header-text {
     padding-top: 150px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  header .header-text h1 {
-  font-size: 42px;
+  #tailored_cover .header-text h1 {
+    font-size: 42px;
   }
 
-  header .header-text p {
+  #tailored_cover .header-text p {
     font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  #tailored_cover .header-text {
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #tailored_cover .header-text h1 {
+    font-size: 60px;
+  }
+
+  #tailored_cover .header-text p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  #around_cover .header-text h1 {
+    font-size: 60px;
   }
 }
 

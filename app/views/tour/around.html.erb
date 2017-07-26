@@ -3,9 +3,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="header-text">
-				<h1><%= t('tours.t1') %></h1>
+				<h1><%= t('tours.t2') %></h1>
                 <hr class="orange">
-				<p><%= t('index.coimbra') %></p>
+				<p><%= t('index.around') %></p>
 			</div>
 		</div>
 	</div>
@@ -14,10 +14,10 @@
 <section id="around_page_information">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 text-center">			
-				<h1><%= t('coimbra.title') %></h1>
+			<div class="col-lg-8 col-lg-offset-2 text-justify">			
+				<h1 class="text-center"><%= t('around.title') %></h1>
                 <hr class="dark">
-                <p><%= t('coimbra.intro') %></p>
+                <p><%= t('around.intro') %></p>
 			</div>
 		</div>
 
@@ -27,9 +27,9 @@
                 <div class="tour-item">
                     <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
-                            <img src="/images/coimbra/unesco.jpg" class="tour-image" alt="goat">
+                            <img src="/images/around/sq/arte.jpg" class="tour-image">
                             <div class='description'>  
-                                <p class='description_content'><p><%= t('coimbra.t1') %></p>  
+                                <p class='description_content'><p><%= t('around.t1') %></p>  
                             </div> 
                             <div class="overlay-info">
                                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
@@ -43,9 +43,9 @@
                 <div class="tour-item">
                     <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
-                            <img src="/images/coimbra/fado.jpg" class="tour-image" alt="goat">
+                            <img src="/images/around/sq/castelos.jpg" class="tour-image">
                             <div class='description'>  
-                                <p class='description_content'><%= t('coimbra.t2') %></p>  
+                                <p class='description_content'><%= t('around.t2') %></p>  
                             </div> 
                             <div class="overlay-info">
                                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
@@ -59,9 +59,9 @@
                 <div class="tour-item">
                     <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
-                            <img src="/images/coimbra/gastronomic.jpg" class="tour-image" alt="goat">
+                            <img src="/images/around/sq/centro.jpg" class="tour-image">
                             <div class='description'>  
-                                <p class='description_content'><%= t('coimbra.t3') %></p>  
+                                <p class='description_content'><%= t('around.t3') %></p>  
                             </div> 
                             <div class="overlay-info">
                                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
@@ -75,9 +75,9 @@
                 <div class="tour-item">
                     <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
-                            <img src="/images/coimbra/jewish.jpg" class="tour-image" alt="goat">
+                            <img src="/images/around/sq/palacio.jpg" class="tour-image">
                             <div class='description'>  
-                                <p class='description_content'><%= t('coimbra.t4') %></p>  
+                                <p class='description_content'><%= t('around.t4') %></p>  
                             </div> 
                             <div class="overlay-info">
                                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
@@ -91,9 +91,9 @@
                 <div class="tour-item">
                     <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
-                            <img src="/images/coimbra/moonlight.jpg" class="tour-image" alt="goat">
+                            <img src="/images/around/sq/peregrinacao.jpg" class="tour-image">
                             <div class='description'>  
-                                <p class='description_content'><%= t('coimbra.t5') %></p>  
+                                <p class='description_content'><%= t('around.t5') %></p>  
                             </div> 
                             <div class="overlay-info">
                                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
@@ -107,9 +107,25 @@
                 <div class="tour-item">
                     <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
-                            <img src="/images/coimbra/riverside.jpg" class="tour-image" alt="goat">
+                            <img src="/images/around/sq/templario.jpg" class="tour-image">
                             <div class='description'>  
-                                <p class='description_content'><%= t('coimbra.t6') %></p>  
+                                <p class='description_content'><%= t('around.t6') %></p>  
+                            </div> 
+                            <div class="overlay-info">
+                                <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+
+            <div class="tour-item-wrapper col-sm-6 col-md-4">
+                <div class="tour-item">
+                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                        <div class="photo-item">
+                            <img src="/images/around/sq/aldeiaxisto.jpg" class="tour-image">
+                            <div class='description'>  
+                                <p class='description_content'><%= t('around.t7') %></p>  
                             </div> 
                             <div class="overlay-info">
                                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
