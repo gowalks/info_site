@@ -63,7 +63,7 @@ p {
 hr {
   border-color: white;
   border-width: 2px;
-  max-width: 200px;
+  max-width: 150px;
   padding-top: 20px;
 }
 hr.orange {

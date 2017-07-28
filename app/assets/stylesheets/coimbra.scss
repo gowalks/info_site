@@ -6,7 +6,11 @@
 	background-image: url('/images/coimbra/cover/unesco.jpg');
 	color: white;
 }
-#unesco-cover .text-with-BG {
+#fado-cover {
+	background-image: url('/images/coimbra/cover/fado.jpg');
+	color: white;
+}
+.text-with-BG {
 	background: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 768px) {

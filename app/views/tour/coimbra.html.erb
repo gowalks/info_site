@@ -1,6 +1,6 @@
 <!--COVER-->
 <header id="coimbra_cover" class="cover-background">
-	<div class="container-fluid">
+	<div class="container-fluid transparent-layer">
 		<div class="row">
 			<div class="header-text">
 				<h1><%= t('tours.t1') %></h1>
@@ -41,7 +41,7 @@
 
             <div class="tour-item-wrapper col-sm-6 col-md-4">
                 <div class="tour-item">
-                    <%= link_to url_for(coimbra_unesco_path(locale: I18n.locale)) do %>
+                    <%= link_to url_for(coimbra_fado_path(locale: I18n.locale)) do %>
                         <div class="photo-item">
                             <img src="/images/coimbra/fado.jpg" class="tour-image">
                             <div class='description'>  

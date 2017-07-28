@@ -4,17 +4,32 @@
 
 #coimbra_cover {
 	background-image: url('/images/index/coimbra.jpg');
-	color: #f96909;
+	color: white;
+  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
 }
 #around_cover {
   background-image: url('/images/index/around.jpg');
-  color: #f96909;
+  color: white;
+  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
 }
 #tailored_cover {
   background-image: url('/images/index/tailored.jpg');
-  color: #f96909;
+  color: white;
+  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
 }
-
+#coimbra_cover .transparent-layer{
+  //background: rgba(255, 255, 255, 0.1);
+}
+#around_cover .transparent-layer{
+  background: rgba(0, 0, 0, 0.3);
+}
+.transparent-layer .header-text p{
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  font-weight: 500;
+  font-sixe: 32px;
+  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
+}
 @media (max-width: 420px) {
   #tailored_cover  .header-text {
     padding-top: 150px;
