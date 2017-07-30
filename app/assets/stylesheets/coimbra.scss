@@ -49,8 +49,9 @@
 	font-size:20px;
 }
 .tour-info ul {
-	padding-left: 100px;
+	padding-left: 50px;
 	font-size:20px;
+	line-height: 160%;
 }
 .tour-info li {
 	font-size:20px;
@@ -65,11 +66,17 @@
 	.tour-info p{
 		text-align: justify;
 	}
+	.tour-info ul {
+		padding-left: 100px;
+	}
 }
 
 /*Tour details*/
 .tour-details p{
 	font-size:18px;
+}
+.tour-details p br{
+	line-height: 190%;
 }
 @media (min-width: 768px) {
   .tour-details h3 {

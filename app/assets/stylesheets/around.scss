@@ -1,3 +1,44 @@
 // Place all the styles related to the around controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#arte-cover {
+	background-image: url('/images/around/arte2.jpg');
+	color: white;
+}
+#arte-cover h1{
+	//font-size: 48px;
+}
+
+@media (max-width: 370px) {
+  #arte-cover  h1 {
+	//font-size: 32px;
+  }
+
+  header .header-text p {
+	  //font-size: 20px;
+	}
+}
+@media (min-width: 370px) and (max-width: 580px) {
+  #arte-cover  h1 {
+	font-size: 40px;
+  }
+ }
+@media (min-width: 768px) and (max-width: 959px) {
+  #arte-cover  h1 {
+	font-size: 55px;
+  }
+
+   #arte-cover  .header-text {
+	padding: 150px 50px 150px 50px;
+  }
+}
+@media (min-width: 960px) {
+  #arte-cover  h1 {
+	font-size: 60px;
+  }
+
+   #arte-cover  .header-text {
+	padding: 180px 50px 180px 50px;
+  }
+}

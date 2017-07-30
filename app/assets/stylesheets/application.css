@@ -53,6 +53,14 @@ p {
     font-size: 24px;
   }
 }
+.tab {
+	padding-left: 25px;
+}
+@media (min-width: 768px) {
+	.tab {
+		padding-left: 50px;
+	}
+}
 
 /*BACKGROUND*/
 .lightBG {

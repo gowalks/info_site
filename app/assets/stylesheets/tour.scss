@@ -5,20 +5,14 @@
 #coimbra_cover {
 	background-image: url('/images/index/coimbra.jpg');
 	color: white;
-  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
 }
 #around_cover {
   background-image: url('/images/index/around.jpg');
   color: white;
-  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
 }
 #tailored_cover {
   background-image: url('/images/index/tailored.jpg');
   color: white;
-  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
-}
-#coimbra_cover .transparent-layer{
-  //background: rgba(255, 255, 255, 0.1);
 }
 #around_cover .transparent-layer{
   background: rgba(0, 0, 0, 0.3);
@@ -28,13 +22,12 @@
   background: rgba(0, 0, 0, 0);
   font-weight: 500;
   font-sixe: 32px;
-  //text-shadow: -1px 0 #ff8535, 0 1px #ff8535, 1px 0 #ff8535, 0 -1px #ff8535;
 }
 @media (max-width: 420px) {
   #tailored_cover  .header-text {
     padding-top: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   #tailored_cover  .header-text h1 {
@@ -147,3 +140,15 @@
 	padding: 0px;
 	margin: 5px 0 5px 0;
 } 
+
+.container-text-align h1 {
+  text-align: center;
+}
+.container-text-align p {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container-text-align p{
+    text-align: justify;
+  }
+}
