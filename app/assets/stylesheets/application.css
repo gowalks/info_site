@@ -66,6 +66,10 @@ p {
 .lightBG {
 	background-color: #ffa556;
 }
+.darkBG {
+	background-color: #703404;
+	color: white;
+}
 
 /*AUX*/
 hr {
