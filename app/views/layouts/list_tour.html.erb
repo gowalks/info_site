@@ -28,6 +28,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">	
+
+                <!--DESCRIPTION-->
                 <h2><b><%= t('details.desc') %></b></h2>
                 <div class="tour-description">
                     <% if I18n.locale == :en %>
@@ -44,7 +46,6 @@
                         <b><%= t('details.readless') %> <i class="fa fa-caret-up" aria-hidden="true"></i></b>
                     </button>
                 </div>
-
                 <div class="tour-description-lead">
                     <% if I18n.locale == :en %>
                         <p><%= text_en[:intro] %> (...)
@@ -59,57 +60,62 @@
                 </div>
                 <br>  
 
-                <hr class="dark">
+                <!--POI-->
+                <% if poi.size > 0 %>
 
-                <h2><b><%= t('details.poi') %></b></h2>
+                    <hr class="dark">
 
-                <% poi.each do |poi_list| %>
-                    <div class="tab">
-                        <a class="" role="button" data-toggle="collapse" href=<%= poi_list[:href] %> aria-controls=<%= poi_list[:ref] %> aria-expanded="false">
-                            <% if I18n.locale == :en %>
-                                <h3><%= poi_list[:title_en] %> <span class="caret"></span></h3>
-                            <% else %>
-                                <h3><%= poi_list[:title_pt] %> <span class="caret"></span></h3>
-                            <% end %>
-                        </a>
+                    <h2><b><%= t('details.poi') %></b></h2>
 
-                        <div id=<%= poi_list[:ref] %> class="collapse">
-                            <div class="text-justify">
-
+                    <% poi.each do |poi_list| %>
+                        <div class="tab">
+                            <a class="" role="button" data-toggle="collapse" href=<%= poi_list[:href] %> aria-controls=<%= poi_list[:ref] %> aria-expanded="false">
                                 <% if I18n.locale == :en %>
-                                    <ul>
-                                        <% poi_list[:list_en].each do |poi_desc| %>
-                                            <li><%= poi_desc %></li>
-                                        <%end%>
-                                        <% if !poi_list[:nested_list_en].empty? %>
-                                            <ul>
-                                                <% poi_list[:nested_list_en].each do |poi_desc2| %>
-                                                    <li><%= poi_desc2 %></li>
-                                                <%end%>
-                                            </ul>
-                                        <%end%> 
-                                    </ul>
+                                    <h3><%= poi_list[:title_en] %> <span class="caret"></span></h3>
                                 <% else %>
-                                     <ul>
-                                        <% poi_list[:list_pt].each do |poi_desc| %>
-                                            <li><%= poi_desc %></li>
-                                        <%end%>
-                                        <% if !poi_list[:nested_list_pt].empty? %>
-                                            <ul>
-                                                <% poi_list[:nested_list_pt].each do |poi_desc2| %>
-                                                    <li><%= poi_desc2 %></li>
-                                                <%end%>
-                                            </ul>
-                                        <%end%> 
-                                    </ul>
+                                    <h3><%= poi_list[:title_pt] %> <span class="caret"></span></h3>
                                 <% end %>
+                            </a>
+
+                            <div id=<%= poi_list[:ref] %> class="collapse">
+                                <div class="text-justify">
+
+                                    <% if I18n.locale == :en %>
+                                        <ul>
+                                            <% poi_list[:list_en].each do |poi_desc| %>
+                                                <li><%= poi_desc %></li>
+                                            <%end%>
+                                            <% if !poi_list[:nested_list_en].empty? %>
+                                                <ul>
+                                                    <% poi_list[:nested_list_en].each do |poi_desc2| %>
+                                                        <li><%= poi_desc2 %></li>
+                                                    <%end%>
+                                                </ul>
+                                            <%end%> 
+                                        </ul>
+                                    <% else %>
+                                         <ul>
+                                            <% poi_list[:list_pt].each do |poi_desc| %>
+                                                <li><%= poi_desc %></li>
+                                            <%end%>
+                                            <% if !poi_list[:nested_list_pt].empty? %>
+                                                <ul>
+                                                    <% poi_list[:nested_list_pt].each do |poi_desc2| %>
+                                                        <li><%= poi_desc2 %></li>
+                                                    <%end%>
+                                                </ul>
+                                            <%end%> 
+                                        </ul>
+                                    <% end %>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                <br>       
+                        </div> 
+                    <br>       
+                    <%end%>
 
                 <%end%>
 
+                <!--OPTIONAL INFORMATION-->
                 <% if !optional.blank? %>
                     <br> 
                     <hr class="dark">
@@ -135,7 +141,7 @@
 <section id=<%= id[:details]%> class="tour-details lightBG">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-6 col-md-offset-3">
                 <div class="row">
                     <div class="col-xs-12 col-sm-offset-2 col-sm-10">
                         <h3 class="text-center"><b>

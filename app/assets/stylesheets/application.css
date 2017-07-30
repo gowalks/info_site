@@ -64,7 +64,7 @@ p {
 
 /*BACKGROUND*/
 .lightBG {
-	background-color: #ffa556;
+	background-color: #ff9a42;
 }
 .darkBG {
 	background-color: #703404;
@@ -198,7 +198,7 @@ hr.black {
 
 /*CONTACTS*/
 #reservations {
-	color: black;
+	color: #333;
 }
 #reservations h3 {
 	font-size:20px;
@@ -215,7 +215,7 @@ hr.black {
 }
 
 #reservations h3 a{
-	color: black;
+	color: #333;
 }
 #reservations h3 a:hover{
 	color: #b24c07;
