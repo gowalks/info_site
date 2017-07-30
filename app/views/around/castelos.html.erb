@@ -1,2 +1,82 @@
-<h1>Around#castelos</h1>
-<p>Find me in app/views/around/castelos.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+	id: {cover: "castelos-cover", info: "castelos-info", details: "castelos-details"},
+	cover_en: {
+		title: "",
+		subtitle: ""
+		},
+	cover_pt: {
+		title: "Castelos e Muralhas Defensivas",
+		subtitle: "Montemor"
+	},
+	data_pt: {
+		reservation: "Disponível mediante reserva todos os dias do ano excepto 1 de Janeiro, Domingo de Páscoa e 25 de Dezembro",
+		time: ["MEIO-DIA - 9h00 às 13h00 OU 14h00 às 18h00 "],
+		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		cost: ["50€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
+	},
+	data_en: {
+		reservation: "",
+		time: "",
+		meeting_point: "",
+		cost: ""
+	},
+	text_pt: {
+		intro: "Nesta visita iremos descobrir um dos mais importantes sistemas defensivos da Época Medieval em Portugal, tendo este sido contributo singular para o estabelecimento da nossa nacionalidade! Vai sentir-se viajar no tempo ao visualizar a Linha Defensiva do Mondego!",
+		more: [
+			"Nesta visita iremos descobrir um dos mais importantes sistemas defensivos da Época Medieval em Portugal, tendo este sido contributo singular para o estabelecimento da nossa nacionalidade! Vai sentir-se viajar no tempo ao visualizar a Linha Defensiva do Mondego!",
+			"Começamos no Centro Histórico de Coimbra, onde terá a oportunidade de aprender sobre o tempo das Cruzadas em Portugal e os sistemas defensivos medievos existentes na cidade e que ainda hoje são visíveis: as muralhas e torres defensivas. Após compreendermos a posição de Coimbra e o seu sistema defensivo, assim como aprendermos sobre a Época Medieval em Portugal principalmente durante o período da Reconquista, iremos percorrer os Campos do Mondego até ao Castelo de Montemor-o-Velho.",
+			"O Rio Mondego é o maior rio exclusivamente Português, percorrendo o país desde a Serra da Estrela até ao Oceano Atlântico. Atravessada a cidade de Coimbra, o Rio Mondego expande-se por vastos e férteis campos onde ainda hoje é cultivado o conhecido Arroz do Mondego e também milho. Aqui pastam muitas vezes ovelhas, aparecem patos para comer os grãos de arroz… mas também podemos ver outras espécies tais como as cegonhas, que constroem os seus ninhos no topo dos postos eléctricos das aldeias que povoam este local idílico.",
+			"Chegados a Montemor-o-Velho iremos contemplar o a beleza do seu castelo, estratégicamente colocado no cimo de uma colina a olhar os Campos do Mondego. Desde aí a panorâmica é magnífica, e a própria estrutura vai deixá-lo sem palavras! É um sítio fantástico, edificado ainda em tempos que estas terras eram povoadas pelos Mouros, e que mais tarde foi habitado por membros da Corte Real Portuguesa. Também ligada à história incontornável desta estrutura defensiva do Mondego está a sua posse pelos Templários, a passagem das tropas francófonas de Junot aquando as Guerras Penínsulares (1810) e a lenda de Pedro & Inês … histórias que lhe contaremos durante esta inesquecível visita guiada!"]
+	},
+	text_en: {
+		intro: "",
+		more: [
+			"",
+			"",
+			""
+			],
+	},
+	poi: [
+		{
+			title_pt: "Castelos e Muralhas Defensivas",
+			title_en: "",
+			ref: "castelos",
+			href: "#castelos",
+			list_pt: [
+				"Torres e Muralhas de Coimbra e a sua estrutura defensiva da época medieval",
+				"Rio Mondego", 
+				"Vila de Montemor-o-Velho", 
+				"Edifício da Câmara Municipal de Montemor-o-Velho", 
+				"Castelo de Montemor-o-Velho", 
+				"Igreja de Santa Maria de Alcáçova", 
+				"Planícies Agrícolas do Mondego"
+			],
+			nested_list_pt: [],
+			list_en: [
+				""
+			],
+			nested_list_en: [],
+		}
+	],
+	optional: {
+		optional_pt: [
+			"Se ficou muito curioso sobre este local e quer conhecer mais, poderá solicitar visita de dia completo!", 
+			"Na visita de dia completo será possível visitarmos o Forte de Santa Catarina na Figueira da Foz, a Torre e o Forte de Buarcos, a Serra da Boa Viagem… se for primavera/verão traga o fato-de-banho: se se sentir corajoso poderá dar um mergulho nas águas do Oceano Atlântico! Se for outono/inverno... agasalhe-se, mas não hesite viver esta oportunidade!",
+			"Sugerimos ainda uma pausa para almoço nesta região, onde poderá saborear a gastronomia típica da zona como por exemplo o peixe e marisco frescos, o pastel de Tentúgal, a queijada de Tentúgal, entre outros!",
+			"Peça uma visita à sua medida: teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhes usufruir plenamente do território e da sua cultura... na companhia de um guia local!"
+
+		],
+		optional_en: [
+			""
+		]
+	},
+	fotos: [
+		"/images/around/castelos/foto7.JPG",
+		"/images/around/castelos/foto2.jpg",
+		"/images/around/castelos/foto3.jpg",
+		"/images/around/castelos/foto4.jpg",
+		"/images/around/castelos/foto5.jpg",
+		"/images/around/castelos/foto6.JPG"
+	]
+} %>

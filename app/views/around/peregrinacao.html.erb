@@ -1,2 +1,79 @@
-<h1>Around#peregrinacao</h1>
-<p>Find me in app/views/around/peregrinacao.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+	id: {cover: "peregrinacao-cover", info: "peregrinacao-info", details: "peregrinacao-details"},
+	cover_en: {
+		title: "",
+		subtitle: ""
+		},
+	cover_pt: {
+		title: "Peregrinação e Devoção Religiosa",
+		subtitle: "Fátima e Nazaré"
+	},
+	data_pt: {
+		reservation: "Disponível mediante reserva todos os dias do ano",
+		time: ["Dia Completo - 9h00 às 18h00"],
+		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		cost: ["80€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
+	},
+	data_en: {
+		reservation: "",
+		time: "",
+		meeting_point: "",
+		cost: ""
+	},
+	text_pt: {
+		intro: "Nesta visita de dia completo iremos visitar dois dos sítios mais sagrados de Portugal: Fátima e Nazaré.",
+		more: [
+			"Nesta visita de dia completo iremos visitar dois dos sítios mais sagrados de Portugal: Fátima e Nazaré.",
+			"Começaremos a manhã por visitar o Santuário de Nossa Senhora do Rosário de Fátima: um dos mais importantes locais de culto mariano de todo o mundo, recebendo mais de 6 milhões de visitantes todos os anos que aí vão procurar um local calmo onde possam prestar devoção ou mesmo cumprir promessas. Aqui a eucaristia é celebrada em vários locais do santuário, em diversas horas do dia, pelo que será possível participar destas celebrações religiosas ao visitar este sítio que – apesar das enormes multidões que o visitam – inspira sempre tranquilidade.",
+			"Conheceremos tudo sobre as Aparições da Nossa Senhora aos Pastorinhos, à medida que visitamos a Capelinha das Aparições de 1919, a Basílica de Nossa Senhora do Rosário de 1950 e a Basílica da Santíssima Trindade de 2007. Nos últimos anos, com a Canonização dos Pastorinhos Jacinta e Francisco, o Santuário foi ampliado com novas obras de arte e estruturas que teremos a oportunidade de contemplar.",
+			"O almoço será livre assim que chegarmos a Nazaré, conhecida pelo seu peixe fresco e marisco!",
+			"Após o almoço teremos a oportunidade de experimentar uma viagem de funicular: o Ascensor da Nazaré, inaugurado em 1889 e que transporta mais de um milhão de passageiros por ano, levar-nos-á ao Sítio da Nazaré. Aqui iremos visitar a Ermida da Memória, erguida em 1182 sob uma gruta no Promontório da Nazaré e que deu origem à Lenda da Nazaré, que iremos conhecer! Entraremos ainda no Santuário de Nossa Senhora da Nazaré, que por muitos séculos trouxe romarias a este sítio nas quais participavam pessoas de todos os estratos sociais incluíndo a Família Real Portuguesa.",
+			"Do Farol da Nazaré teremos ainda vista para a Praia do Norte, muito famosa entre os surfistas e mundialmente conhecida por aqui ter sido surfada por Garrett MacNamara em 2011 a “onda mais alta do mundo” calculada em 34 metros! Este feito valeu-lhe uma entrada no Guiness Book of Records, e posicionou a Praia do Norte no mapa mundial do surf!"]
+	},
+	text_en: {
+		intro: "",
+		more: [
+			"",
+			"",
+			""
+			],
+	},
+	poi: [
+		{
+			title_pt: "Peregrinação e Devoção Religiosa",
+			title_en: "",
+			ref: "peregrinacao",
+			href: "#peregrinacao",
+			list_pt: [
+				"Santuário de Fátima (Capelinha das Aparições, Basílica de Nossa Senhora do Rosário, Basílica da Santíssima Trindade)", 
+				"Praia da Nazaré", 
+				"Ascensor da Nazaré", 
+				"Sítio da Nazaré (Ermida da Memória e Santuário de Nossa Senhora da Nazaré)",
+				"Farol da Nazaré", 
+				"Praia do Norte", 
+				"Pinhal de Leiria"],
+			nested_list_pt: [],
+			list_en: [
+				""
+			],
+			nested_list_en: [],
+		}
+	],
+	optional: {
+		optional_pt: [
+			"Se pretender uma visita privada, contacte-nos! Teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhe usufruir plenamente do território e da sua cultura... ao seu ritmo... no seu idioma... e na companhia de um guia local!"
+		],
+		optional_en: [
+			""
+		]
+	},
+	fotos: [
+		"/images/around/peregrinacao/foto5.JPG",
+		"/images/around/peregrinacao/foto1.jpg",
+		"/images/around/peregrinacao/foto2.jpg",
+		"/images/around/peregrinacao/foto6.JPG",
+		"/images/around/peregrinacao/foto4.jpg",
+		"/images/around/peregrinacao/foto3.jpg",
+	],
+} %>

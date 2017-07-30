@@ -1,2 +1,70 @@
-<h1>Around#templarios</h1>
-<p>Find me in app/views/around/templarios.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+	id: {cover: "templarios-cover", info: "templarios-info", details: "templarios-details"},
+	cover_en: {
+		title: "EN",
+		subtitle: ""
+		},
+	cover_pt: {
+		title: "Cavaleiros Templários",
+		subtitle: "Do Mondego ao Tejo"
+	},
+	data_pt: {
+		reservation: "Disponível mediante reserva de 3ªf a Domingo",
+		time: ["Dia Completo - 9h00 às 18h00"],
+		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		cost: ["98€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
+	},
+	data_en: {
+		reservation: "",
+		time: "",
+		meeting_point: "",
+		cost: ""
+	},
+	text_pt: {
+		intro: "Esta é uma das temáticas mais intrigantes da História Mundial, e muitas pessoas ficam absolutamente espantadas com o legado que os Cavaleiros da Ordem do Templo deixaram em Portugal! Venha conhecer alguns dos locais mais importantes do tempo das cruzadas no nosso país, e descobrir as diversas personagens históricas desta época! Sinta-se viajar aos primórdios do Reino de Portugal e à época medieval, ao visitar fabulosos Castelos entre o Rio Mondego e o Rio Tejo, à medida que lhe contamos a história e estórias a eles ligadas!",
+		more: [
+			"Esta é uma das temáticas mais intrigantes da História Mundial, e muitas pessoas ficam absolutamente espantadas com o legado que os Cavaleiros da Ordem do Templo deixaram em Portugal! Venha conhecer alguns dos locais mais importantes do tempo das cruzadas no nosso país, e descobrir as diversas personagens históricas desta época! Sinta-se viajar aos primórdios do Reino de Portugal e à época medieval, ao visitar fabulosos Castelos entre o Rio Mondego e o Rio Tejo, à medida que lhe contamos a história e estórias a eles ligadas!",
+			"A visita inicia em Coimbra com enfoque no período das Cruzadas e na importância que desempenhou esta cidade com as suas estruturas defensivas do Centro Histórico, beneficiadas pela Linha Defensiva do Mondego. Falaremos da importância de Coimbra desde o século XI, e conheceremos uma das mais importantes personagens da época: D. Sesnando Davides. No século seguinte seria igualmente sepultado nesta cidade, transformada na capital do Reino, o primeiro Rei de Portugal D. Afonso Henriques – ele próprio cavaleiro, que lutou ao lado dos Templários na reconquista do território aos Mouros durante o século XII.",
+			"Partiremos então à descoberta do Castelo de Penela: uma das mais importantes estruturas desta Linha Defensiva, pela sua posição estratégica na estrada de ligação entre o Baixo-Mondego e Santarém. Hoje, este Castelo é testemunho de vários estilos arquitectónicos onde diversas épocas se sobrepõem: sesnandina, românica e gótica!",
+			"Cedo chegaremos à “Cidade Templária de Portugal”: Tomar. Aqui conheceremos detalhes da vida de Gualdim Pais (escudeiro de D. Afonso Henriques, Cruzado Português e Freire Templário) à medida que visitamos a impressionante estrutura castelar deste sítio. É em Tomar que faremos uma paragem livre para almoço junto às margens do Rio Nabão, onde poderá usufruir de panorâmicas fantásticas para o topo da colina onde se encontram as estruturas defensivas da época da Reconquista.",
+			"Ainda encantados pelo Castelo de Tomar, partiremos à descoberta de mais um emblemático monumento militar medieval mandado construir por Gualdim Pais: o Castelo de Almourol. Situado numa pequena ilha escarpada, no curso médio do Rio Tejo, Almourol é um dos mais emblemáticos castelos da Reconquista e um dos que melhor evoca a memória dos Templários no nosso país. Se o clima permitir, embarcaremos no Cais do Castelo a caminho da Ilha onde poderemos explorar bem de perto esta estrutura!"]
+	},
+	text_en: {
+		intro: "",
+		more: [
+			"",
+			"",
+			""
+			],
+	},
+	poi: [
+		{
+			title_pt: "Cavaleiros Templários",
+			title_en: "",
+			ref: "templarios",
+			href: "#templarios",
+			list_pt: [],
+			nested_list_pt: [],
+			list_en: [
+				""
+			],
+			nested_list_en: [],
+		}
+	],
+	optional: {
+		optional_pt: [
+			"Se pretender uma visita privada, contacte-nos! Teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhe usufruir plenamente do território e da sua cultura... ao seu ritmo... no seu idioma... e na companhia de um guia local!"
+		],
+		optional_en: [
+			""
+		]
+	},
+	fotos: [
+		"/images/around/templarios/fotos4.jpg",
+		"/images/around/templarios/fotos5.jpg",
+		"/images/around/templarios/fotos3.jpg",
+		"/images/around/templarios/fotos1.jpg",
+		"/images/around/templarios/fotos2.jpg",
+	],
+} %>

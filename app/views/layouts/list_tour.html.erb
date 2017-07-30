@@ -105,9 +105,28 @@
                                 <% end %>
                             </div>
                         </div>
-                    </div>        
+                    </div> 
+                <br>       
 
                 <%end%>
+
+                <% if !optional.blank? %>
+                    <br> 
+                    <hr class="dark">
+                    <h2><b><%= t('details.opt') %></b></h2>
+                    <% if I18n.locale == :en %>
+                        <% optional[:optional_en].each do |text| %>
+                            <p><%= text %></p>
+                        <%end%>
+                    <% else %>
+                        <% optional[:optional_pt].each do |text| %>
+                            <p><%= text %></p>
+                        <%end%>
+                    <% end %>
+
+                    <% if optional[:optional_pt].size > 1 %>
+                    <% end %>
+                <% end %>
 			</div>
 		</div>
 	</div>

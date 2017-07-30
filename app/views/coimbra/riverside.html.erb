@@ -1,2 +1,74 @@
-<h1>Coimbra#riverside</h1>
-<p>Find me in app/views/coimbra/riverside.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+    id: {cover: "riverside-cover", info: "riverside-info", details: "riverside-details"},
+    cover_en: {
+        title: "",
+        subtitle: ""
+        },
+    cover_pt: {
+        title: "Beira Rio e Lendas de Amor",
+        subtitle: ""
+    },
+    data_pt: {
+        reservation: "De 3ªf a Domingo, mediante reserva",
+        time: ["10h00 às 12h00", "14h00 às 16h00"],
+        meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+        cost: ["25€ por pessoa (inclui entrada nos Jardins da Quinta das Lágrimas)","Crianças 0 a 6 anos – grátis; Crianças 6 a 12 anos 12,50€"]
+    },
+    data_en: {
+        reservation: "",
+        time: "",
+        meeting_point: "",
+        cost: ""
+    },
+    text_pt: {
+        intro: "O maior rio Português é aquele que banha Coimbra, vindo da mais alta Montanha de Portugal Continental: a Serra da Estrela. Originalmente conhecido como “Monda”, pelos Romanos que aqui habitaram quando Coimbra era conhecida por “Aeminium”, esta linha de água permitiu o crescimento da cidade ao longo dos séculos e encerra inúmeras lendas e histórias de amor que ainda hoje encantam quem por aqui passa. ",
+        more: [
+            "O maior rio Português é aquele que banha Coimbra, vindo da mais alta Montanha de Portugal Continental: a Serra da Estrela. Originalmente conhecido como “Monda”, pelos Romanos que aqui habitaram quando Coimbra era conhecida por “Aeminium”, esta linha de água permitiu o crescimento da cidade ao longo dos séculos e encerra inúmeras lendas e histórias de amor que ainda hoje encantam quem por aqui passa.",
+            "Durante esta visita irá perceber a importância que o Rio Mondego assumiu: primeiro para os Romanos que aqui se instalaram, e depois durante o período da Reconquista territorial no século XII … que deu lugar à fundação do Reino de Portugal!",
+            "À medida que caminhamos por estes sítios carregados de História, vamos contar-vos as lendas e histórias de amor cantadas por poetas e que ainda hoje dão a Coimbra uma aura única que ainda faz dela a “Capital do Amor em Portugal”. Vamos dar-vos a conhecer a história da Rainha Santa, e a mais bela e trágica história de amor que Portugal testemunhou: o romance de cortar a respiração entre D. Pedro I de Portugal e Inês de Castro (o Romeu e Julieta Portugueses!).",
+            "Depois de experimentar este percurso, não há como não se deixar apaixonar por Coimbra!"]
+    },
+    text_en: {
+        intro: "",
+        more: [
+            "",
+            "",
+            ""
+            ],
+    },
+    poi: [
+        {
+            title_pt: "Beira Rio e Lendas de Amor",
+            title_en: "",
+            ref: "riverside",
+            href: "#riverside",
+            list_pt: [
+                "Largo da Portagem",
+                "Parque Manuel Braga",
+                "Parque Verde do Mondego",
+                "Ponte Pedonal Pedro & Inês",
+                "Praça da Canção",
+                "Mosteiro de Santa Clara-a-Velha",
+                "Mosteiro de Santa Clara-a-Nova",
+                "Convento de S. Francisco",
+                "Portugal dos Pequenitos",
+                "Jardins da Quinta das Lágrimas (entrada incluída)"
+            ],
+            nested_list_pt: [],
+            list_en: [
+                ""
+            ],
+            nested_list_en: [],
+        }
+    ],
+    fotos: [
+        "/images/around/riverside/foto1.jpg",
+        "/images/around/riverside/foto2.jpg",
+        "/images/around/riverside/foto3.jpg",
+        "/images/around/riverside/foto4.jpg",
+        "/images/around/riverside/foto5.jpg",
+        "/images/around/riverside/foto6.jpg"
+    ],
+    optional: {}
+} %>

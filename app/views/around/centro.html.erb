@@ -1,2 +1,82 @@
-<h1>Around#centro</h1>
-<p>Find me in app/views/around/centro.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+	id: {cover: "centro-cover", info: "centro-info", details: "centro-details"},
+	cover_en: {
+		title: "",
+		subtitle: ""
+		},
+	cover_pt: {
+		title: "Património Mundial da Humanidade no Centro de Portugal
+",
+		subtitle: "Tomar, Batalha e Alcobaça"
+	},
+	data_pt: {
+		reservation: "Disponível mediante reserva todos os dias do ano, excepto 1 de Janeiro, Domingo de Páscoa, 1 de Maio, 20 de Agosto, 24 e 25 de Dezembro",
+		time: ["Dia Completo - 9h00 às 18h00"],
+		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		cost: ["98€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
+	},
+	data_en: {
+		reservation: "",
+		time: "",
+		meeting_point: "",
+		cost: ""
+	},
+	text_pt: {
+		intro: "Venha conhecer três dos mais impressionantes sítios de Património Mundial da Humanidade em Portugal na nossa companhia: Tomar, Batalha e Alcobaça!",
+		more: [
+			"Venha conhecer três dos mais impressionantes sítios de Património Mundial da Humanidade em Portugal na nossa companhia: Tomar, Batalha e Alcobaça!",
+			"Conhecida como “Cidade Templária” em Tomar desvendaremos o charme da “Mata dos Sete Montes”, o Castelo e o Convento de Cristo (inscrito na lista da UNESCO desde 1983)! É nesta cidade que faremos também uma pausa para disfrutarem de um almoço no Centro Histórico, onde poderão aproveitar também para conhecer as típicas ruas comerciais e os melhores restaurantes à beira do Rio Nabão.",
+			"Após o almoço partiremos a caminho de Batalha, fazendo uma paragem estratégica no fabuloso Aqueduto dos Pegões Altos. Este aqueduto, que fornecia água ao Convento de Cristo de Tomar, tem 6km de comprimento e 30m de altura e é uma das mais impressionantes obras do final do século XVI e inícios do século XVII em Portugal!",
+			"Já em Batalha encontraremos o Mosteiro de Santa Maria da Vitória (também conhecido como Mosteiro da Batalha e inscrito na lista da UNESCO desde 1983)! Iremos ainda passar pelo local onde decorreu a batalha lendária que terminou com a maior crise dinástica da história de Portugal, e conhecer tudo sobre a lenda a Padeira de Aljubarrota!",
+			"Será então tempo de visitar Alcobaça, com o seu belíssimo Mosteiro (um dos mais imponentes testemunhos da arquitectura Circestience em toda a Europa, e inscrito na lista da UNESCO desde 1989). Do conjunto de espaços da época medieval visitaremos o Refeitório, o Dormitório, a Sala do Capítulo, o Claustro de D. Dinis, a Sala dos Reis e a impressionante Cozinha!",
+			"Não hesite participar desta visita, deixe-se encantar pelo Património Mundial da Humanidade do Centro de Portugal!"]
+	},
+	text_en: {
+		intro: "",
+		more: [
+			"",
+			"",
+			""
+			],
+	},
+	poi: [
+		{
+			title_pt: "Património Mundial da Humanidade no Centro de Portugal",
+			title_en: "",
+			ref: "centro",
+			href: "#centro",
+			list_pt: [
+				"Mata dos Sete Montes", 
+				"Castelo de Tomar", 
+				"Convento de Cristo de Tomar", 
+				"Aqueduto de Tomar", 
+				"Rio Nabão", 
+				"Aqueduto de Pegões", 
+				"Mosteiro de Santa Maria da Vitória",
+				"Aljubarrota", 
+				"Mosteiro de Alcobaça", 
+				"Pinhal de Leiria."
+			],
+			nested_list_pt: [],
+			list_en: [
+				""
+			],
+			nested_list_en: [],
+		}
+	],
+	optional: {
+		optional_pt: [
+			"Se pretender uma visita privada, contacte-nos! Teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhe usufruir plenamente do território e da sua cultura… ao seu ritmo... no seu idioma... e na companhia de um guia local!
+"
+		],
+		optional_en: [
+			""
+		]
+	},
+	fotos: [
+		"/images/around/centro/foto1.jpg",
+		"/images/around/centro/foto2.jpg",
+		"/images/around/centro/foto3.JPG",
+	],
+} %>

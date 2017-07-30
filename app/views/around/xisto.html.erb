@@ -1,2 +1,77 @@
-<h1>Around#xisto</h1>
-<p>Find me in app/views/around/xisto.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+	id: {cover: "xisto-cover", info: "xisto-info", details: "xisto-details"},
+	cover_en: {
+		title: "",
+		subtitle: ""
+		},
+	cover_pt: {
+		title: "Encantadoras Aldeias de Xisto",
+		subtitle: "Lousã"
+	},
+	data_pt: {
+		reservation: "Disponível mediante reserva todos os dias do ano",
+		time: ["MEIO-DIA - 9h00 às 13h00 OU 14h00 às 18h00"],
+		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		cost: ["50€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
+	},
+	data_en: {
+		reservation: "",
+		time: "",
+		meeting_point: "",
+		cost: ""
+	},
+	text_pt: {
+		intro: "Apesar de haver vestígios de presença humana neste território deste a época pré-histórica, é apenas na época medieval que as populações se começam a fixar verdadeiramente neste território. Do conjunto das 27 aldeias históricas que fazem parte da Rede das Aldeias do Xisto, visitaremos duas Aldeias de Xisto (Candal e Talasnal) com as suas construções datadas entre o século XVII e XVIII. Estão localizadas na Serra da Lousã, a poucos quilómetros de distância de Coimbra!
+",
+		more: [
+			"Apesar de haver vestígios de presença humana neste território deste a época pré-histórica, é apenas na época medieval que as populações se começam a fixar verdadeiramente neste território. Do conjunto das 27 aldeias históricas que fazem parte da Rede das Aldeias do Xisto, visitaremos duas Aldeias de Xisto (Candal e Talasnal) com as suas construções datadas entre o século XVII e XVIII. Estão localizadas na Serra da Lousã, a poucos quilómetros de distância de Coimbra!",
+			"A Aldeia do Candal é a mais desenvolvida das aldeias serranas e está habituada a receber visitantes devido à sua posição acessível, na estrada nacional. Mas não se deixe enganar: aqui respira-se ar puro, há actualmente apenas 7 habitantes e os seus animais de companhia, e faremos uma caminhada pelo centro da Aldeia até ao miradouro… onde se usufrui de uma vista belíssima sobre o vale e a Ribeira do Candal.",
+			"A segunda paragem desta visita é na Aldeia do Talasnal, descrita por muitos como uma representação de “um mundo mágico de vegetação luxuriante por onde espreitam veados, corços, javalis e outras espécies”! Esta aldeia conta com muitas casas restauradas, e num dia de semana é comum pararmos para escutar apenas silêncio, o zumbir das abelhas e o correr da água que brota da fonte e do tanque da aldeia! Ao fim-de-semana a aldeia anima: os restaurantes e lojas de artesanato abrem, os caminhantes aparecem vindos dos vários trilhos da montanha, e ouvem-se os ecos da diversão de algumas dezenas de pessoas pelas ruas estreitas deste sítio encantador!"]
+	},
+	text_en: {
+		intro: "",
+		more: [
+			"",
+			"",
+			""
+			],
+	},
+	poi: [
+		{
+			title_pt: "Encantadoras Aldeias de Xisto",
+			title_en: "",
+			ref: "xisto",
+			href: "#xisto",
+			list_pt: [
+				"Vila da Lousã", 
+				"Aldeia de Xisto do Candal", 
+				"Aldeia de Xisto do Talasnal com panorâmicas sob o Castelo e Serra da Lousã"
+			],
+			nested_list_pt: [],
+			list_en: [
+				""
+			],
+			nested_list_en: [],
+		}
+	],
+	optional: {
+		optional_pt: [
+			"Se ficou muito curioso sobre este local, e quer conhecer mais, poderá solicitar visita de dia completo e visitar mais locais!",
+			" Na visita de dia completo será possível visitarmos o Castelo da Lousã, o Santuário da Nossa Senhora da Misericórdia, a Praia Fluvial da Louçainha e as suas cascatas… traga o fato-de-banho: se se sentir corajoso poderá dar um mergulho nas águas transparentes deste sítio fabuloso! Se for outono/inverno… agasalhe-se, mas não hesite viver esta oportunidade!",
+			"Sugerimos ainda uma pausa para almoço nesta região, onde poderá saborear a gastronomia típica da zona como por exemplo o cabrito assado, a chanfana, o talasnico… e os licores locais tais como licor beirão, água ardente de medronho, entre outros!",
+			"Peça uma visita à sua medida: teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhes usufruir plenamente do território e da sua cultura… na companhia de um guia local!"
+		],
+		optional_en: [
+			""
+		]
+	},
+	fotos: [
+		"/images/around/xisto/foto1.jpg",
+		"/images/around/xisto/foto2.jpg",
+		"/images/around/xisto/foto3.jpg",
+		"/images/around/xisto/foto4.jpg",
+		"/images/around/xisto/foto5.jpg",
+		"/images/around/xisto/foto6.jpg"
+	],
+} %>

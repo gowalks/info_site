@@ -1,2 +1,81 @@
-<h1>Around#palacio</h1>
-<p>Find me in app/views/around/palacio.html.erb</p>
+<%= render file: "layouts/list_tour", 
+locals: {
+	id: {cover: "palacio-cover", info: "palacio-info", details: "palacio-details"},
+	cover_en: {
+		title: "",
+		subtitle: ""
+		},
+	cover_pt: {
+		title: "Florestas e Palácios Encantados",
+		subtitle: "Bussaco"
+	},
+	data_pt: {
+		reservation: "Disponível mediante reserva todos os dias do ano",
+		time: ["MEIO-DIA - 9h00 às 13h00 OU 14h00 às 18h00"],
+		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		cost: ["50€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
+	},
+	data_en: {
+		reservation: "",
+		time: "",
+		meeting_point: "",
+		cost: ""
+	},
+	text_pt: {
+		intro: "Competindo com Sintra no topo do ranking dos locais mais encantadores de Portugal, o Bussaco (ou Buçaco) é um tesouro no Centro do País apenas a 30 minutos de distância de Coimbra!",
+		more: [
+			"Competindo com Sintra no topo do ranking dos locais mais encantadores de Portugal, o Bussaco (ou Buçaco) é um tesouro no Centro do País apenas a 30 minutos de distância de Coimbra!",
+			"A Mata Nacional do Bussaco é uma Área Protegida plantada pela Ordem dos Carmelitas Descalços, que no início do século XVII viram estes terrenos cedidos para a construção do seu Retiro Espiritual composto por um Convento e uma Floresta que cedo se transformou num verdadeiro conto de fadas.",
+			"Em 1888, a Coroa Portuguesa iniciou a construção de um Palácio Real no local onde se encontrava o Convento – que na altura foi parcialmente demolido para a construção deste edifício de características construtivas Neo-Manuelinas.",
+			"Nesta visita de meio-dia vai-nos ser possível contemplar toda a beleza deste local, utilizando um dos trilhos da Mata Nacional do Bussaco. Chegados ao destino faremos, então, uma caminhada à medida que aprendemos sobre os edifícios existentes dentro do Muro construído pelos Carmelitas, a fauna e flora que este sítio nos oferece!"]
+	},
+	text_en: {
+		intro: "",
+		more: [
+			"",
+			"",
+			""
+			],
+	},
+	poi: [
+		{
+			title_pt: "Palácios e Bosques Encantados",
+			title_en: "",
+			ref: "palacios",
+			href: "#palacios",
+			list_pt: [
+				"Portões e Muros da Mata Nacional do Bussaco", 
+				"Casas da Mata", 
+				"Fonte Fria", 
+				"Vale dos Fetos", 
+				"Jardins do Palácio", 
+				"Convento dos Carmelitas Descalços e Palácio do Bussaco (exteriores)"
+			],
+			nested_list_pt: [],
+			list_en: [
+				""
+			],
+			nested_list_en: [],
+		}
+	],
+	optional: {
+		optional_pt: [
+			"Se ficou muito curioso sobre esta temática, e quer conhecer mais, poderá solicitar visita de dia completo e visitar mais sítios de interesse ligados à história desta Mata Nacional!",
+			"Intimamente ligada com as vivências históricas deste local, estão as Guerras Peninsulares: a 27 de Setembro de 1810 ocorreu neste local a Batalha do Bussaco, em que o exército Luso-Britânico comandado pelo Tenente-General Arthur Wellesley (também conhecido por Duque de Wellington) controlou a atitude ofensiva das tropas Napoleónicas lideradas pelo Marechal André Massena. Teremos assim oportunidade de visitar os seguintes pontos de interesse, dependendo da sua curiosidade em relação a este local: Moinho de Sula, Obelisco da Batalha do Bussaco, Museu Militar do Bussaco, Cruz Alta, Capelas dos Passos da Paixão de Cristo, Refúgios dos Carmelitas na Mata.",
+			"Sugerimos ainda uma pausa para almoço nesta região, onde poderá saborear a gastronomia típica da zona como por exemplo o leitão assado à bairrada, com batata frita em azeite, salada e laranja, o pão da mealhada, o famoso vinho “Baga” e Espumante Tinto da Bairrada, e a água do Luso!",
+			"Peça uma visita à sua medida: teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhes usufruir plenamente do território e da sua cultura… na companhia de um guia local!"
+		],
+		optional_en: [
+			""
+		]
+	},
+	fotos: [
+		"/images/around/palacio/foto1.jpg",
+		"/images/around/palacio/foto2.jpg",
+		"/images/around/palacio/foto3.jpg",
+		"/images/around/palacio/foto4.jpg",
+		"/images/around/palacio/foto5.jpg",
+		"/images/around/palacio/foto6.jpg",
+		"/images/around/palacio/foto7.jpg"
+	]
+} %>
