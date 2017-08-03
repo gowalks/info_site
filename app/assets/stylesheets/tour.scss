@@ -17,64 +17,45 @@
 #around_cover .transparent-layer{
   background: rgba(0, 0, 0, 0.3);
 }
-.transparent-layer .header-text p{
+.transparent-layer .header-text h3{
   color: white;
   background: rgba(0, 0, 0, 0);
-  font-weight: 500;
-  font-sixe: 32px;
 }
-@media (max-width: 420px) {
-  #tailored_cover  .header-text {
-    padding-top: 150px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
 
-  #tailored_cover  .header-text h1 {
-  font-size: 32px;
-  }
-
-  #tailored_cover .header-text p {
-    font-size: 18px;
+/*AROUND*/
+#around_cover .header-text{
+  padding: 60px 5px 0 5px;
+}
+#around_cover .header-text h1{
+  margin-bottom: 5px;
+}
+#around_cover .header-text hr{
+  padding-top: 0px;
+}
+@media (min-width: 677px) {
+  #around_cover .header-text{
+    padding: 150px 5px 0 5px;
   }
 }
-#around_cover .header-text,
+@media (min-width: 1000px) {
+  #around_cover .header-text{
+    padding: 150px 100px 0 100px;
+  }
+}
+
+/*TAILORED*/
 #tailored_cover .header-text {
   padding-top: 150px;
 }
-@media (min-width: 420px ) and (max-width: 500px) {
+@media (max-width: 570px) {
   #tailored_cover .header-text {
-    padding-top: 150px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #tailored_cover .header-text h1 {
-    font-size: 42px;
-  }
-
-  #tailored_cover .header-text p {
-    font-size: 20px;
+    padding: 60px 5px 0 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 950px) {
   #tailored_cover .header-text {
-    padding-top: 150px;
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-  #tailored_cover .header-text h1 {
-    font-size: 60px;
-  }
-
-  #tailored_cover .header-text p {
-    font-size: 24px;
-  }
-}
-@media (min-width: 768px) and (max-width: 850px) {
-  #around_cover .header-text h1 {
-    font-size: 60px;
   }
 }
 
@@ -136,19 +117,7 @@
     padding: 0px 15px 0px 15px;
     margin-right: 60px;
 } 
-.description p{ 
+.description h3{ 
 	padding: 0px;
 	margin: 5px 0 5px 0;
 } 
-
-.container-text-align h1 {
-  text-align: center;
-}
-.container-text-align p {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .container-text-align p{
-    text-align: justify;
-  }
-}

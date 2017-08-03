@@ -121,12 +121,12 @@
                 <h2 class="section-heading"><%= t('reservations.title') %></h2>
                 <hr class="dark">
                 
-                <p><%= t('reservations.text') %></p>
+                <h3 class="breakwords"><%= t('reservations.text') %></h3>
 
-                <h3>
+                <h3 class="breakwords">
                     <a href="mailto:booking@gowalksportugal.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> booking@gowalksportugal.com</a>
                 </h3>
-                <h3>
+                <h3 class="breakwords">
                     <a href="tel:00351910163118"><i class="fa fa-phone" aria-hidden="true"></i> +351 910 163 118</a>
                 </h3>
             </div>
@@ -196,14 +196,14 @@
 	    });
 
 	$(window).on('resize', function() {
-	  if ($(window).width() < 768) {
+	  if ($(window).width() < 753) {
 	    $('.dropdown-open').addClass('open');
 	  } else {
 	    $('.dropdown-open').removeClass('open');
 	  }
 	});
 	
-	if ($(window).width() < 768) {
+	if ($(window).width() < 753) {
 	    $('.dropdown-open').addClass('open');
 	} else {
 	    $('.dropdown-open').removeClass('open');

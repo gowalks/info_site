@@ -1,14 +1,40 @@
 
-
-
 FAQ e Parceiros -> buscar ao archives
 Parceiros -> abrir noutra janela
 
+------------------------------
+
 <!-- Back to the menu -->
-<span id="back-to-coimbra-menu" class="position-button">
+<span id="back-to-coimbra-menu" class="position-button hidden">
         <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn", id: "backToCoimbraMenu"%>
 </span>
 
+<script type="text/javascript">
+        //back to the top button
+    // Only enable if the document has a long scroll bar
+    // Note the window height + offset
+    if ( ($(window).height() + 100) < $(document).height() ) {
+        $('#back-to-coimbra-menu').removeClass('hidden').affix({
+            // how far to scroll down before link "slides" into view
+            offset: {top:100}
+        });
+    }
+    $('#backToCoimbraMenu').click(function(){
+        $('html,body').animate({scrollTop:0},'slow');return false;
+    });
+}
+</script>
+
+#back-to-coimbra-menu.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 100px; /* padding from the right side of the window */
+}
+#back-to-coimbra-menu.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 5px; /* height of link element */
+    right: 100px; /* padding from the right side of the window */
+}
 
 -------------
 

@@ -30,27 +30,15 @@
 	background-image: url('/images/around/xisto.jpg');
 	color: white;
 }
-#arte-cover h1{
-	//font-size: 48px;
-}
 
-@media (max-width: 370px) {
-  #arte-cover  h1 {
-	//font-size: 32px;
-  }
-
-  header .header-text p {
-	  //font-size: 20px;
-	}
-}
 @media (min-width: 370px) and (max-width: 580px) {
   #arte-cover  h1 {
-	font-size: 40px;
+	//font-size: 40px;
   }
  }
 @media (min-width: 768px) and (max-width: 959px) {
   #arte-cover  h1 {
-	font-size: 55px;
+	//font-size: 55px;
   }
 
    #arte-cover  .header-text {
@@ -59,7 +47,7 @@
 }
 @media (min-width: 960px) {
   #arte-cover  h1 {
-	font-size: 60px;
+	//font-size: 60px;
   }
 
    #arte-cover  .header-text {

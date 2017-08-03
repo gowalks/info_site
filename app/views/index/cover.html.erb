@@ -7,7 +7,7 @@
 					<%= t('index.hello') %>
 				</h1>
                 <hr class="orange">
-				<p><%= t('index.intro') %></p>
+				<h3><%= t('index.intro') %></h3>
 			</div>
 		</div>
 	</div>
@@ -19,9 +19,9 @@
 			<div class="col-lg-8 col-lg-offset-2 text-center">
 				<img src="\images\logo\gowalks_logo_mini.png" class="img-responsive center-block" alt="GOwalks logo">
                 <hr class="orange">
-				<p><%= t('index.gowalks') %></p>
+				<h3><%= t('index.gowalks') %></h3>
                 <a class="page-scroll" href="#coimbra-tour" data-turbolinks="false">
-                    <p><i class="fa fa-angle-down fa-5x"></i></p>
+                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
                 </a></li>
 			</div>
 		</div>
@@ -32,9 +32,9 @@
     <div class="container-fluid cover-tour transparent-layer">
         <div class="row cover-text">
             <div>
-                <h1><%= t('tours.t1') %></h1>
+                <h2><%= t('tours.t1') %></h2>
                 <hr>
-                <p><%= t('index.coimbra') %></p>
+                <h3><%= t('index.coimbra') %></h3>
                 <%= link_to t('index.button'), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
             </div>
         </div>
@@ -44,9 +44,9 @@
     <div class="container-fluid cover-tour transparent-layer">
         <div class="row cover-text">
             <div>
-                <h1><%= t('tours.t2') %></h1>
+                <h2><%= t('tours.t2') %></h2>
                 <hr>
-                <p><%= t('index.around') %></p>
+                <h3><%= t('index.around') %></h3>
                 <%= link_to t('index.button'), url_for(tour_around_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
             </div>
         </div>
@@ -54,12 +54,11 @@
 </section>
 <section id="tailored-tour" class="cover-background">
     <div class="container-fluid cover-tour transparent-layer">
-        <div class="">
         <div class="row cover-text ">
             <div>
-                <h1><%= t('tours.t3') %></h1>
+                <h2><%= t('tours.t3') %></h2>
                 <hr>
-                <p><%= t('index.tailored') %></p>
+                <h3><%= t('index.tailored') %></h3>
                 <%= link_to t('index.button'), url_for(tour_tailored_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
             </div>
         </div>
