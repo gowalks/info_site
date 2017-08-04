@@ -62,7 +62,7 @@ p {
 	h1 {font-size: 70px;}
 	h2 {font-size: 48px;}
 	h3 {font-size: 24px;}
-	p {font-size: 18px;}
+	p {font-size: 16px;}
 }
 .uppercaseText {
 	text-transform: uppercase;
@@ -98,7 +98,7 @@ p {
 }
 /*BACKGROUND*/
 .lightBG {
-	background-color: #ff9a42;
+	background-color: #ffac66;
 }
 .darkBG {
 	background-color: #703404;

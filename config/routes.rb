@@ -1,31 +1,34 @@
 Rails.application.routes.draw do
 
   scope "(:locale)", locale: /en|pt|es/ do
-    get 'around/arte'
 
-    get 'around/castelos'
+    scope ':tour' do
+        get 'around/arte'
 
-    get 'around/centro'
+        get 'around/castelos'
 
-    get 'around/palacio'
+        get 'around/centro'
 
-    get 'around/peregrinacao'
+        get 'around/palacio'
 
-    get 'around/templarios'
+        get 'around/peregrinacao'
 
-    get 'around/xisto'
+        get 'around/templarios'
 
-    get 'coimbra/unesco'
+        get 'around/xisto'
 
-    get 'coimbra/fado'
+        get 'coimbra/unesco'
 
-    get 'coimbra/gastronomy'
+        get 'coimbra/fado'
 
-    get 'coimbra/jewish'
+        get 'coimbra/gastronomy'
 
-    get 'coimbra/moonlight'
+        get 'coimbra/jewish'
 
-    get 'coimbra/riverside'
+        get 'coimbra/moonlight'
+
+        get 'coimbra/riverside'
+    end
 
     get 'tour/coimbra'
 
