@@ -33,35 +33,44 @@ h1 {
 	font-weight: 800;
 }
 h2 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.5;
+}
+h5 {
+	font-size: 32px;
+	line-height: 1.5;
+	font-weight: 600;
 }
 h3 {
 	font-size: 20px;
 	line-height: 1.5;
 	font-weight: 400;
 }
+h4 {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
 p {
-  font-size: 10px;
+  font-size: 16px;
   line-height: 1.5;
 }
 @media (max-width: 400px) {
 	h1 {font-size: 40px;}
 	h2 {font-size: 30px;}
-	h3 {font-size: 17px;}
-	p {font-size: 18px;}
-}
-@media (min-width: 400px) and (max-width: 575px) {
-	h1 {font-size: 56px;}
-	h2 {font-size: 40px;}
-	h3 {font-size: 20px;}
-	p {font-size: 18px;}
+	h5 {font-size: 24px;}
+	h3 {font-size: 18px;}
+	h4 {font-size: 16px;}
+	p {font-size: 14px;}
 }
 @media (min-width: 767px) {
 	h1 {font-size: 70px;}
 	h2 {font-size: 48px;}
+	h5 {font-size: 36px;}
 	h3 {font-size: 24px;}
+	h4 {font-size: 20px;}
 	p {font-size: 16px;}
 }
 .uppercaseText {
@@ -97,8 +106,11 @@ p {
   }
 }
 /*BACKGROUND*/
+.lighterBG {
+	background-color: #ffe8aa;
+}
 .lightBG {
-	background-color: #ffac66;
+	background-color: #F2BB66;
 }
 .darkBG {
 	background-color: #703404;
@@ -108,9 +120,11 @@ p {
 /*AUX*/
 hr {
   border-color: white;
-  border-width: 2px;
+  border-width: 3px;
   max-width: 150px;
+  margin-top: 0px;
   padding-top: 20px;
+  //padding-bottom: 20px;
 }
 hr.orange {
   border-color: #f96909;

@@ -69,6 +69,8 @@ en:
     poi: "Points of Interest"
     readplus: "Read more"
     readless: "Read less"
+    infoplus: "More Information"
+    infoless: "Less Information"
   reservations:
     title: "Reservations"
     text: "To reserve a Walk, please contact us:"

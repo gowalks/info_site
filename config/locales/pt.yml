@@ -69,6 +69,8 @@ pt:
     poi: "Pontos de Interesse:"
     readplus: "Ler mais"
     readless: "Ler menos"
+    infoplus: "Mais Informação"
+    infoless: "Menos Informação"
   reservations:
     title: "Reservas"
     text: "Para reservar um percurso, por favor contacte-nos através de:"

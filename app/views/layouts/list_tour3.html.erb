@@ -1,10 +1,10 @@
 
 <!--COVER-->
 <header id=<%= id[:cover]%> class="cover-background">
-	<div class="container-fluid transparent-layer">
-		<div class="row">
-			<div class="header-text">
-				<h1> 
+    <div class="container-fluid transparent-layer">
+        <div class="row">
+            <div class="header-text">
+                <h1> 
                     <% if I18n.locale == :en %>
                         <%= cover_en[:title] %> 
                     <% else %>
@@ -19,20 +19,27 @@
                         <%= cover_pt[:subtitle]%>
                     <% end %>
                 </h2>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </header>
 
-<section id=<%= id[:info]%> class="tour-info">
-	<div class="container-fluid">
-		<div class="row">
-
-            <div class="col-lg-4">
+<section id=<%= id[:info]%> class="tour-info3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 side-images">  
                 <img src=<%= fotos[0] %> class="img-responsive" alt="">
+                <img src=<%= fotos[1] %> class="img-responsive" alt="">
+                <img src=<%= fotos[2] %> class="img-responsive" alt="">
             </div>
 
-			<div class="col-lg-8">	
+            <div class="col-md-7 side-text">  
+
+                <% if I18n.locale == :en %>
+                    <h4 class="orange-color uppercase"><b><%= poi[:title_en] %></b></h4>
+                <% else %>
+                    <h4 class="orange-color uppercase"><b><%= poi[:title_pt] %></b></h4>
+                <% end %>
 
                 <!--DESCRIPTION-->
                 <div class="tour-description">
@@ -47,188 +54,189 @@
                     <% end %>
                     
                     <button type="button" class="btn btn-link" onclick="readLessFunction()">
-                        <b><%= t('details.readless') %> <i class="fa fa-caret-up" aria-hidden="true"></i></b>
+                        <b class="orange-color"><%= t('details.readless') %> <i class="fa fa-caret-up" aria-hidden="true"></i></b>
                     </button>
                 </div>
                 <div class="tour-description-lead">
                     <% if I18n.locale == :en %>
-                        <p><%= text_en[:intro] %> (...)
+                        <p><%= text_en[:intro] %> 
                     <% else %>
-                        <p><%= text_pt[:intro] %> (...) 
+                        <p><%= text_pt[:intro] %> 
                     <% end %>
 
                     <button type="button" class="btn btn-link" onclick="readMoreFunction()">
-                        <b><%= t('details.readplus') %> <i class="fa fa-caret-down" aria-hidden="true"></i></b>
+                        <b class="orange-color"><%= t('details.readplus') %> <i class="fa fa-caret-down" aria-hidden="true"></i></b>
                     </button>
                 </p>
                 </div>
                 <br>  
 
                 <!--POI-->
-                <% if poi.size > 0 %>
+                <% if !poi.blank? %>
 
-                    <h3><b><%= t('details.poi') %></b></h3>
-
-                    <% poi.each do |poi_list| %>
-                        <div class="tab">
-                            <a class="" role="button" data-toggle="collapse" href=<%= poi_list[:href] %> aria-controls=<%= poi_list[:ref] %> aria-expanded="false">
-                                <% if I18n.locale == :en %>
-                                    <h4><%= poi_list[:title_en] %> <span class="caret"></span></h4>
-                                <% else %>
-                                    <h4><%= poi_list[:title_pt] %> <span class="caret"></span></h4>
-                                <% end %>
-                            </a>
-
-                            <div id=<%= poi_list[:ref] %> class="collapse">
-                                <div class="text-justify">
-
-                                    <% if I18n.locale == :en %>
-                                        <ul>
-                                            <% poi_list[:list_en].each do |poi_desc| %>
-                                                <li><%= poi_desc %></li>
-                                            <%end%>
-                                            <% if !poi_list[:nested_list_en].empty? %>
-                                                <ul>
-                                                    <% poi_list[:nested_list_en].each do |poi_desc2| %>
-                                                        <li><%= poi_desc2 %></li>
-                                                    <%end%>
-                                                </ul>
-                                            <%end%> 
-                                        </ul>
-                                    <% else %>
-                                         <ul>
-                                            <% poi_list[:list_pt].each do |poi_desc| %>
-                                                <li><%= poi_desc %></li>
-                                            <%end%>
-                                            <% if !poi_list[:nested_list_pt].empty? %>
-                                                <ul>
-                                                    <% poi_list[:nested_list_pt].each do |poi_desc2| %>
-                                                        <li><%= poi_desc2 %></li>
-                                                    <%end%>
-                                                </ul>
-                                            <%end%> 
-                                        </ul>
-                                    <% end %>
-                                </div>
-                            </div>
-                        </div> 
-                    <br>       
-                    <%end%>
+                    <h4 class="orange-color uppercase"><b><%= t('details.poi') %></b></h4>
+                        
+                    <% if I18n.locale == :en %>
+                        <p>
+                            <% poi[:list_en].each do |poi_desc| %>
+                                <%= poi_desc %> 
+                                <% if poi_desc != poi[:list_en].last %>
+                                    <b class="orange-color"> – </b>
+                                <%end%>    
+                            <%end%>
+                            <% if !poi[:nested_list_en].empty? %>
+                                 (
+                                    <% poi[:nested_list_en].each do |poi_desc2| %>
+                                        <%= poi_desc2 %>
+                                        <% if poi_desc2 != poi[:nested_list_en].last %>
+                                            , 
+                                        <%end%> 
+                                    <%end%>
+                                )
+                            <%end%> 
+                        </p>
+                    <% else %>
+                        <p>
+                            <% poi[:list_pt].each do |poi_desc| %>
+                                <%= poi_desc %> 
+                                <% if poi_desc != poi[:list_pt].last %>
+                                    <b class="orange-color"> – </b>
+                                <%end%>    
+                            <%end%>
+                            <% if !poi[:nested_list_pt].empty? %>
+                                (
+                                    <% poi[:nested_list_pt].each do |poi_desc2| %>
+                                        <%= poi_desc2 %>
+                                        <% if poi_desc2 != poi[:nested_list_pt].last %>
+                                            , 
+                                        <%end%> 
+                                    <%end%>
+                                )
+                            <%end%> 
+                        </p>
+                    <% end %>
 
                 <%end%>
 
-                <!--OPTIONAL INFORMATION-->
-                <% if !optional.blank? %>
-                    <br> 
-                    <hr class="dark">
-                    <h3><b><%= t('details.opt') %></b></h3>
+                <% if !poi2.blank? %>
+
+                    <p class="orange-color uppercase"><b>
+                        <% if I18n.locale == :en %>
+                            <%= poi2[:title_en] %>
+                        <% else %>
+                            <%= poi2[:title_pt] %>
+                        <% end %>
+                    </b></p>
+                        
                     <% if I18n.locale == :en %>
-                        <% optional[:optional_en].each do |text| %>
-                            <p><%= text %></p>
-                        <%end%>
+                        <p>
+                            <% poi2[:list_en].each do |poi_desc| %>
+                                <%= poi_desc %> 
+                                <% if poi_desc != poi2[:list_en].last %>
+                                    <b class="orange-color"> – </b>
+                                <%end%>    
+                            <%end%>
+                        </p>
                     <% else %>
-                        <% optional[:optional_pt].each do |text| %>
-                            <p><%= text %></p>
-                        <%end%>
+                        <p>
+                            <% poi2[:list_pt].each do |poi_desc| %>
+                                <%= poi_desc %> 
+                                <% if poi_desc != poi2[:list_pt].last %>
+                                    <b class="orange-color"> – </b>
+                                <%end%>    
+                            <%end%>
+                        </p>
                     <% end %>
 
-                    <% if optional[:optional_pt].size > 1 %>
-                    <% end %>
-                <% end %>
-			</div>
-		</div>
-	</div>
-</section>
+                <%end%>
+                <br> 
 
-<section class="no-padding">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-
-                <% fotos.each do |foto| %>
-                    <div class="col-sm-4 tour-foto">
-                        <img src=<%= foto %> class="img-responsive" alt="">
-                    </div>
-                <% end %>
-
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id=<%= id[:details]%> class="tour-details">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-offset-2 col-sm-10">
-                        <h3 class="text-center"><b>
-                            <% if I18n.locale == :en %>
-                                <%= data_en[:reservation] %> 
-                            <% else %>
-                                <%= data_pt[:reservation]%>
+                <div>
+                    <h4 class="orange-color"><b>Horário</b></h4>
+                    <p>
+                        <% if I18n.locale == :en %>
+                            <%= data_en[:reservation] %></br> 
+                            <% data_en[:time].each do |time| %>
+                                <%= time %></br>
                             <% end %>
-                        </b></h3>
-                        <br>
-                    </div>
+                        <% else %>
+                            <%= data_pt[:reservation]%></br>
+                            <% data_pt[:time].each do |time| %>
+                                <%= time %></br>
+                            <% end %>
+                        <% end %>
+                    </p>
                 </div>
-                <div class="row vertical-align">
-                    <div class="col-xs-3 col-sm-2 text-center">
-                        <p><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i></p>
-                    </div>
-                    <div class="col-xs-9 col-sm-10">
-                        <p>
-                            <% if I18n.locale == :en %>
-                                <% data_en[:time].each do |time| %>
-                                    <%= time %> <br>
-                                <% end %>
-                            <% else %>
-                                <% data_pt[:time].each do |time| %>
-                                    <%= time %> <br>
-                                <% end %>
-                            <% end %>
-                        </p>
-                    </div>
-                </diV>
+                <br> 
 
-                <div class="row vertical-align">
-                    <div class="col-xs-3 col-sm-2 text-center">
-                        <p><i class="fa fa-eur fa-3x" aria-hidden="true"></i></p>
-                    </div>
-                    <div class="col-xs-9 col-sm-10">
-                        <p>
-                            <% if I18n.locale == :en %>
-                                <% data_en[:cost].each do |cost| %>
-                                    <%= cost %> <br>
-                                <% end %>
-                            <% else %>
-                                <% data_pt[:cost].each do |cost| %>
-                                    <%= cost %> <br>
-                                <% end %>
+                <div>
+                    <h4 class="orange-color"><b>Preço</b></h4>
+                    <p>
+                        <% if I18n.locale == :en %>
+                            <% data_en[:cost].each do |cost| %>
+                                <%= cost %> <br>
                             <% end %>
-                        </p>
-                    </div>
-                </diV>
-
-                <div class="row vertical-align">
-                    <div class="col-xs-3 col-sm-2 text-center">
-                        <p><i class="fa fa-map-marker fa-3x" aria-hidden="true"></i></p>
-                    </div>
-                    <div class="col-xs-9 col-sm-10">
-                        <p>
-                            <% if I18n.locale == :en %>
-                                <% data_en[:meeting_point].each do |meet| %>
-                                    <%= meet %> <br>
-                                <% end %>
-                            <% else %>
-                                <% data_pt[:meeting_point].each do |meet| %>
-                                    <%= meet %> <br>
-                                <% end %>
+                        <% else %>
+                            <% data_pt[:cost].each do |cost| %>
+                                <%= cost %> <br>
                             <% end %>
-                        </p>
-                    </div>
-                </diV>
+                        <% end %>
+                    </p>
+                </div>
+                <br> 
 
+                <div>
+                    <h4 class="orange-color"><b>Ponto de Encontro</b></h4>
+                    <p>
+                        <% if I18n.locale == :en %>
+                            <% data_en[:meeting_point].each do |meet| %>
+                                <%= meet %> <br>
+                            <% end %>
+                        <% else %>
+                            <% data_pt[:meeting_point].each do |meet| %>
+                                <%= meet %> <br>
+                            <% end %>
+                        <% end %>
+                    </p>
+                </div>
+                <br>
+
+                <% if !optional.blank? %>
+
+                    <h4 class="orange-color"><b><%= t('details.opt') %></b></h4>
+
+                    <div class="optional-info">
+                        <% if I18n.locale == :en %>
+                            <% optional[:optional_en].each do |text| %>
+                                <p><%= text %></p>
+                            <%end%>
+                        <% else %>
+                            <% optional[:optional_pt].each do |text| %>
+                                <p><%= text %></p>
+                            <%end%>
+                        <% end %>
+                        
+                        <button type="button" class="btn btn-link" onclick="readLessFunction2()">
+                            <b class="orange-color"><%= t('details.infoless') %> <i class="fa fa-caret-up" aria-hidden="true"></i></b>
+                        </button>
+                    </div>
+                    <div class="optional-info-lead">
+                        <% if I18n.locale == :en %>
+                            <p><%= optional[:lead_en] %> 
+                        <% else %>
+                            <p><%= optional[:lead_pt] %> 
+                        <% end %>
+
+                        <% if optional[:optional_pt].size > 0 %>
+                            <button type="button" class="btn btn-link" onclick="readMoreFunction2()">
+                                <b class="orange-color"><%= t('details.infoplus') %> <i class="fa fa-caret-down" aria-hidden="true"></i></b>
+                            </button>
+                        <% end %>
+                    </p>
+                    </div>
+                    <br>  
+
+                <% end %>
             </div>
         </div>
     </div>
@@ -247,6 +255,21 @@
         x.style.display = 'block';
 
         var y = document.getElementsByClassName("tour-description")[0];
+        y.style.display = 'none';
+    }
+
+    function readMoreFunction2() {
+        var x = document.getElementsByClassName("optional-info-lead")[0];
+        x.style.display = 'none';
+
+        var y = document.getElementsByClassName("optional-info")[0];
+        y.style.display = 'block';
+    }
+    function readLessFunction2() {
+        var x = document.getElementsByClassName("optional-info-lead")[0];
+        x.style.display = 'block';
+
+        var y = document.getElementsByClassName("optional-info")[0];
         y.style.display = 'none';
     }
 </script>

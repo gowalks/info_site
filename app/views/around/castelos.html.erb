@@ -1,6 +1,6 @@
-<%= render file: "layouts/list_tour", 
+<%= render file: "layouts/list_tour2", 
 locals: {
-	id: {cover: "castelos-cover", info: "castelos-info", details: "castelos-details"},
+	id: {cover: "castelos-cover", info: "castelos-info", details: "castelos-details", optional: "castelos-optional"},
 	cover_en: {
 		title: "",
 		subtitle: ""
@@ -12,7 +12,7 @@ locals: {
 	data_pt: {
 		reservation: "Disponível mediante reserva todos os dias do ano excepto 1 de Janeiro, Domingo de Páscoa e 25 de Dezembro",
 		time: ["MEIO-DIA - 9h00 às 13h00 OU 14h00 às 18h00 "],
-		meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+		meeting_point: ["Largo da Portagem (encontrará a bandeira “Coimbra City Tours” atrás da Estátua de Joaquim António de Aguiar)"],
 		cost: ["50€ por pessoa (todas as despesas incluídas excepto comida e bebida). Mínimo 2 participantes ou valor correspondente."]
 	},
 	data_en: {
@@ -37,29 +37,30 @@ locals: {
 			""
 			],
 	},
-	poi: [
-		{
-			title_pt: "Castelos e Muralhas Defensivas",
-			title_en: "",
-			ref: "castelos",
-			href: "#castelos",
-			list_pt: [
-				"Torres e Muralhas de Coimbra e a sua estrutura defensiva da época medieval",
-				"Rio Mondego", 
-				"Vila de Montemor-o-Velho", 
-				"Edifício da Câmara Municipal de Montemor-o-Velho", 
-				"Castelo de Montemor-o-Velho", 
-				"Igreja de Santa Maria de Alcáçova", 
-				"Planícies Agrícolas do Mondego"
-			],
-			nested_list_pt: [],
-			list_en: [
-				""
-			],
-			nested_list_en: [],
-		}
-	],
+	poi: {
+		title_pt: "Castelos e Muralhas Defensivas",
+		title_en: "",
+		ref: "castelos",
+		href: "#castelos",
+		list_pt: [
+			"Torres e Muralhas de Coimbra e a sua estrutura defensiva da época medieval",
+			"Rio Mondego", 
+			"Vila de Montemor-o-Velho", 
+			"Edifício da Câmara Municipal de Montemor-o-Velho", 
+			"Castelo de Montemor-o-Velho", 
+			"Igreja de Santa Maria de Alcáçova", 
+			"Planícies Agrícolas do Mondego"
+		],
+		nested_list_pt: [],
+		list_en: [
+			""
+		],
+		nested_list_en: [],
+	},
+	poi2: {},
 	optional: {
+		lead_pt: "Se ficou muito curioso sobre este local e quer conhecer mais, poderá solicitar visita de dia completo!",
+		lead_en: "",
 		optional_pt: [
 			"Se ficou muito curioso sobre este local e quer conhecer mais, poderá solicitar visita de dia completo!", 
 			"Na visita de dia completo será possível visitarmos o Forte de Santa Catarina na Figueira da Foz, a Torre e o Forte de Buarcos, a Serra da Boa Viagem… se for primavera/verão traga o fato-de-banho: se se sentir corajoso poderá dar um mergulho nas águas do Oceano Atlântico! Se for outono/inverno... agasalhe-se, mas não hesite viver esta oportunidade!",

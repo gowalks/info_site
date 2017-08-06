@@ -1,4 +1,4 @@
-<%= render file: "layouts/list_tour3", 
+<%= render file: "layouts/list_tour2", 
 locals: {
     id: {cover: "unesco-cover", info: "unesco-info", details: "unesco-details"},
     cover_en: {
@@ -22,11 +22,12 @@ locals: {
         cost: ""
     },
     text_pt: {
-        intro: "Coimbra consta da lista de Património Mundial da Humanidade apenas desde 2013, quando tanto os seus monumentos como as suas tradições foram reconhecidos pela UNESCO (Organização das Nações Unidas para a Educação, a Ciência e a Cultura), mas este local – que também é conhecida por alguns como a “Cidade do Conhecimento” - guarda surpresas inesperadas a cada esquina seja pela beleza única dos seus edifícios, seja pela vivência estudantil que lhe confere uma aura única!",
+        intro: "Depois desta visita, saberá porque tem “Coimbra mais encanto, na hora da despedida”!",
         more: [
+            "Depois desta visita, saberá porque tem “Coimbra mais encanto, na hora da despedida”!",
             "Coimbra consta da lista de Património Mundial da Humanidade apenas desde 2013, quando tanto os seus monumentos como as suas tradições foram reconhecidos pela UNESCO (Organização das Nações Unidas para a Educação, a Ciência e a Cultura), mas este local – que também é conhecida por alguns como a “Cidade do Conhecimento” - guarda surpresas inesperadas a cada esquina seja pela beleza única dos seus edifícios, seja pela vivência estudantil que lhe confere uma aura única!",
-            "Neste percurso pedonal pelo Centro Histórico de Coimbra iremos desvendar as diversas razões desta classificação, percorrendo a Baixa e a Alta da cidade à medida que descobrimos tudo sobre a sua importância na História de Portugal e os valores materiais e imateriais do seu perímetro classificado. Esta visita, guiada por habitantes de Coimbra e antigos estudantes da mais antiga instituição do país – a Universidade de Coimbra – permitir-lhe-á apaixonar-se por esta cidade e sentir-se dentro da tradição académica num testemunho de alguém que a viveu intensamente!",
-            "Depois desta visita, saberá porque tem “Coimbra mais encanto, na hora da despedida”!"]
+            "Neste percurso pedonal pelo Centro Histórico de Coimbra iremos desvendar as diversas razões desta classificação, percorrendo a Baixa e a Alta da cidade à medida que descobrimos tudo sobre a sua importância na História de Portugal e os valores materiais e imateriais do seu perímetro classificado. Esta visita, guiada por habitantes de Coimbra e antigos estudantes da mais antiga instituição do país – a Universidade de Coimbra – permitir-lhe-á apaixonar-se por esta cidade e sentir-se dentro da tradição académica num testemunho de alguém que a viveu intensamente!"
+        ]
     },
     text_en: {
         intro: "",
@@ -36,59 +37,57 @@ locals: {
             ""
             ],
     },
-    poi: [
-        {
-            title_pt: "Tour Património Mundial da Humanidade",
-            title_en: "",
-            ref: "unesco",
-            href: "#unesco",
-            list_pt: [
-                "Largo da Portagem",
-                "Casa Medieval de Coimbra",
-                "Praça do Comércio",
-                "Ruas da Baixa de Coimbra",
-                "Igreja de Santa Cruz",
-                "Rua da Sofia",
-                "Muralhas e Torres Defensivas Medievais",
-                "Pólo I da Universidade de Coimbra"],
-            nested_list_pt: [
-                "Chímico",
-                "Antigo Colégio de Jesus", 
-                "Largo D. Dinis", 
-                "Escadas Monumentais", 
-                "Repúblicas Estudantis", 
-                "Aqueduto de S. Sebastião", 
-                "Jardim Botânico", 
-                "Alta Modernista do Estado Novo", 
-                "Paço das Escolas"],
-            list_en: [
-                ""
-            ],
-            nested_list_en: [""]
-        },
-        {
-            title_pt: "Tour Universidade de Coimbra",
-            title_en: "",
-            ref: "unesco2",
-            href: "#unesco2",
-            list_pt: [
-                "Circuito Paço das Escolas com a sua Biblioteca Joanina", 
-                "Nível 4", 
-                "Prisão Académica", 
-                "Capela de S. Miguel", 
-                "Via Latina", 
-                "Torre da Universidade", 
-                "Sala dos Capelos", 
-                "Sala das Armas", 
-                "Sala do Exame Privado", 
-                "Varandas Panorâmicas sobre o Centro Histórico de Coimbra."],
-            nested_list_pt: [],
-            list_en: [
-                ""
-            ],
-            nested_list_en: [],
-        }
-    ],
+    poi: {
+        title_pt: "Tour Património Mundial da Humanidade",
+        title_en: "",
+        ref: "unesco",
+        href: "#unesco",
+        list_pt: [
+            "Largo da Portagem",
+            "Casa Medieval de Coimbra",
+            "Praça do Comércio",
+            "Ruas da Baixa de Coimbra",
+            "Igreja de Santa Cruz",
+            "Rua da Sofia",
+            "Muralhas e Torres Defensivas Medievais",
+            "Pólo I da Universidade de Coimbra"],
+        nested_list_pt: [
+            "Chímico",
+            "Antigo Colégio de Jesus", 
+            "Largo D. Dinis", 
+            "Escadas Monumentais", 
+            "Repúblicas Estudantis", 
+            "Aqueduto de S. Sebastião", 
+            "Jardim Botânico", 
+            "Alta Modernista do Estado Novo", 
+            "Paço das Escolas"],
+        list_en: [
+            ""
+        ],
+        nested_list_en: [""]
+    },
+    poi2: {
+        title_pt: "Universidade de Coimbra",
+        title_en: "",
+        ref: "unesco2",
+        href: "#unesco2",
+        list_pt: [
+            "Circuito Paço das Escolas com a sua Biblioteca Joanina", 
+            "Nível 4", 
+            "Prisão Académica", 
+            "Capela de S. Miguel", 
+            "Via Latina", 
+            "Torre da Universidade", 
+            "Sala dos Capelos", 
+            "Sala das Armas", 
+            "Sala do Exame Privado", 
+            "Varandas Panorâmicas sobre o Centro Histórico de Coimbra."],
+        nested_list_pt: [],
+        list_en: [
+            ""
+        ],
+        nested_list_en: [],
+    },
     fotos: [
         "/images/coimbra/unesco/foto2.jpg",
         "/images/coimbra/unesco/foto4.jpg",

@@ -1,4 +1,4 @@
-<%= render file: "layouts/list_tour2", 
+<%= render file: "layouts/list_tour3", 
 locals: {
     id: {cover: "gastronomic-cover", info: "gastronomic-info", details: "gastronomic-details"},
     cover_en: {
@@ -13,7 +13,7 @@ locals: {
         reservation: "De 2ªf a sábado, mediante reserva
 ",
         time: ["Das 10h00 às 13h00"],
-        meeting_point: ["Largo da Portagem (junto à nossa bandeira “Coimbra City Tours”, que encontrará atrás da Estátua de Joaquim António de Aguiar)"],
+        meeting_point: ["Largo da Portagem (encontrará a bandeira “Coimbra City Tours” atrás da Estátua de Joaquim António de Aguiar)"],
         cost: ["40€ por pessoa (inclui provas gastronómicas)","Crianças: 0 a 6 anos – grátis; 6 a 12 anos – 20€"]
     },
     data_en: {
@@ -38,33 +38,31 @@ locals: {
             ""
             ],
     },
-    poi: [
-        {
-            title_pt: "Caprichos Gastronómicos – Baixa e Mercado da Cidade",
-            title_en: "",
-            ref: "gastronomy",
-            href: "#gastronomy",
-            list_pt: [
-                "Largo da Portagem",
-                "Rio Mondego",
-                "Pastelaria e Doçaria Regional",
-                "Casa Medieval",
-                "Praça do Comércio",
-                "Ruas típicas comerciais",
-                "Restaurantes Típicos e os seus menús regionais",
-                "Lojas de produtos típicos portugueses",
-                "Mercado D. Pedro V",
-                "Café Histórico Santa Cruz",
-                "Arco de Almedina"
-            ],
-            list_pt2: "Largo da Portagem – Rio Mondego – Pastelaria e Doçaria Regional - Casa Medieval - Praça do Comércio – Ruas típicas comerciais – Restaurantes Típicos e os seus menús regionais – Lojas de produtos típicos portugueses – Mercado D. Pedro V – Café Histórico Santa Cruz – Arco de Almedina"
-            nested_list_pt: [],
-            list_en: [
-                ""
-            ],
-            nested_list_en: [],
-        }
-    ],
+    poi: {
+        title_pt: "Caprichos Gastronómicos – Baixa e Mercado da Cidade",
+        title_en: "",
+        ref: "gastronomy",
+        href: "#gastronomy",
+        list_pt: [
+            "Largo da Portagem",
+            "Rio Mondego",
+            "Pastelaria e Doçaria Regional",
+            "Casa Medieval",
+            "Praça do Comércio",
+            "Ruas típicas comerciais",
+            "Restaurantes Típicos e os seus menús regionais",
+            "Lojas de produtos típicos portugueses",
+            "Mercado D. Pedro V",
+            "Café Histórico Santa Cruz",
+            "Arco de Almedina"
+        ],
+        nested_list_pt: [],
+        list_en: [
+            ""
+        ],
+        nested_list_en: [],
+    },
+    poi2: {},
     optional: {},
     fotos: [
         "/images/coimbra/gastronomic/foto1.jpg",
