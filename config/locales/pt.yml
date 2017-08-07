@@ -63,6 +63,7 @@ pt:
     t2: 'Se já consultou as nossas visitas temáticas e não encontrou o que pretendia, gostaria de alterar o roteiro, adicionar outros locais e/ou experiências ou simplesmente ter 100% da nossa atenção… contacte-nos e diga-nos quando virá visitar Portugal, quantas pessoas virão, nacionalidade e os seus gostos pessoais… e adaptaremos o roteiro para que possa viver momentos únicos em Portugal!'
     t3: 'Entre sítios inesquecíveis e actividades imperdíveis, conheça algumas das nossas sugestões de Norte a Sul do País... consulte-nos e teremos o maior gosto em ajudá-lo a programar a sua viagem!'
   details:
+    title: "Descubra esta Grande Oportunidade"
     desc: "Descrição:"
     opt: "Opcional"
     tailored: "Percurso Personalizado"
@@ -71,6 +72,10 @@ pt:
     readless: "Ler menos"
     infoplus: "Mais Informação"
     infoless: "Menos Informação"
+    details: "Tudo o que precisa saber:"
+    schedule: "Horário"
+    price: "Preço"
+    meeting: "Ponto de Encontro"
   reservations:
     title: "Reservas"
     text: "Para reservar um percurso, por favor contacte-nos através de:"

@@ -88,6 +88,9 @@ p {
         -ms-hyphens: auto;
             hyphens: auto;
 }
+.orange-color {
+	color: #f96909;
+}
 .tab {
 	padding-left: 25px;
 }
@@ -105,16 +108,13 @@ p {
     text-align: justify;
   }
 }
+
 /*BACKGROUND*/
 .lighterBG {
 	background-color: #ffe8aa;
 }
 .lightBG {
 	background-color: #F2BB66;
-}
-.darkBG {
-	background-color: #703404;
-	color: white;
 }
 
 /*AUX*/

@@ -62,7 +62,8 @@ en:
     t1: 
     t2: 
     t3: 
-  details:
+  details: 
+    title: "Delve into this Great Opportunity"
     desc: "Description:"
     opt: "Optional"
     tailored: "Private Tailored Tour"
@@ -71,6 +72,10 @@ en:
     readless: "Read less"
     infoplus: "More Information"
     infoless: "Less Information"
+    details: "All you need to know:"
+    schedule: "Schedule"
+    price: "Price"
+    meeting: "Meeting Point"
   reservations:
     title: "Reservations"
     text: "To reserve a Walk, please contact us:"
