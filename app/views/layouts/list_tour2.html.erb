@@ -28,6 +28,15 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">	
+                <h5 class="text-center"> 
+                    <% if I18n.locale == :en %>
+                        <%= cover_en[:title] %> 
+                    <% else %>
+                        Título
+                    <% end %>
+                </h5>
+                <hr class="orange">
+
                 <% if I18n.locale == :en %>
                     <h4 class="orange-color uppercase"><b><%= poi[:title_en] %></b></h4>
                 <% else %>
