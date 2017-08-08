@@ -57,7 +57,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 	h1 {font-size: 40px;}
 	h2 {font-size: 30px;}
 	h5 {font-size: 24px;}
@@ -65,7 +65,7 @@ p {
 	h4 {font-size: 16px;}
 	p {font-size: 14px;}
 }
-@media (min-width: 767px) {
+@media (min-width: 900px) {
 	h1 {font-size: 70px;}
 	h2 {font-size: 48px;}
 	h5 {font-size: 36px;}

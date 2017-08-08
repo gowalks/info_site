@@ -30,3 +30,9 @@
 	background-image: url('/images/around/xisto.jpg');
 	color: white;
 }
+
+@media (min-width: 767px) and (max-width: 1100px) {
+	#centro-cover .header-text {
+		padding: 120px 50px 0 50px;
+	}
+}

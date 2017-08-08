@@ -29,15 +29,6 @@
 .text-with-BG {
 	background: rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 768px) {
-  #unesco-cover .header-text h1 {
-	//font-weight: 800;
-	//font-size: 40px;
-  }
-	#unesco-cover .header-text h2 {
-	  //font-size: 28px;
-	}
-}
 
 /*Tour info*/
 
@@ -115,11 +106,11 @@
 }
 
 .tour-details .col-sm-4{
-	padding: 0 120px 0 120px;
+	padding: 20px 120px 30px 120px;
 }
 @media (max-width: 500px) {
 	.tour-details .col-sm-4{
-		padding: 0 25px 0 25px;
+		padding: 30px 25px 0 25px;
 	}
 }
 @media (min-width: 768px) {
