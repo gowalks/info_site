@@ -17,47 +17,6 @@
 #around_cover .transparent-layer{
   background: rgba(0, 0, 0, 0.3);
 }
-.transparent-layer .header-text h3{
-  color: white;
-  background: rgba(0, 0, 0, 0);
-}
-
-/*AROUND*/
-#around_cover .header-text{
-  padding: 60px 5px 0 5px;
-}
-#around_cover .header-text h1{
-  margin-bottom: 5px;
-}
-#around_cover .header-text hr{
-  padding-top: 0px;
-}
-@media (min-width: 677px) {
-  #around_cover .header-text{
-    padding: 150px 5px 0 5px;
-  }
-}
-@media (min-width: 1000px) {
-  #around_cover .header-text{
-    padding: 150px 100px 0 100px;
-  }
-}
-
-/*TAILORED*/
-#tailored_cover .header-text {
-  padding-top: 150px;
-}
-@media (max-width: 570px) {
-  #tailored_cover .header-text {
-    padding: 60px 5px 0 5px;
-  }
-}
-@media (min-width: 768px) and (max-width: 950px) {
-  #tailored_cover .header-text {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
 
 .tour-item-wrapper{
 	padding: 25px;	
