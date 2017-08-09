@@ -38,10 +38,12 @@
 .tour-info p{
 	text-align: left;
 }
+.tour-optional button,
 .tour-info button {
 	color: #333;
 	padding:0;
 }
+.tour-optional button:hover,
 .tour-info button:hover {
 	color: #f96909;
 }

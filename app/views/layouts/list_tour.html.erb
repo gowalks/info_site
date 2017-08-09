@@ -1,4 +1,3 @@
-
 <!--COVER-->
 <header id=<%= id[:cover]%> class="cover-background">
     <div class="container-fluid transparent-layer">
@@ -250,6 +249,15 @@
     </div>
 </section>
 
+<!-- Back to menu -->
+<span id="back-to-menu-button" class="position-button hidden">
+    <% if controller_name == "coimbra" %>
+        <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
+    <% else %>
+        <%= link_to fa_icon("th 2x"), url_for(tour_around_path(locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
+    <% end %>
+</span><!-- /top-link-block -->
+
 <script type="text/javascript">
     function readMoreFunction() {
         var x = document.getElementsByClassName("tour-description-lead")[0];
@@ -280,4 +288,15 @@
         var y = document.getElementsByClassName("optional-info")[0];
         y.style.display = 'none';
     }
+
+    //back to menu button
+    // Only enable if the document has a long scroll bar
+    // Note the window height + offset
+    if ( ($(window).height() + 100) < $(document).height() ) {
+        $('#back-to-menu-button').removeClass('hidden').affix({
+            // how far to scroll down before link "slides" into view
+            offset: {top:100}
+        });
+    }
+
 </script>

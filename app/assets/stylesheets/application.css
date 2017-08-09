@@ -102,14 +102,16 @@ p {
 		padding-left: 50px;
 	}
 }
-.container-text-align h2,
-.container-text-align h3  {
+.container-text-align  {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .container-text-align h3{
+  .container-text-align {
     text-align: justify;
   }
+  .container-text-align h2 {
+	  text-align: center;
+	}
 }
 
 /*BACKGROUND*/
@@ -292,17 +294,17 @@ footer .fa
 }
 
 /*BUTTON BACK TO TOP*/
-.position-button a {
+.position-button .btn {
 	height: 50px;
 	width: 50px;
 	border-radius:100%;
 	color:white;
 	background-color: #b24c07;
 }
-.position-button a:link {
+.position-button .btn:link {
 	color: white;
 	}
-.position-button a:hover{
+.position-button .btn:hover{
 	background-color: #e26e1f;
 }
 #back-to-top-button.affix-top {
@@ -313,20 +315,48 @@ footer .fa
 #back-to-top-button.affix {
     position: fixed; /* keeps it on the bottom once in view */
     bottom: 5px; /* height of link element */
-    right: 5px; /* padding from the right side of the window */
+    right: 6px; /* padding from the right side of the window */
+}
+#back-to-menu-button.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 60px; /* padding from the right side of the window */
+}
+#back-to-menu-button.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 5px; /* height of link element */
+    right: 60px; /* padding from the right side of the window */
+}
+#back-to-menu-button .fa {
+	padding-top: 6px;
+}
+@media (max-width: 460px) {
+	#back-to-top-button.affix {
+	    bottom: 40px; /* height of link element */
+	}
+	#back-to-menu-button.affix {
+	    bottom: 40px; /* height of link element */
+	}
 }
 @media (max-width: 767px) {
-	.position-button a {
+	.position-button .btn {
 		font-size: 11px;
 	}
 }
 @media (min-width: 767px) {
-	.position-button a {
+	.position-button .btn {
 		height: 60px;
 		width:60px;
+	}
+	#back-to-menu-button .fa {
+		padding-top: 10px;
 	}
 	#back-to-top-button.affix {
 	    bottom: 15px; /* height of link element */
 	    right: 15px; /* padding from the right side of the window */
+	}
+	#back-to-menu-button.affix {
+	    bottom: 15px; /* height of link element */
+	    right: 85px; /* padding from the right side of the window */
 	}
 }
