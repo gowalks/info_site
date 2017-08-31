@@ -9,10 +9,12 @@
                 <hr class="orange">
 				<h3><%= t('index.intro') %></h3>
 			</div>
+		</div>
+        <div class="row arrow">
             <a class="page-scroll" href="#about" data-turbolinks="false">
                 <h3><i class="fa fa-angle-down fa-5x"></i></h3>
             </a></li>
-		</div>
+        </div>
 	</div>
 </header>
 
@@ -20,7 +22,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 text-center">
-				<img src="\images\logo\gowalks_logo_mini.png" class="img-responsive center-block" alt="GOwalks logo">
+				<img src="\images\logo\gowalks_logo_mini.png" class="img-responsive center-block" alt="GOwalks logo" width="50%">
                 <hr class="orange">
 				<h3><%= t('index.gowalks') %></h3>
                 <a class="page-scroll" href="#coimbra-tour" data-turbolinks="false">
@@ -39,12 +41,13 @@
                 <hr class="orange">
                 <h3><%= t('index.coimbra') %></h3>
                 <%= link_to t('index.button'), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
-                <a class="page-scroll" href="#around-coimbra-tour" data-turbolinks="false">
-                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
-                </a></li>
             </div>
         </div>
-
+        <div class="row arrow">
+            <a class="page-scroll" href="#around-coimbra-tour" data-turbolinks="false">
+                <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+            </a></li>
+        </div>
     </div>
 </section>
 <section id="around-coimbra-tour" class="cover-background">
@@ -55,10 +58,12 @@
                 <hr class="orange">
                 <h3><%= t('index.around') %></h3>
                 <%= link_to t('index.button'), url_for(tour_around_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
-                <a class="page-scroll" href="#tailored-tour" data-turbolinks="false">
-                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
-                </a></li>
             </div>
+        </div>
+        <div class="row arrow">
+            <a class="page-scroll" href="#tailored-tour" data-turbolinks="false">
+                <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+            </a></li>
         </div>
     </div>
 </section>
@@ -70,10 +75,12 @@
                 <hr class="orange">
                 <h3><%= t('index.tailored') %></h3>
                 <%= link_to t('index.button'), url_for(tour_tailored_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
-                <a class="page-scroll" href="#reservations" data-turbolinks="false">
-                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
-                </a></li>
             </div>
+        </div>
+        <div class="row arrow">
+            <a class="page-scroll" href="#reservations" data-turbolinks="false">
+                <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+            </a></li>
         </div>
     </div>
 </section>

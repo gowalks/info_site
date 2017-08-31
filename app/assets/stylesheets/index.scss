@@ -80,6 +80,11 @@ header .header-text h3 {
 .cover-tour .btn {
 	margin-top: 25px;
 }
+.arrow {
+	position: absolute;
+	width: 100%;
+	bottom:0;
+}
 @media (min-width: 768px) {
 	#coimbra-tour .cover-text{
 		position: absolute;
@@ -100,4 +105,5 @@ header .header-text h3 {
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
+
 }

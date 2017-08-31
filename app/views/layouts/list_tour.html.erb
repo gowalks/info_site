@@ -19,6 +19,8 @@
                     <% end %>
                 </h2>
             </div>
+        </div>
+        <div class="row arrow">
             <a class="page-scroll" href=#<%= id[:info]%> data-turbolinks="false">
                 <h3><i class="fa fa-angle-down fa-5x"></i></h3>
             </a></li>
@@ -213,14 +215,10 @@
                 <p><small>
                     <% if I18n.locale == :en %>
                         <%= data_en[:reservation] %></br> 
-                        <% data_en[:time].each do |time| %>
-                            <%= time %></br>
-                        <% end %>
+                        <%= data_en[:time] %></br> 
                     <% else %>
                         <%= data_pt[:reservation]%></br>
-                        <% data_pt[:time].each do |time| %>
-                            <%= time %></br>
-                        <% end %>
+                        <%= data_pt[:time] %></br> 
                     <% end %>
                 </small></p>       
             </div>
@@ -229,13 +227,9 @@
                 <h4><b><%= t('details.price') %></b></h4> 
                 <p><small>
                     <% if I18n.locale == :en %>
-                        <% data_en[:cost].each do |cost| %>
-                            <%= cost %> <br>
-                        <% end %>
+                        <%= data_en[:cost] %></br> 
                     <% else %>
-                        <% data_pt[:cost].each do |cost| %>
-                            <%= cost %> <br>
-                        <% end %>
+                        <%= data_pt[:cost] %></br> 
                     <% end %>
                 </small></p>
             </div>
@@ -244,13 +238,9 @@
                 <h4><b><%= t('details.meeting') %></b></h4> 
                 <p><small>
                     <% if I18n.locale == :en %>
-                        <% data_en[:meeting_point].each do |meet| %>
-                            <%= meet %> <br>
-                        <% end %>
+                        <%= data_en[:meeting_point] %></br> 
                     <% else %>
-                        <% data_pt[:meeting_point].each do |meet| %>
-                            <%= meet %> <br>
-                        <% end %>
+                        <%= data_pt[:meeting_point] %></br> 
                     <% end %>
                 </small></p>
             </div>
