@@ -1,51 +1,13 @@
-
-FAQ e Parceiros -> buscar ao archives
-Parceiros -> abrir noutra janela
-
-------------------------------
-ICONS
-
-                <div class="text-right">
-                    <img src="/images/icons/icons-01.png" class="inline-block" width="350px" height="150px" class="img-responsive" alt="">
-                    <img src="/images/icons/icons-02.png" class="inline-block" width="350px" height="150px" class="img-responsive" alt="">
-                </div>
-
------------------------
-
-
-<!-- Back to the menu -->
-<span id="back-to-coimbra-menu" class="position-button hidden">
-        <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn", id: "backToCoimbraMenu"%>
-</span>
-
-<script type="text/javascript">
-        //back to the top button
-    // Only enable if the document has a long scroll bar
-    // Note the window height + offset
-    if ( ($(window).height() + 100) < $(document).height() ) {
-        $('#back-to-coimbra-menu').removeClass('hidden').affix({
-            // how far to scroll down before link "slides" into view
-            offset: {top:100}
-        });
-    }
-    $('#backToCoimbraMenu').click(function(){
-        $('html,body').animate({scrollTop:0},'slow');return false;
-    });
+.lighterBG {
+    background-color: #ffe8aa;
 }
-</script>
-
-#back-to-coimbra-menu.affix-top {
-    position: absolute; /* allows it to "slide" up into view */
-    bottom: -82px; /* negative of the offset - height of link element */
-    right: 100px; /* padding from the right side of the window */
+.lightBG {
+    background-color: #F2BB66;
 }
-#back-to-coimbra-menu.affix {
-    position: fixed; /* keeps it on the bottom once in view */
-    bottom: 5px; /* height of link element */
-    right: 100px; /* padding from the right side of the window */
+.darkBG {
+  background-color: #7a4407;
 }
 
--------------
 
 Sara Steel
 talvez, pensei que na parte do About se meta um icone com a "team" e outro com o "vehicle" 😀
@@ -55,16 +17,84 @@ Sara Steel
 sim acho que ficava melhor com ícones e depois se as pessoas tivessem curiosidade iam lá carregar
 
 --------
-Tour Legado Romano
-	Bussaco, Tour Florestas e Palácios Encantados
-	Bairrada e Vista Alegre, Tour Gastronomia & Enologia ao Encontro da Arte
-	Lousã, Tour Encantadoras Aldeias de Xisto
-	Montemor, Tour Castelos e Muralhas Defensivas
-Aveiro, Barra e Costa-Nova, Tour Ria e Aldeias Piscatórias
-Pedro & Inês (Coimbra & Alcobaça), Tour Lendas de Amor
-	Tomar, Batalha e Alcobaça, Tour Património Mundial da Humanidade no Centro de Portugal
-	Fátima e Nazaré, Tour Peregrinação e Devoção Religiosa
-	Do Mondego ao Tejo, Tour Cavaleiros Templários
 
--------------------
+PERGUNTAS FREQUENTES
+Perguntas frequentes
 
+TOURS & SIGHTSEEING
+
+1. Como devo efectuar a minha reserva?                                                                Deverá contactar-nos com a maior antecedência possível indicando que pretende fazer visita connosco. Se não teve oportunidade de nos contactar com antecedência, poderá telefonar-nos para indagar a nossa disponibilidade no próprio dia. Deverá indicar o dia pretendido para a visita, horário, nr. de participantes e temática.
+
+2. Porque é necessário efectuar pré-pagamento para completar as reservas das “Tours & Sightseeing” e não há reembolsos? Uma vez manifestada a intenção de efectuar uma visita personalizada na nossa companhia, ficamos totalmente disponíveis para o receber e iremos recusar eventuais pedidos que surjam para o mesmo horário. Porque estamos altamente comprometidos com o nosso trabalho e em recebê-lo, pedimos a sua compreensão na nossa política de reembolsos!
+
+3. Como efectuar pagamentos? Utilizamos conta paypal. Iremos enviar-lhe um pedido de pagamento. Constatará que se trata de uma forma de pagamento rápida, segura e fácil!
+
+4. Como funcionam as visitas de dia inteiro?                                                         Podemos elaborar um roteiro baseado nos seus gostos pessoais, ou poderá conjugar temáticas. Por exemplo: “Património Mundial (UWH)” de manhã e “Beira Rio e Lendas de Amor” de tarde!
+
+5. Que levar para a visita?                                                                                       Roupa e calçado confortável! No Verão não se esqueça de se proteger do sol com óculos e chapéu/boné e protector solar. Leve ainda uma garrafa de água fresca, que poderemos encher durante a visita em locais estratégicos.
+
+6. Porque não vamos de carro, autocarro ou taxi?                                           Coimbra é uma cidade que, no seu centro histórico, tem ruas interditas a trânsito e bastante estreitas, “segredos” e “tesouros” escondidos em lugares recônditos e becos-sem-saída que só a pé podemos alcançar! Vamos caminhar com calma, parar várias vezes pelo caminho para apreciar a paisagem e aprender sobre a nossa cultura… Apesar das subidas e descidas Coimbra tem muito mais encanto a pé! Contudo, se tiver dificuldades de mobilidade, poderá pedir-nos antecipadamente a adaptação da visita a transporte, que poderemos conjugar com parte do percurso a pé.
+
+….. mais perguntas e respostas em breve!
+
+Att: Centro de arbitragem (informação legal) – Na eventualidade de um litigio o consumidor pode recorrer ao Centro de Arbitragem de Conflitos de Consumo do Distrito de Coimbra, com sítio em http://www.centrodearbitragemdecoimbra.com e sede em Av. Fernão Magalhães, N.º 240, 1º, 3000-172 – Coimbra.
+
+
+FAQ
+Frequently asked questions!
+
+TOURS & SIGHTSEEING
+
+1. How should I complete my reservation? You must contact us in advance and let us know that you want to make a tour with us. If you don’t have the opportunity to contact us previously, you can call us and ask if we’re available for the same day. You must tell us your preferred day for the tour, schedule, theme and how many people will be joining.
+
+2. Why is it necessary to do a pre-payment for the “Tours & Sightseeing” and why do you have a no-refund policy? Once you tell us you want to visit Coimbra alongside us, we will be totally available to welcome you and will eventually refuse the following requests for tours at the same schedule. Because we’re fully commited to our work and in welcoming you, we ask your understanding for the no-refund policy!
+
+3. How can I pay? We use a paypal account. We will send you a money request so you can easily do your payment in a quick and safe way!
+
+4. How do the FULL DAY tours work? We can create a route based on your personal interests or we can combine themes. For example: World Heritage Tour (UWH) in the morning and “Riverside and Tales of Love” in the afternoon!
+
+5. What can we take with us for the tour? Comfortable shoes and clothes! In the summer don’t forget to protect yourself with glasses, hat and sunscreen. Take a bottle of fresh water with you, and we will refil it during the visit in strategic places.
+
+6. Why don’t we visit the city by bus or taxi? Coimbra is a medieval city and, in its historical center, most streets are only pedestrian and it’s not allowed for cars to drive there. In these small alleys it will be possible to discover hidden “secrets” and “treasures” and no-way-out streets that only with our help you can figure out! We’re going to walk slowly and appreciate the landscape and our culture in between the downtown and uptown Coimbra. Our city has more charm walking! If you have mobility issues you can ask us – in advance – to adapt the visit in order to include transportation so we can combine both worlds (walking + transportation)!
+
+….. more questions and answers soon!
+
+
+------------------
+
+PARTNERS
+So you can enjoy the best of Coimbra, we developed several partnerships with places that we love in our city! Therefore, after you use our services, you can get discounts on the best…
+
+Local Crafts > Where to buy?
+
+Coimbra Welcome Center – Located near Largo da Portagem, the main entrance near the river to the Historical Center, here you will find a shop that only sells things about Coimbra! You can also have all the information you need to departure discovering the city and center region of Portugal.
+
+Portuguese Gastronomy > Where to eat?
+
+Fangas - Located in the Historical Heart of the city, this is a great place to taste Portuguese food as “tapas” style, in a very comfy place!
+Pastelaria Briosa – At the entrance of the historical center (Largo da Portagem) you will find the best typical pastry from the region!
+Loggia – The best panoramic terrace in town and great food! This is a great place if you want to relax near the University.
+DUX, taberna Urbana – If you want to spend some time tasting great wine and portuguese tapas, this is one of the best options you can have!
+Activities > What to do?
+
+Fado ao Centro – A great place to get to know this unique tradition directly connected with Coimbra’s University. An exhibition and live shows available everyday… and everyone is welcome!
+
+PARCEIROS
+Para que possa aproveitar o melhor de Coimbra, elaboramos várias PARCERIAS com os locais que mais gostamos! Desta forma, após usufruir dos nossos serviços, poderá obter descontos nos melhores…
+
+https://www.facebook.com/coimbrawelcomecenter
+Coimbra Welcome Center – Localizada próximo do Largo da Portagem, a principal entrada para o Centro Histórico, encontrará neste estabelecimento que funciona numa CASA MEDIEVAL produtos e serviços dedicados a Coimbra! Poderá obter todas as informações que necessita para partir à descoberta da cidade e da região centro de Portugal.
+Gastronomia Portuguesa > Onde comer?
+
+http://fangas.pt/pt
+Fangas - Localizado no Coração Histórico de Coimbra, é um excelente local para experimentar comida Portuguesa em jeito de “tapas”, num sítio super-acolhedor!
+https://www.facebook.com/pastelariabriosa?fref=ts
+Pastelaria Briosa – Na entrada para o Centro Histórico (Largo da Portagem) poderá encontrar o melhor da pastelaria regional!
+http://www.loggia.pt/
+Loggia - O melhor terraço panorâmico em Coimbra e excelente comida! Este é um sítio fantástico se pretender relaxar junto à Universidade.
+https://www.facebook.com/duxtabernaurbana
+DUX, taberna Urbana – Se pretender usufruir de um bom vinho e petiscos portugueses, esta é uma das melhores opções que pode fazer!
+https://www.beerpraxis.com/
+Praxis – Coimbra é conhecida pela sua Tradição Cervejeira, e a Praxis é o melhor exemplo de uma cervejaria onde a tradição se alia à modernidade, permitindo-lhe conhecer mais sobre este Património Imaterial! Aqui pode visitar o Museu da Cerveja, saber sobre o processo de fabrico… e usufruir de um excelente repasto!
+
+http://www.fadoaocentro.com/en

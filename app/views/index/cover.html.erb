@@ -9,6 +9,9 @@
                 <hr class="orange">
 				<h3><%= t('index.intro') %></h3>
 			</div>
+            <a class="page-scroll" href="#about" data-turbolinks="false">
+                <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+            </a></li>
 		</div>
 	</div>
 </header>
@@ -33,7 +36,7 @@
         <div class="row cover-text">
             <div>
                 <h2><%= t('tours.t1') %></h2>
-                <hr>
+                <hr class="orange">
                 <h3><%= t('index.coimbra') %></h3>
                 <%= link_to t('index.button'), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
             </div>
@@ -45,7 +48,7 @@
         <div class="row cover-text">
             <div>
                 <h2><%= t('tours.t2') %></h2>
-                <hr>
+                <hr class="orange">
                 <h3><%= t('index.around') %></h3>
                 <%= link_to t('index.button'), url_for(tour_around_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
             </div>
@@ -57,7 +60,7 @@
         <div class="row cover-text ">
             <div>
                 <h2><%= t('tours.t3') %></h2>
-                <hr>
+                <hr class="orange">
                 <h3><%= t('index.tailored') %></h3>
                 <%= link_to t('index.button'), url_for(tour_tailored_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
             </div>

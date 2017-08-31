@@ -121,6 +121,9 @@ p {
 .lightBG {
 	background-color: #F2BB66;
 }
+.darkBG {
+  background-color: #7a4407;
+}
 
 /*AUX*/
 hr {
@@ -148,19 +151,27 @@ hr.black {
 
 /*BUTTON*/
 .btn-customize {
-    background: #b24c07;
+    background: #f96909;
     color: #ffffff;
 }
  
 .btn-customize:hover, .btn-customize:focus, .btn-customize:active, .btn-customize.active, .open > .dropdown-toggle.btn-customize {
-    background: #e26e1f;
+    background: #ff9349;
     color: #ffffff;
 }
  
 .btn-customize:active, .btn-customize.active {
-    background: #e26e1f;
+    background: #ff9349;
     color: #ffffff;
     box-shadow: none;
+}
+
+/*SCROLL ARROW*/
+.page-scroll{
+	color: #f96909;
+}
+.page-scroll:hover{
+	color: #ff9349;
 }
 
 /*NAVBAR*/
@@ -170,7 +181,7 @@ hr.black {
 }
 .navbar-default .navbar-header .navbar-toggle:hover,
 .navbar-default .navbar-header .navbar-toggle:focus { /*menu icon on hover/focus*/
-	background-color: #b24c07;
+	background-color: #7a4407;
 }
 .navbar-default .navbar-header .navbar-toggle .icon-bar{ /*menu bars*/
 	background-color: white;
@@ -194,10 +205,9 @@ hr.black {
 .navbar-default .nav > .active > a,
 .navbar-default .nav > .active > a:hover,
 .navbar-default .nav > .active > a:focus { /*selected option*/
-    background-color: #b24c07;
+    background-color: #7a4407;
     color: white;
 }
-
 @media only screen and (max-width:767px){
     .navbar-default .nav .dropdown .dropdown-menu > li > a,
 	.navbar-default .nav .dropdown .dropdown-menu > li > a:focus { /*DROPDOWN MENU*/
@@ -224,7 +234,7 @@ hr.black {
 	.navbar-default .nav > .active > .page-scroll, 
 	.navbar-default .nav > .active > .page-scroll:hover, 
 	.navbar-default .nav .dropdown:active > a:focus { /*MENU OPTION WITH OPEN DD when selected*/
-	    background-color: #b24c07;
+	    background-color: #7a4407;
 	    color: white;
 	}
 }
@@ -245,19 +255,17 @@ hr.black {
 	}
 	.navbar-default .nav .dropdown .dropdown-toggle[aria-expanded="true"] { /*BUTTON WHERE DD WAS EXPANDED*/
 		background-color: #ff9349;
-    	color: #7a4407;
+    	color: white;
 	}
 }
 
 /*CONTACTS*/
-#reservations {
-	color: #333;
-}
-#reservations h3 a{
-	color: #333;
+#reservations,
+#reservations h3 a {
+	color: white;
 }
 #reservations h3 a:hover{
-	color: #b24c07;
+	color: #f96909;
 }
 
 .social-media {
@@ -299,13 +307,13 @@ footer .fa
 	width: 50px;
 	border-radius:100%;
 	color:white;
-	background-color: #b24c07;
+	background-color: #f96909;
 }
 .position-button .btn:link {
 	color: white;
 	}
 .position-button .btn:hover{
-	background-color: #e26e1f;
+	background-color: #ff9349;
 }
 #back-to-top-button.affix-top {
     position: absolute; /* allows it to "slide" up into view */
