@@ -39,8 +39,12 @@
                 <hr class="orange">
                 <h3><%= t('index.coimbra') %></h3>
                 <%= link_to t('index.button'), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
+                <a class="page-scroll" href="#around-coimbra-tour" data-turbolinks="false">
+                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+                </a></li>
             </div>
         </div>
+
     </div>
 </section>
 <section id="around-coimbra-tour" class="cover-background">
@@ -51,6 +55,9 @@
                 <hr class="orange">
                 <h3><%= t('index.around') %></h3>
                 <%= link_to t('index.button'), url_for(tour_around_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
+                <a class="page-scroll" href="#tailored-tour" data-turbolinks="false">
+                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+                </a></li>
             </div>
         </div>
     </div>
@@ -63,8 +70,10 @@
                 <hr class="orange">
                 <h3><%= t('index.tailored') %></h3>
                 <%= link_to t('index.button'), url_for(tour_tailored_path(locale: I18n.locale)), class: "btn btn-lg btn-customize"%>
+                <a class="page-scroll" href="#reservations" data-turbolinks="false">
+                    <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+                </a></li>
             </div>
-        </div>
         </div>
     </div>
 </section>

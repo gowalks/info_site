@@ -2,8 +2,8 @@
 locals: {
     id: {cover: "unesco-cover", info: "unesco-info", details: "unesco-details"},
     cover_en: {
-        title: "EN",
-        subtitle: ""
+        title: "UNESCO World Heritage Tour",
+        subtitle: "+ University of Coimbra Tour (optional"
         },
     cover_pt: {
         title: "Património Mundial da Humanidade",
@@ -30,16 +30,15 @@ locals: {
         ]
     },
     text_en: {
-        intro: "",
+        intro: "After this tour, you will know why “Coimbra tem mais encanto, na hora da despedida”!",
         more: [
-            "",
-            "",
-            ""
+            "While Coimbra has only been classified as World Heritage in 2013, when both its monuments as well as traditions have been recognized by UNESCO (a specialized agency of the UN for Education, Science and Culture), it's safe to say that this city – also known as the “City of Knowledge” - holds unexpected surprises at each corner either by the unique beauty of its historical buildings or even the singular aura lend by a student life filled with centuries of tradition!",
+            "During this walking tour through the Historical Center of Coimbra we will discover the different reasons that allowed for such classification, going from the Downtown to the Uppertown while we unveil its importance in the History of Portugal and the material and immaterial values within the classified perimeter. This visit, conducted by residents of Coimbra and former students of the oldest institution in the Country – the University – will make you fall in love for this city and feel yourself as part of the academic traditions as someone who had already lived them intensely!"
             ],
     },
     poi: {
         title_pt: "Tour Património Mundial da Humanidade",
-        title_en: "",
+        title_en: "UNESCO World Heritage Tour",
         ref: "unesco",
         href: "#unesco",
         list_pt: [
@@ -52,12 +51,19 @@ locals: {
             "Muralhas e Torres Defensivas Medievais",
             "Pólo I da Universidade de Coimbra (Chímico, Antigo Colégio de Jesus, Largo D. Dinis, Escadas Monumentais, Repúblicas Estudantis, Aqueduto de S. Sebastião, Jardim Botânico, Alta Modernista do Estado Novo, Paço das Escolas)"],
         list_en: [
-            ""
+            "Largo da Portagem",
+            "Medieval House of Coimbra",
+            "Praça do Comércio",
+            "Downtown Coimbra",
+            "Santa Cruz Church",
+            "Rua da Sofia",
+            "Medieval Walls and Towers",
+            "University of Coimbra - Pólo I (Chímico, Antigo Colégio de Jesus, Largo D. Dinis, Escadas Monumentais, Repúblicas Estudantis, Aqueduto de S. Sebastião, Jardim Botânico, Alta Modernista do Estado Novo, Paço das Escolas)"],
         ]
     },
     poi2: {
         title_pt: "Universidade de Coimbra",
-        title_en: "",
+        title_en: "University of Coimbra",
         ref: "unesco2",
         href: "#unesco2",
         list_pt: [
@@ -72,7 +78,16 @@ locals: {
             "Sala do Exame Privado", 
             "Varandas Panorâmicas sobre o Centro Histórico de Coimbra."],
         list_en: [
-            ""
+            "Paço das Escolas circuit including the Joanina Library",
+            "Level 4", 
+            "Academic Prison", 
+            "S. Miguel Chapel", 
+            "Via Latina", 
+            "Tower of the University", 
+            "Sala dos Capelos", 
+            "Sala das Armas", 
+            "Sala do Exame Privado", 
+            "Panoramic balconies over the Historical Center of Coimbra."
         ],
     },
     fotos: [
@@ -86,5 +101,4 @@ locals: {
     optional: {}
 } %>
 
-<%= yield :ola %>
 <%= yield :back_to_coimbra_menu %>

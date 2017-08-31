@@ -19,6 +19,9 @@
                     <% end %>
                 </h2>
             </div>
+            <a class="page-scroll" href=#<%= id[:info]%> data-turbolinks="false">
+                <h3><i class="fa fa-angle-down fa-5x"></i></h3>
+            </a></li>
         </div>
     </div>
 </header>
@@ -27,8 +30,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">  
-
-
 
                 <h5 class="text-center bold"> 
                     <%= t('details.title') %>
@@ -260,9 +261,9 @@
 <!-- Back to menu -->
 <span id="back-to-menu-button" class="position-button hidden">
     <% if controller_name == "coimbra" %>
-        <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
+        <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(anchor: "coimbra_page_information", locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
     <% else %>
-        <%= link_to fa_icon("th 2x"), url_for(tour_around_path(locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
+        <%= link_to fa_icon("th 2x"), url_for(tour_around_path(anchor: "around_page_information", locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
     <% end %>
 </span><!-- /top-link-block -->
 
