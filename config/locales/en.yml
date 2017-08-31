@@ -31,16 +31,16 @@ en:
     t2: "Tours Around Coimbra"
     t3: "Tailored Tours"
   index:
-    hello: "HI! LET'S WALK?"
-    intro: "Combining the passion of walking while enjoying Portuguese culture, with a knowledgeable and enthusiastic inhabitant, we’ll guide you in an exciting journey through “Lusitania Lands” you’ll want to remember forever!"
-    gowalks: "Searching for authentic experiences in Portugal? We have the answers you're looking for! Guided Tours, Theme and Personalized Tours, Workshops and other leisure activities inspired in Portuguese Culture and Heritage... runned by locals!"
+    hello: "HELLO! WELCOME TO PORTUGAL!"
+    intro: "Let yourself fall in love with the Portuguese Culture alongside a knowledgeable and enthusiastic local guide. We’ll give you the opportunity to live an unforgettable journey throughout Lusitania Lands, which you’ll want to remember forever!"
+    gowalks: "Searching for authentic experiences in Portugal? We have the solution! Guided Tours, Thematic and Customized Routes, Transfers, Workshops and other leisure activities inspired in Portuguese Culture and Heritage… runned by local guides!"
     coimbra: "Fall in love – step by step – with the most charming city in Portugal: Coimbra!"
     around: "Enjoy unique cultural moments in central Portugal. Castles and Palaces, Schist or Medieval Villages, Roman Sites… and much more!"
-    tailored: "Didn't find what you were looking for? We will help you build a tailored route throughout Lusitania Lands that you'll remember forever!"
+    tailored: "Couldn’t find what you where looking for? We are glad to provide Private Tours throughout Portuguese Territory, customized to your desires!"
     button: "More Information"
   coimbra:
     title: "Our Walking Tours"
-    intro: 
+    intro: "We have built many themed routes in Coimbra, so that you could enjoy the best of the “city of knowledge”! Here we present you all the details and allow you to book a guided tour alongside us: we’ll be glad in welcoming you in our city!"
     t1: "UNESCO World Heritage"
     t2: "Fado"
     t3: "Gastronomic Whims"
@@ -58,10 +58,11 @@ en:
     t6:
     t7:
   tailored:
-    title: 
-    t1: 
-    t2: 
-    t3: 
+    subtext: "We are glad to provide Private Tours throughout Portuguese Territory, customized to your desires!"
+    title: "Couldn’t find what you where looking for?"
+    t1: "We’re specialized in Leisure & Heritage in Portuguese Territory! Don’t hesitate contacting us if you intend to spend your vacation or just a relaxed weekend getaway, alone or accompanied, in Portugal. We will give you the best suggestions, helping you build a unique route throughout “Lusitania Lands”!"
+    t2: "If you have already seen our themed tours and couldn’t find what you wanted, if you would like to change one of the tours adding other nearby sites of interest or experiences… or if you just want to have 100% of our specialized guides attention… contact us and let us know when you are coming to Portugal, how many people will join you, your nationality and personal tastes… and we’ll adapt the route so you can enjoy unforgettable moments in our country!"
+    t3: "Amongst unforgettable places and unmissable activities, get to know some of our suggestions from the North to the South of the country… contact us and we’ll be very glad to help you program your journey!"
   details: 
     title: "Delve into this Great Opportunity"
     desc: "Description:"

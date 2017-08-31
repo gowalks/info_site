@@ -31,16 +31,16 @@ pt:
     t2: "Tours desde Coimbra"
     t3: "Percursos Personalizados"
   index:
-    hello: "OLÁ! VAMOS CAMINHAR?"
-    intro: "Combinando a paixão de caminhar com o desfrutar da cultura Portuguesa, pela mão de um habitante conhecedor e entusiasta, vamos guiar-te numa jornada excitante por terras Lusitânias, que vais querer lembrar para sempre!"
-    gowalks: "Procuras experiências autênticas em Portugal? Nós temos a solução! Visitas guiadas, Percursos Temáticos e Personalizados, Workshops e outras actividades de lazer inspiradas na Cultura e Património Portugueses... geridas por habitantes locais!"
+    hello: "OLÁ! BEM-VINDOS A PORTUGAL!"
+    intro: "Deixe-se apaixonar pela cultura Portuguesa, na companhia de um guia local conhecedor e entusiasta. Vamos dar-lhe a oportunidade de viver uma jornada inesquecível por Terras Lusas, que vai querer recordar para sempre!"
+    gowalks: "Procura experiências autênticas em Portugal? Nós temos a solução! Visitas guiadas, Percursos Temáticos e Personalizados, Transferes, Workshops e outras actividades de lazer inspiradas na Cultura e Património Portugueses... geridas por guias locais!"
     coimbra: "Apaixone-se - passo a passo - pela cidade mais charmosa de Portugal: Coimbra!"
     around: "Aprecie momentos culturais únicos no Centro de Portugal. Castelos e Palácios, Aldeias de Xisto ou Vilas Medievais, Vestígios Romanos e muito mais!"
     tailored: "Não encontrou o que procurava? Nós ajudamo-lo a construir um roteiro único por “Terras Lusas” que vai recordar para sempre!"
     button: "Mais informação"
   coimbra:
     title: "As nossas Tours a pé"
-    intro: 'Construímos várias rotas temáticas para que possa usufruir do melhor da "cidade do conhecimento"! Conheça aqui todos os detalhes e reserve uma visita na nossa companhia: teremos o maior gosto em recebê-lo na nossa cidade!'
+    intro: 'Construímos várias rotas temáticas em Coimbra, para que possa usufruir do melhor da "cidade do conhecimento"! Conheça aqui todos os detalhes e reserve uma visita na nossa companhia: teremos o maior gosto em recebê-lo na nossa cidade!'
     t1: "Património Mundial da Humanidade"
     t2: "Fado de Coimbra"
     t3: "Caprichos Gastronómicos"
@@ -58,7 +58,8 @@ pt:
     t6: 'Cavaleiros Templários'
     t7: 'Aldeias de Xisto' 
   tailored:
-    title: "TOURS PRIVADAS, À SUA MEDIDA!"
+    subtext: "Nós ajudamo-lo a construir um roteiro único por “Terras Lusas” que vai recordar para sempre!"
+    title: "Não encontrou o que procurava? "
     t1: 'Somos especialistas em Lazer e Património no território Português! Não hesite contactar-nos se tenciona programar as suas férias ou apenas um dia ou um fim-de-semana descontraído, seja sozinha/o ou acompanhada/o, em Portugal.   Damos-lhe as melhores sugestões, ajudamo-lo a construir um roteiro único por "Terras Lusas"!'
     t2: 'Se já consultou as nossas visitas temáticas e não encontrou o que pretendia, gostaria de alterar o roteiro, adicionar outros locais e/ou experiências ou simplesmente ter 100% da nossa atenção… contacte-nos e diga-nos quando virá visitar Portugal, quantas pessoas virão, nacionalidade e os seus gostos pessoais… e adaptaremos o roteiro para que possa viver momentos únicos em Portugal!'
     t3: 'Entre sítios inesquecíveis e actividades imperdíveis, conheça algumas das nossas sugestões de Norte a Sul do País... consulte-nos e teremos o maior gosto em ajudá-lo a programar a sua viagem!'
