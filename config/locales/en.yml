@@ -42,21 +42,26 @@ en:
     title: "Our Walking Tours"
     intro: "We have built many themed routes in Coimbra, so that you could enjoy the best of the “city of knowledge”! Here we present you all the details and allow you to book a guided tour alongside us: we’ll be glad in welcoming you in our city!"
     t1: "UNESCO World Heritage"
-    t2: "Fado"
+    t2: "Fado from Coimbra"
     t3: "Gastronomic Whims"
     t4: "Jewish Coimbra"
-    t5: "Moonlight"
+    t5: "Coimbra under the Moonlight"
     t6: "Riverside and Tales of Love"
+    t7: "Scavenger's Hunt of Coimbra"
   around:
     title: "Around Coimbra"
+    subtitle: "Depart to Discover the Center of Portugal"
     intro: 'Coimbra is much more than its historical centre: it’s territory is vast, as is one that extends beyond its regional lines that – despite this – have an undeniable connection to this city. It is the historical and cultural result of various people and personalities who lived here. For this reason we suggest you visiting the following enigmatic places in Portugal, not too far from Coimbra!'
-    t1:
-    t2:
-    t3:
-    t4:
-    t5:
-    t6:
-    t7:
+    t1: 'Gastronomy and Wine meets Art'
+    t2: 'Castles and Town WallsCASTLES'
+    t3: 'UNESCO World Heritage of Central Portugal'
+    t4: 'Enchanted Forests and Palaces'
+    t5: 'Pilgrimage and Religious Devotion'
+    t6: 'Knights Templar'
+    t7: 'Charming Schist Villages'
+    t8: 'Roman Legacy'
+    t9: 'Tales of Love: Pedro & Inês'
+    t10: 'Lagoon and Fisherman Villages'
   tailored:
     subtext: "We are glad to provide Private Tours throughout Portuguese Territory, customized to your desires!"
     title: "Couldn’t find what you where looking for?"
