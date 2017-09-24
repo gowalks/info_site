@@ -16,4 +16,7 @@ class CoimbraController < ApplicationController
 
   def riverside
   end
+
+  def peddypaper
+  end
 end

@@ -1,0 +1,86 @@
+<%= render file: "layouts/list_tour", 
+
+locals: {
+	id: {
+	    cover: "amor-cover", info: "amor-info", details: "amor-details"
+    },
+    cover_en: {
+        title: "Tales Of Love: Pedro And Inês",
+        subtitle: "Fullday Tour Of Coimbra And Alcobaça"
+        },
+    cover_pt: {
+        title: "Lendas De Amor: Pedro & Inês",
+        subtitle: "Visita De Dia Completo A Coimbra E Alcobaça"
+    },
+    meeting_point: {
+        name: "Combinar",
+    },
+    data_pt: {
+        reservation: "Disponível de 3ªf a Domingo, excepto 1 de Janeiro, Domingo de Páscoa, 1 de Maio, 20 de Agosto e 25 de Dezembro,  mediante consulta de disponibilidade de guia",
+        cost: "80€/pessoa, min 2 pessoas ou valor equivalente"
+    },
+    data_en: {
+        reservation: "Available from Tuesday to Sunday, except 1st January, Easter Sunday, 1st of May, 20th August and 25th December, under request of guide’s availability | From 9am to 6pm",
+        cost: "80€/person . Min 2 people or equivalent price"
+    },
+    text_pt: {
+        intro: "Nesta visita guiada vamos conhecer todos os detalhes da trágica – e mais bela - história de amor de Portugal, à medida que percorremos alguns dos locais onde tudo se passou no século XIV!",
+        more: [
+            "Iniciaremos o dia com uma caminhada pelos espaços citadinos ligados a esta temática, conhecendo os Parques Verdes do Rio Mondego que desde 2006 é atravessado por uma belíssima Ponte Pedonal e Ciclável conhecida como “Pedro & Inês”. Conheceremos ainda o Mosteiro de Santa Clara-a-Velha e em seguida iremos de visita aos Jardins da Quinta das Lágrimas, nome dado a este espaço verde onde se respira tranquilidade devido às desventuras do romance entre a Dama Inês de Castro e o príncipe D. Pedro I de Portugal. Aqui encontraremos vestígios da história de amor destas duas personagens da História de Portugal, por entre árvores centenárias, ruínas medievais e neo-góticas, diversos tanques e regatos!",
+            "Após pausa para almoço, partiremos para Alcobaça onde visitaremos a Abadia deste Mosteiro Património Mundial da Humanidade e simultaneamente Panteão Nacional, eterna morada de Pedro e Inês. Após a morte trágica de Inês de Castro, D. Pedro ordena a construção de duas grandes arcas tumulares em estilo gótico para deposição dos seus restos mortais. Estes túmulos jazem hoje em dia no transepto da Abadia de Alcobaça, frente a frente para sempre.",
+            "Antes de regressarmos a Coimbra vamos visitar uma das pastelarias locais para experimentar alguns dos caprichos gastronómicos regionais. Aqui poderá experimentar doces conventuais premiados tais como as famosas Cornucópias, Castanhas de ovo, Delícia de amêndoas, Diário de Inês, Ovos do Paraíso, Pudim de São Bernardo, Torrão de Abadessa, Torresmo do Céu… entre outras delícias que o vão deixar apaixonado por este sítio!"]
+    },
+    text_en: {
+        intro: "In this guided tour we will unveil all the details of the most tragic – as well as the most beautiful – love story in the History of Portugal, as we travel along some of the sites where it all took place during the 14th Century!",
+        more: [
+            "Our day starts with a foot walk through the city sites that are directly connected with this tragic tale. First the Mondego Green Parks which are connected by the  lovely pedestrian bridge known as “Pedro & Inês” since 2006. Next we will visit the Monastery of Santa Clara-a-Velha and the Quinta das Lágrimas Gardens, a name that was given as a reminder of the love filled adventures of Lady Inês de Castro and Prince D. Pedro I from Portugal.",
+            "After a short lunch break, we will be driving to Alcobaça where we can visit the Abbey as part of the World Heritage Monastery as well as the National Pantheon, the eternal resting place of Pedro and Inês. After the tragic death of Inês de Castro, D. Pedro ordered the construction of two big gothic styled tombs. Both of these still remain at the transept of the Alcobaça Abbey, fronting each other forever.",
+            "Before returning to Coimbra there will be a quick stop at one of the local pastries to taste some of the regional gastronomic treats. Here you will be able to experience prized conventual pastry like the famous Cornucópias, Castanhas de ovo, Delícia de amêndoas, Diário de Inês, Ovos do Paraíso, Pudim de São Bernardo, Torrão de Abadessa, Torresmo do Céu… by the end of it you will be deeply in love with this place!"
+        ],
+    },
+    poi: {
+        list_pt: [
+            "Rio Mondego", 
+            "Ponte Pedro & Inês", 
+            "Mosteiro de Santa Clara-a-Velha e Canto dos Amores", 
+            "Jardins da Quinta das Lágrimas com o seu Retiro Medieval", 
+            "Retiro Romântico", 
+            "Fonte dos Amores", 
+            "Fonte das Lágrimas", 
+            "Auditório Camões", 
+            "Sequoias de Wellington", 
+            "Centro Histórico de Alcobaça", 
+            "Abadia do Mosteiro de Alcobaça com Túmulos de Pedro e Inês", 
+            "Pinhal de Leiria."
+        ],
+        list_en: [
+            "Mondego River", 
+            "Pedro & Inês Pedestrian Bridge", 
+            "Monastery of Santa Clara-a-Velha and Corner of Love", 
+            "Gardens of Quinta das Lágrimas and its Medieval Retreat", 
+            "Romantic Garden", 
+            "Fountain of Love", 
+            "Fountain of Tears", 
+            "Camões Auditorium", 
+            "Wellington Sequoia", 
+            "Historical Center of Alcobaça", 
+            "Abbey of the Monastery of Alcobaça and the Tombs of Pedro & Inês", 
+            "Leiria Pinewood."
+        ]
+    },
+    poi2: {},
+    optional: {
+        lead_pt:"Se pretender uma visita privada, contacte-nos! Teremos o maior gosto em adaptar o roteiro de acordo com as suas preferências pessoais e curiosidades, e dar-lhe assim a conhecer o melhor de Portugal permitindo-lhe usufruir plenamente do território e da sua cultura… ao seu ritmo… no seu idioma... e na companhia de um guia local!",
+        lead_en: "Ask for a tailored tour: we will gladly adapt the route according  to your personal preferences, allowing you to discover everything you would want to know about the portuguese culture… accompanied by a local guide!",
+        optional_pt: [
+        ],
+        optional_en: [
+        ]
+    },
+    fotos: [
+        "/images/coimbra/fado/foto1.jpg",
+    ],
+    icon: [
+        2,7
+    ],
+} %>

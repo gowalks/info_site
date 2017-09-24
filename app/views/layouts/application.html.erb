@@ -170,6 +170,16 @@
     </a>
 </span><!-- /top-link-block -->
 
+<!-- Back to menu -->
+<span id="back-to-menu-button" class="position-button hidden">
+    <% if controller_name == "coimbra" %>
+        <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(anchor: "coimbra_page_information", locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
+    <% end %>
+    <% if controller_name == "around" %>
+        <%= link_to fa_icon("th 2x"), url_for(tour_around_path(anchor: "around_page_information", locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
+    <% end %>
+</span><!-- /top-link-block -->
+
 <script type="text/javascript">
     $( document ).ready(function() {
         checkScroll();
@@ -221,6 +231,16 @@
 	$('#backToTopBtn').click(function(){
         $('html,body').animate({scrollTop:0},'slow');return false;
     });
+
+        //back to menu button
+    // Only enable if the document has a long scroll bar
+    // Note the window height + offset
+    if ( ($(window).height() + 100) < $(document).height() ) {
+        $('#back-to-menu-button').removeClass('hidden').affix({
+            // how far to scroll down before link "slides" into view
+            offset: {top:100}
+        });
+    }
 }
 </script>
 

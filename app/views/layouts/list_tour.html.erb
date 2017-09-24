@@ -42,10 +42,12 @@
                 <!--DESCRIPTION-->
                 <div class="tour-description">
                     <% if I18n.locale == :en %>
+                        <p><%= text_en[:intro] %> 
                         <% text_en[:more].each do |text| %>
                             <p><%= text %></p>
                         <% end %>
                     <% else %>
+                        <p><%= text_pt[:intro] %> 
                         <% text_pt[:more].each do |text| %>
                             <p><%= text %></p>
                         <% end %>
@@ -131,9 +133,67 @@
 
                 <%end%>
 
-                <div id="tour-icon" class="text-center">
-                    <img src="/images/icon.png" class="inline-block" width="50px" height="50px" class="img-responsive" alt="">
-                </div>
+                <% if !icon.empty? %>
+                    <div id="tour-icon" class="text-center">
+                        <% icon.each do |icon_item| %>
+                            <% case icon_item 
+                                when 1 %>
+                                    <% @src = "/images/icons/icons-01.png"%>
+                                    <% @txt_pt = "História Medieval" %>
+                                    <% @txt_en = "Medieval History" %>
+                                <% when 2 %>
+                                    <% @src = "/images/icons/icons-02.png"%> 
+                                    <% @txt_pt = "Lendas de Amor" %>
+                                    <% @txt_en = "Tales of Love" %>
+                                <% when 3 %>
+                                    <% @src = "/images/icons/icons-03.png"%> 
+                                    <% @txt_pt = "Património da Humanidade" %>
+                                    <% @txt_en = "World Heritage" %>
+                                <% when 4 %>
+                                   <% @src = "/images/icons/icons-04.png"%> 
+                                    <% @txt_pt = "Música e Fado de Coimbra" %>
+                                    <% @txt_en = "Music & Fado Coimbra" %>
+                                <% when 5 %>
+                                    <% @src = "/images/icons/icons-05.png"%> 
+                                    <% @txt_pt = "Herança Judaica" %>
+                                    <% @txt_en = "Jewish Heritage" %>
+                                <% when 6 %>
+                                    <% @src = "/images/icons/icons-06.png"%> 
+                                    <% @txt_pt = "Experiências Personalizadas" %>
+                                    <% @txt_en = "Tailored Experiences" %>
+                                <% when 7 %>
+                                    <% @src = "/images/icons/icons-07.png"%> 
+                                    <% @txt_pt = "Beira Rio" %>
+                                    <% @txt_en = "Riverside" %>
+                                <% when 8 %>
+                                    <% @src = "/images/icons/icons-08.png"%> 
+                                    <% @txt_pt = "Gastronomia & Vinho & Cerveja" %>
+                                    <% @txt_en = "Gastronomy & Wine & Beer" %>
+                                <% when 9 %>
+                                    <% @src = "/images/icons/icons-09.png"%> 
+                                    <% @txt_pt = "Aldeias Históricas & Aldeias de Xisto" %>
+                                    <% @txt_en = "Historical Villages & Xisto Villages" %>
+                                <% when 10 %>
+                                    <% @src = "/images/icons/icons-10.png"%> 
+                                    <% @txt_pt = "Legado Romano" %>
+                                    <% @txt_en = "Roman Legacy" %>
+                                <% when 11 %>
+                                    <% @src = "/images/icons/icons-11.png"%> 
+                                    <% @txt_pt = "Luar" %>
+                                    <% @txt_en = "Moonlight" %>
+                            <% end %>
+
+
+                            <% if I18n.locale == :en %>
+                                <% @txt =  @txt_en %>
+                            <% else %>
+                                <% @txt =  @txt_pt %>
+                            <% end %>
+
+                            <%= image_tag @src, size: "50", title: @txt, 'data-toggle' => 'tooltip', 'data-placement' => 'bottom' %>
+                        <% end %>
+                    </div>
+                <%end%>
 
             </div>
         </div>
@@ -165,10 +225,12 @@
 
                     <div class="optional-info">
                         <% if I18n.locale == :en %>
+                            <p><%= optional[:lead_en] %> 
                             <% optional[:optional_en].each do |text| %>
                                 <p><%= text %></p>
                             <%end%>
                         <% else %>
+                            <p><%= optional[:lead_pt] %> 
                             <% optional[:optional_pt].each do |text| %>
                                 <p><%= text %></p>
                             <%end%>
@@ -214,11 +276,9 @@
                 <h4><b><%= t('details.schedule') %></b></h4>
                 <p><small>
                     <% if I18n.locale == :en %>
-                        <%= data_en[:reservation] %></br> 
-                        <%= data_en[:time] %></br> 
+                        <%= data_en[:reservation] %>
                     <% else %>
-                        <%= data_pt[:reservation]%></br>
-                        <%= data_pt[:time] %></br> 
+                        <%= data_pt[:reservation]%>
                     <% end %>
                 </small></p>       
             </div>
@@ -237,25 +297,32 @@
                 <p><i class="fa fa-map-marker fa-3x" aria-hidden="true"></i></p>
                 <h4><b><%= t('details.meeting') %></b></h4> 
                 <p><small>
+
                     <% if I18n.locale == :en %>
-                        <%= data_en[:meeting_point] %></br> 
+                        <% case meeting_point[:name] 
+                            when "Largo da Portagem" %>
+                                 <%= link_to "Largo da Portagem", "https://goo.gl/maps/TuzHNMiDBZL2" %>  – find our <i>#Gowalksportugal Coimbra City Tours</i> flag in the garden on the back of the statue
+                            <% when "Casa Medieval" %>
+                                For sale at <%= link_to "Casa Medieval", "https://goo.gl/maps/iYCroSwkn2Q2" %>
+                            <% when "Combinar" %>
+                                To be agreed with the client (hotel or point of interest in Coimbra’s city center)
+                        <% end %>
                     <% else %>
-                        <%= data_pt[:meeting_point] %></br> 
+                        <% case meeting_point[:name] 
+                            when "Largo da Portagem" %>
+                                <%= link_to "Largo da Portagem", "https://goo.gl/maps/TuzHNMiDBZL2" %> – encontre a nossa bandeira <i>#Gowalksportugal Coimbra City Tours</i> no jardim atrás da estátua
+                            <% when "Casa Medieval" %>
+                                À venda na <%= link_to "Casa Medieval", "https://goo.gl/maps/iYCroSwkn2Q2" %>
+                            <% when "Combinar" %>
+                                A combinar com os clientes (alojamento ou ponto de interesse no centro da cidade de Coimbra)
+                        <% end %>
                     <% end %>
+
                 </small></p>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Back to menu -->
-<span id="back-to-menu-button" class="position-button hidden">
-    <% if controller_name == "coimbra" %>
-        <%= link_to fa_icon("th 2x"), url_for(tour_coimbra_path(anchor: "coimbra_page_information", locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
-    <% else %>
-        <%= link_to fa_icon("th 2x"), url_for(tour_around_path(anchor: "around_page_information", locale: I18n.locale)), class: "btn", id: "backToMenuBtn"%>
-    <% end %>
-</span><!-- /top-link-block -->
 
 <script type="text/javascript">
     function readMoreFunction() {
@@ -288,14 +355,8 @@
         y.style.display = 'none';
     }
 
-    //back to menu button
-    // Only enable if the document has a long scroll bar
-    // Note the window height + offset
-    if ( ($(window).height() + 100) < $(document).height() ) {
-        $('#back-to-menu-button').removeClass('hidden').affix({
-            // how far to scroll down before link "slides" into view
-            offset: {top:100}
-        });
-    }
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
 
 </script>

@@ -15,6 +15,12 @@ Rails.application.routes.draw do
 
         get 'around/templarios'
 
+        get 'around/romano'
+
+        get 'around/ria'
+
+        get 'around/amor'
+
         get 'around/xisto'
 
         get 'coimbra/unesco'
@@ -28,6 +34,8 @@ Rails.application.routes.draw do
         get 'coimbra/moonlight'
 
         get 'coimbra/riverside'
+
+        get 'coimbra/peddypaper'
     end
 
     get 'tour/coimbra'

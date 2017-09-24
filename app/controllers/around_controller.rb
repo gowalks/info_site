@@ -19,4 +19,13 @@ class AroundController < ApplicationController
 
   def xisto
   end
+
+  def romano
+  end
+
+  def ria
+  end
+
+  def amor
+  end
 end
