@@ -30,3 +30,32 @@
         
     </div>
 </section>
+
+<% fotos = [
+	"/images/tailored/foto1.jpg",
+	"/images/tailored/foto2.jpg",
+	"/images/tailored/foto3.jpg",
+	"/images/tailored/foto4.jpg",
+	"/images/tailored/foto5.jpg",
+	"/images/tailored/foto6.jpg",
+	"/images/tailored/foto7.jpg",
+	"/images/tailored/foto8.jpg",
+	"/images/tailored/foto9.jpg",
+	"/images/tailored/foto10.jpg",
+	"/images/tailored/foto11.jpg",
+	"/images/tailored/foto12.jpg"
+] %>
+
+<section class="no-padding">
+    <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+
+            <% fotos.each do |foto| %>
+                <div class="col-sm-4 tour-foto">
+                    <img src=<%= foto %> class="img-responsive" alt="">
+                </div>
+            <% end %>
+
+        </div>
+    </div>
+</section>
