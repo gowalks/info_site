@@ -42,7 +42,17 @@ header .header-text h3 {
 	padding: 150px 150px 0 150px;
   }
 }
-
+/*ABOUT*/
+#about-links {
+	padding-top: 50px;
+}
+#about-links a:hover {
+	color: #7a4407;
+}
+.separator {
+	padding-left: 50px;
+	padding-right: 50px;
+}
 /*TOUR*/
 #coimbra-tour {
 	background-image: url('/images/index/coimbra.jpg');

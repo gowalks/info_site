@@ -26,12 +26,17 @@
                 <hr class="orange">
 				<h3><%= t('index.gowalks') %></h3>
 
-                <div class="about-links hidden">
-                    <h4>
-                        Partners
-                        <i class="fa fa-circle" aria-hidden="true"></i>
-                        FAQ
-                    </h4>
+                <div id="about-links" class="hidden">
+                    <h4><b>
+                        <span class="">
+                        <%= link_to t('general.team'), url_for(general_partners_path(locale: I18n.locale)), class: "orange-color"%>
+                        <span class="separator">–</span>    
+                        </span>
+
+                        <%= link_to t('general.partners'), url_for(general_partners_path(locale: I18n.locale)), class: "orange-color"%>
+                        <span class="separator">–</span>               
+                        <%= link_to t('general.faq'), url_for(general_faq_path(locale: I18n.locale)), class: "orange-color"%>
+                    </b></h4>
                 </div>
 
                 <a class="page-scroll" href="#coimbra-tour" data-turbolinks="false">

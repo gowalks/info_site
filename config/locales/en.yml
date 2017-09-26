@@ -71,10 +71,10 @@ en:
   general:
     partners: "Partners"
     partners_sub: "So you can enjoy the best of Coimbra, we developed several partnerships with places that we love in our city! Therefore, after you use our services, you can get discounts on the best…"
-    team:
-    team_sub:
-    faq:
-    faq_sub:
+    team: "Team"
+    team_sub: ""
+    faq: "FAQ"
+    faq_sub: "Frequent Asked Questions"
   details: 
     title: "Delve into this Great Opportunity"
     desc: "Description:"
