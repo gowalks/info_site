@@ -22,7 +22,11 @@
 #around_cover .transparent-layer{
   background: rgba(0, 0, 0, 0.3);
 }
-
+.carousel-control{
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
 .tour-item-wrapper{
 	padding: 25px;	
 }
