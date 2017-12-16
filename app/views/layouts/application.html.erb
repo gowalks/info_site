@@ -67,40 +67,28 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 			<ul class="nav navbar-nav navbar-right">
-				<li class="navOption">
-					<% if controller_name == "index" %>
-						<a class="page-scroll" href="#about" data-turbolinks="false">
-							<%= t('menu.op1') %>
-						</a>
-					<% else %>
-						<%= link_to t('menu.op1'), url_for(root_path(anchor: "about", locale: I18n.locale)), :class => "page-scroll", :"data-turbolinks" => false %>
-					<% end %>
+				<li class="navOption dropdown dropdown-open">
+					<%= link_to t('menu.op1'), url_for(root_path(anchor: "about", locale: I18n.locale)), :class => "page-scroll", :"data-turbolinks" => false %>
+					<ul class="dropdown-menu">
+						<li><%= link_to t('general.team'), url_for(general_team_path(locale: I18n.locale))  %></li>
+						<li><%= link_to t('general.partners'), url_for(general_partners_path(locale: I18n.locale)) %></li>
+						<li><%= link_to t('general.faq'), url_for(general_faq_path(locale: I18n.locale)) %></li>
+					</ul>
 				</li>
 
 				<li class="navOption dropdown dropdown-open">
-					<% if controller_name == "index" %>
-						<a class="page-scroll" href="#coimbra-tour" data-turbolinks="false">
-							<%= t('menu.op2') %>
-						</a>
-					<% else %>
-						<%= link_to t('menu.op2'), url_for(root_path(anchor: "coimbra-tour", locale: I18n.locale)), :class => "page-scroll", :"data-turbolinks" => false %>
-					<% end %>
+					<%= link_to t('menu.op2'), url_for(root_path(anchor: "coimbra-tour", locale: I18n.locale)), :class => "page-scroll", :"data-turbolinks" => false %>
 					<ul class="dropdown-menu">
 						<li><%= link_to t('tours.t1'), url_for(tour_coimbra_path(locale: I18n.locale))  %></li>
 						<li><%= link_to t('tours.t2'), url_for(tour_around_path(locale: I18n.locale)) %></li>
 						<li><%= link_to t('tours.t3'), url_for(tour_tailored_path(locale: I18n.locale)) %></li>
 					</ul>
-					
 				</li>
 
 				<li class="navOption">
-					<% if controller_name == "index" %>
-						<a class="page-scroll" href="#reservations" data-turbolinks="false">
-							<%= t('menu.op5') %>
-						</a>
-					<% else %>
-						<%= link_to t('menu.op5'), url_for(root_path(anchor: "reservations", locale: I18n.locale)), :class => "page-scroll", :"data-turbolinks" => false %>
-					<% end %>
+					<a class="page-scroll" href="#reservations" data-turbolinks="false">
+						<%= t('menu.op5') %>
+					</a>
 				</li>
 
 				<%= yield :language_option %>

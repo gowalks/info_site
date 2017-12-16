@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'general/partners'
-
-  get 'general/team'
-
-  get 'general/faq'
-
-  get 'partners/team'
-
-  get 'partners/faq'
-
   scope "(:locale)", locale: /en|pt|es/ do
 
     scope ':tour' do
@@ -47,6 +37,12 @@ Rails.application.routes.draw do
 
         get 'coimbra/peddypaper'
     end
+
+    get 'general/partners'
+
+    get 'general/team'
+
+    get 'general/faq'
 
     get 'tour/coimbra'
 

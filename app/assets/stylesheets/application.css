@@ -114,6 +114,13 @@ p {
 	}
 }
 
+/*List without bullets*/
+.nostyle {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /*BACKGROUND*/
 .lighterBG {
 	background-color: #ffe8aa;
@@ -161,8 +168,6 @@ hr.black {
 }
  
 .btn-customize:active, .btn-customize.active {
-    background: #ff9349;
-    color: #ffffff;
     box-shadow: none;
 }
 

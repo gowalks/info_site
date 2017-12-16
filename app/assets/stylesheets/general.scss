@@ -6,13 +6,19 @@
 	background-image: url('/images/general/partners.jpg');
 	color: white;
 }
-
 #faq-cover {
 	background-image: url('/images/general/faq.jpg');
 	color: white;
 }
-
 #team-cover {
 	background-image: url('/images/general/team.jpg');
 	color: white;
+}
+.cover-background-small {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
 }

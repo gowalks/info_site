@@ -26,17 +26,39 @@
                 <hr class="orange">
 				<h3><%= t('index.gowalks') %></h3>
 
-                <div id="about-links" class="hidden">
-                    <h4><b>
-                        <span class="">
-                        <%= link_to t('general.team'), url_for(general_partners_path(locale: I18n.locale)), class: "orange-color"%>
-                        <span class="separator">–</span>    
-                        </span>
+                <div id="about-links">
+                    <div class="row hidden">
+                        <div class="col-sm-4">
+                            <%= link_to t('general.team'), url_for(general_team_path(locale: I18n.locale)), class: "btn btn-lg btn-customize-inverse"%>
+                        </div>
+                        <div class="col-sm-4">
+                            <%= link_to t('general.partners'), url_for(general_partners_path(locale: I18n.locale)), class: "btn btn-lg btn-customize-inverse"%>
+                        </div>
+                        <div class="col-sm-4">
+                            <%= link_to t('general.faq'), url_for(general_faq_path(locale: I18n.locale)), class: "btn btn-lg btn-customize-inverse"%>
+                        </div>
+                    </div>
 
-                        <%= link_to t('general.partners'), url_for(general_partners_path(locale: I18n.locale)), class: "orange-color"%>
-                        <span class="separator">–</span>               
-                        <%= link_to t('general.faq'), url_for(general_faq_path(locale: I18n.locale)), class: "orange-color"%>
-                    </b></h4>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="btn-link" href="/general/team">
+                                <p><i class="fa fa-users fa-3x orange-color" aria-hidden="true"></i></p>
+                                <p><%= t('general.team') %></p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="btn-link" href="/general/partners">
+                                <p><i class="fa fa-link fa-3x orange-color" aria-hidden="true"></i></p>
+                                <p><%= t('general.partners') %></p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="btn-link" href="/general/faq">
+                                <p><i class="fa fa-question-circle fa-3x orange-color" aria-hidden="true"></i></p>
+                                <p><%= t('general.faq') %></p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <a class="page-scroll" href="#coimbra-tour" data-turbolinks="false">
