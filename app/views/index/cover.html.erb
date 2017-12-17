@@ -27,36 +27,25 @@
 				<h3><%= t('index.gowalks') %></h3>
 
                 <div id="about-links">
-                    <div class="row hidden">
-                        <div class="col-sm-4">
-                            <%= link_to t('general.team'), url_for(general_team_path(locale: I18n.locale)), class: "btn btn-lg btn-customize-inverse"%>
-                        </div>
-                        <div class="col-sm-4">
-                            <%= link_to t('general.partners'), url_for(general_partners_path(locale: I18n.locale)), class: "btn btn-lg btn-customize-inverse"%>
-                        </div>
-                        <div class="col-sm-4">
-                            <%= link_to t('general.faq'), url_for(general_faq_path(locale: I18n.locale)), class: "btn btn-lg btn-customize-inverse"%>
-                        </div>
-                    </div>
 
                     <div class="row">
-                        <div class="col-sm-4">
-                            <a class="btn-link" href="/general/team">
+                        <div class="col-xs-4">
+                            <%= link_to url_for(general_team_path(locale: I18n.locale)), class: "btn-link" do %>
                                 <p><i class="fa fa-users fa-3x orange-color" aria-hidden="true"></i></p>
                                 <p><%= t('general.team') %></p>
-                            </a>
+                            <% end %>
                         </div>
-                        <div class="col-sm-4">
-                            <a class="btn-link" href="/general/partners">
+                        <div class="col-xs-4">
+                            <%= link_to url_for(general_partners_path(locale: I18n.locale)), class: "btn-link" do %>
                                 <p><i class="fa fa-link fa-3x orange-color" aria-hidden="true"></i></p>
                                 <p><%= t('general.partners') %></p>
-                            </a>
+                            <% end %>
                         </div>
-                        <div class="col-sm-4">
-                            <a class="btn-link" href="/general/faq">
+                        <div class="col-xs-4">
+                            <%= link_to url_for(general_faq_path(locale: I18n.locale)), class: "btn-link" do %>
                                 <p><i class="fa fa-question-circle fa-3x orange-color" aria-hidden="true"></i></p>
                                 <p><%= t('general.faq') %></p>
-                            </a>
+                             <% end %>
                         </div>
                     </div>
                 </div>
