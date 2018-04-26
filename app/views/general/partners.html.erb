@@ -63,14 +63,14 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-left">
+            <div class="col-lg-8 col-lg-offset-2">
                 <% partners.each do |partner| %>
                     <div class="partner-info">
-                        <h4>
+                        <h2>
                             <a url=<%= partner[:url] %> >
                                 <%= partner[:nome] %>
                             </a>
-                        </h4>
+                        </h2>
                         <p class="small"><i class="fa fa-map-marker" aria-hidden="true"></i> <%= partner[:morada] %> | <i class="fa fa-phone" aria-hidden="true"></i> <%= partner[:telefone] %></p>
                         <% if I18n.locale == :pt %>
                             <%=raw partner[:descricao_pt].gsub(/\n/, '<br/>') %>

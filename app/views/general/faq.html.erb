@@ -90,10 +90,10 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-8 col-lg-offset-2">
                 <% questions.each do |question| %>
                     <div class="faq-question">
-                        <h2>
+                        <h3>
                             <% if I18n.locale == :pt %>
                                 <%=raw question[:question_pt].gsub(/\n/, '<br/>') %>
                             <% elsif I18n.locale == :esp %>
@@ -101,7 +101,7 @@
                             <% else %>
                                 <%=raw question[:question_en].gsub(/\n/, '<br/>') %>
                             <% end %>
-                        </h2>
+                        </h3>
                         <p>
                             <% if I18n.locale == :pt %>
                                 <%=raw question[:answer_pt].gsub(/\n/, '<br/>') %>
