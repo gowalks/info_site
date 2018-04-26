@@ -1,0 +1,119 @@
+<% questions = [
+    {
+        question_en: 'WHAT ARE GOWALKSPORTUGAL?',
+        answer_en: 'Gowalksportugal are an initiative of the Company of Tourist Animation "GO! Leisure & Heritage, Unip. Lda". This company, created in 2012 by a local inhabitant formed by the University of Coimbra in "Tourism, Leisure and Heritage", is registered in RNAAT (National Registry of Agents of Tourist Animation) with nr. 237/2012.\nWe advise all our clients to always request proof of certification, and an invoice with data such as taxpayer number when they enjoy guided tours in Portugal!',
+        question_pt: 'O QUE SÃO AS GOWALKSPORTUGAL?',
+        answer_pt: 'As Gowalksportugal são uma iniciativa da Empresa de Animação Turística “GO! Leisure & Heritage, Unip. Lda”. Esta empresa, criada em 2012 por uma habitante local formada pela Universidade de Coimbra em “Turismo, Lazer e Património”, está registada no RNAAT (Registo Nacional de Agentes de Animação Turística) com o nr. 237/2012.\nAconselhamos todos os nossos clientes a pedir sempre comprovativo de certificação, e factura com dados tais como número de contribuinte, quando usufruem de visitas guiadas em Portugal!'
+    },    
+    {
+        question_en: 'WHO ARE YOUR EMPLOYEES?',
+        answer_en: 'Our employees are locals with certified higher education in areas such as Tourism, Leisure and Heritage, Architecture, Archeology, History, History of Art ... passionate about the region that they promote. They also love meeting people of the most varied nationalities, sharing with them everything good that Portugal has!',
+        question_pt: 'QUEM SÃO OS VOSSOS COLABORADORES?',
+        answer_pt: 'Os nossos colaboradores são habitantes locais com formação superior certificada em áreas como Turismo, Lazer e Património, Arquitectura, Arqueologia, História, História de Arte … apaixonados pela região que promovem e por conhecer pessoas das mais variadas nacionalidades, partilhando com elas tudo de bom que Portugal tem!'
+    },
+    {
+        question_en: 'HOW CAN I BOOK A VISIT?',
+        answer_en: 'You can contact us through this website (www.gowalksportugal.com) and make the reservation of the desired guided tour. We will need to know the desired visit, date and time, the name of all participants and an email contact as well as a telephone number.\nAfter we receive this request, we will confirm availability.\nIf you are already in Coimbra you can also visit our physical space and try to book directly with us!',
+        question_pt: 'COMO POSSO RESERVAR UMA VISITA?',
+        answer_pt: 'É possível contactar-nos através deste website (www.gowalksportugal.com) e efectuar a reserva da visita guiada desejada. Vamos necessitar saber qual a visita desejada, dia e horário pretendido, o nome de todos os participantes e um contacto de e-mail assim como telefónico.\nApós recebermos este pedido, confirmaremos disponibilidade.\nSe estiver em Coimbra pode também visitar o nosso espaço físico e procurar reservar directamente connosco!'
+    },
+    {
+        question_en: 'WHERE CAN I FIND YOU IN COIMBRA?',
+        answer_en: 'Our place is called "Sítio do Património" and is located at Visconde da Luz Street, Visconde Shopping Center, 1º st floor – nr. 10.',
+        question_pt: 'ONDE POSSO ENCONTRAR-VOS EM COIMBRA?',
+        answer_pt: 'O nosso espaço chama-se “Sítio do Património” e está localizado na Rua Visconde da Luz, Centro Comercial Visconde 1º andar – loja 10.'
+    },
+    {
+        question_en: 'WHAT ARE YOUR OPENING HOURS?',
+        answer_en: 'Our place is opened from Monday to Friday from 10:00 am to 1:00 p.m. and from 2:00 p.m. to 6:00 p.m.',
+        question_pt: 'QUAL O VOSSO HORÁRIO DE ATENDIMENTO?',
+        answer_pt: 'O nosso espaço está de portas abertas entre 2ªf a 6ªf das 10h00 às 13h00 e das 14h00 às 18h00.'
+    },
+    {
+        question_en: 'I AM ALREADY IN COIMBRA: CAN I RESERVE A GUIDED VISIT RIGHT AWAY?',
+        answer_en: 'Although we work every day of the year, our guided tours are subject to guide availability and have a limited number of participants. For this reason, we advise you to book as far in advance as possible. However, you can contact us in person in Coimbra (Monday to Friday from 10:00 am to 1:00 pm and from 2:00 pm to 6:00 pm on Visconde da Luz Street, Visconde Shopping Center - 1st floor, nr. 10) or call 00351 239 198 472 to check availability on the same day!',
+        question_pt: 'JÁ ESTOU EM COIMBRA: POSSO RESERVAR UMA VISITA GUIADA NO PRÓPRIO DIA?',
+        answer_pt: 'Apesar de trabalharmos todos os dias do ano, as nossas visitas guidas estão sujeitas à disponibilidade de guia e têm limite de participantes. Por esse motivo, aconselhamos a reserva com a maior antecedência possível. Contudo, poderá contactar-nos presencialmente em Coimbra (2ªf a 6ªf das 10h00 às 13h00 e das 14h00 às 18h00 na Rua Visconde da Luz, Centro Comercial Visconde 1º andar – loja 10) ou telefonar para o 00351 239 198 472 para consultar disponibilidade no próprio dia!'
+    },
+    {
+        question_en: 'HOW LONG WILL IT TAKE FOR YOU TO REPLY MY E-MAIL?',
+        answer_en: 'We try to respond to all emails within a maximum of 24 hours. During the week our opening hours are from 10:00 a.m. to 1:00 p.m. and from 2:00 p.m. to 6:00 p.m. and we can answer relatively quickly within that time. During the weekend we check all emails at the end of the day, reserving one hour to respond to all requests on a first come/first served basis.',
+        question_pt: 'QUANTO TEMPO DEMORAM A RESPONDER AO MEU E-MAIL?',
+        answer_pt: 'Procuramos responder a todos os e-mails num período máximo de 24h. Durante a semana o nosso horário de funcionamento é das 10h00 às 13h00 e das 14h00 às 18h00 podendo responder com relativa rapidez dentro desse horário. Durante o fim-de-semana verificamos todos os e-mails ao final do dia procurando reservar uma hora para responder a todos os pedidos, por ordem de chegada.'
+    },
+    {
+        question_en: 'PROBLEMS OF LOCOMOTION / FOOD RESTRICTIONS / HEALTH PROBLEMS / TRAVELING WITH CHILDREN / BABIES ... CAN I PARTICIPATE IN YOUR VISITS?',
+        answer_en: 'Our visits are available to anyone, regardless of age and limitations! Please, if you have any special requests let us know and we will do our best to provide you with the best experience!',
+        question_pt: 'PROBLEMAS DE LOCOMOÇÃO / RESTRIÇÕES ALIMENTARES / PROBLEMAS DE SAÚDE / VIAJAR COM CRIANÇAS/BEBÉS … POSSO AINDA ASSIM PARTICIPAR DAS VOSSAS VISITAS?',
+        answer_pt: 'As nossas visitas estão disponíveis para qualquer pessoa, independentemente da idade e limitações! Por favor se tiver algum pedido especial, comunique e daremos o nosso melhor para lhe proporcionar a melhor experiência!'
+    },
+    {
+        question_en: 'I WANT TO DO A GUIDED VISIT TO A SITE THAT IS NOT MENTIONED ON YOUR WEBSITE / I WANT TO LIGHTLY CHANGE ONE OF THE SUGGESTED ROUTES ON YOUR WEBSITE - HOW DO I DO IT?',
+        answer_en: 'If you have not found what you want you can ask for a tailored tour and we will build a route for you, visiting the places that you most want within the themes that interest you most: Gastronomy, Jewish Heritage, Roman Legacy, World Heritage, etc!',
+        question_pt: 'QUERO USUFRUIR DE UMA VISITA GUIADA A UM SÍTIO QUE NÃO ESTÁ MENCIONADO NO VOSSO WEBSITE / QUERO ALTERAR LIGEIRAMENTE UM DOS ROTEIROS SUGERIDOS NO VOSSO WEBSITE – COMO FAÇO?',
+        answer_pt: 'Se não encontrou o que pretende poderá solicitar uma “tailored tour” e construiremos um roteiro à sua medida, visitando os locais que mais desejar dentro das temáticas que mais lhe interessam: gastronomia, património judaico, romanização, património da humanidade, etc!'
+    },
+    {
+        question_en: 'WHAT SHOULD I TAKE FOR A GUIDED VISIT?',
+        answer_en: 'All of our visits involve some walking, even those in which we use the car to move between points of interest. For this reason, we advise all our customers to bring comfortable clothing and footwear: in winter hiking boots and waterproof clothing, during summer sandals or hiking shoes and cool clothes, in the fall and spring several layers of clothing as the temperature suffers abrupt changes during the day! It is advisable to always carry a bottle of water and a snack.',
+        question_pt: 'O QUE DEVO LEVAR PARA UMA VISITA GUIADA?',
+        answer_pt: 'Todas as nossas visitas envolvem alguma caminhada, mesmo aquelas em que utilizamos a viatura para nos deslocarmos entre os pontos de interesse. Por esse motivo, aconselhamos todos os nossos clientes a levar roupa e calçado confortável: no inverno umas botas de caminhada e roupa impermeáveis, no verão sandálias ou ténis de caminhada e roupa fresca, no outono e primavera várias camadas de roupa já que a temperatura sofre alterações bruscas durante o dia! Aconselhamos que se faça sempre acompanhar de uma garrafa de água e um snack.'
+    },
+    {
+        question_en: 'WHAT IS YOUR CANCELLATION POLICY?',
+        answer_en: 'As soon as our clients book a visit, a guide will be assigned to it and guaranteed to do the service. In addition, we will refuse all other requests for guided tours for the same day/time, committing ourselves to our customers. For this reason, we do not make refunds. However, we may re-schedule the visit within the availability of our guide(s) by giving our clients a credit note lasting for 12 months from the date of the visit. This credit note can be used by the person making the reservation or by any other person (friend, family, acquaintance) visiting Portugal.',
+        question_pt: 'QUAL É A VOSSA POLÍTICA DE CANCELAMENTO?',
+        answer_pt: 'A partir do momento em que os nossos clientes reservam uma visita, será atribuido um guia à mesma e garantido a esse/a colaborador/a que fará o serviço. Além disto, iremos recusar todos os outros pedidos de visitas guiadas distintas para o mesmo dia/horário, comprometendo-nos com os nossos clientes. Por este motivo, não fazemos reembolsos. Contudo, poderemos re-agendar a visita dentro da disponibilidade do(s) nosso(s) guia(s) cedendo aos nossos clientes uma nota de crédito com duração de 12 meses a contar da data da visita. Esta nota de crédito pode ser utilizada por quem fez a reserva ou por qualquer outra pessoa (amigo, familiar, conhecido) de visita a Portugal.'
+    },
+    {
+        question_en: 'WHY AREN’T GOWALKSPORTUGAL "FREE-TOURS"?',
+        answer_en: 'Our company is based by the principles of "fair trade" and we believe that all our employees should be properly remunerated for their services, providing them with a fair labor contract in order to provide them with happiness in their professional lives and stability in their personal life. Our customers should also be assured of quality service, and know exactly what they are paying.\nWe also believe that all companies must scrupulously comply with their tax obligations, as well as assure clients of a quality service by hiring qualified people, subscribing to the insurances required by law (work accident insurance, third party personal accident insurance, civil liability insurance), among other legal measures required by the Portuguese Government to regulate Tourism Animation companies.\nThe company also carries out initiatives of social responsibility, actively collaborating in events of promotion and preservation of the Local Heritage, making partnerships with other institutions based in Portugal.\nIn addition, many of our visits have associated costs that we decided to include to simplify the life for our clients: entrances to monuments, transportation, food and drinks, etc. See descriptions of each guided tour for more information!\nWe intend to extend the range of services of Tourist Animation, and optimize more and more the services that we already have. We have therefore been making a constant investment - since 2012 - to provide unique moments of leisure as our guests enjoy the local Heritage!',
+        question_pt: 'PORQUE É QUE AS GOWALKSPORTUGAL NÃO SÃO “FREE-TOURS”?',
+        answer_pt: 'A nossa empresa rege-se pelos princípios de “comércio-justo” e acreditamos que todos os nossos colaboradores devem ser devidamente remunerados pelos seus serviços, fornecendo-lhes um contrato de trabalho justo por forma a proporcionar-lhes felicidade na sua vida profissional e estabilidade na sua vida pessoal. Os nossos clientes devem também ser assegurados um serviço de qualidade, e saber exactamente o que estão a pagar.\nAcreditamos ainda que todas as empresas devem cumprir escrupulosamente as suas obrigações fiscais, assim como assegurar aos clientes um serviço de qualidade contratando pessoas qualificadas, subscrevendo os seguros exigidos por lei (seguro de acidentes de trabalho, seguro de acidentes pessoais de terceiros, seguro de responsabilidade civil), entre outras medidas legais exigidas pelo Governo Português para regulação das empresas de Animação Turística. \nA empresa leva também a cabo iniciativas de responsabilidade social, colaborando activamente em eventos de promoção e preservação patrimonial, efectuando parcerias com outras instituições sediadas em Portugal.\nAlém disto, muitas das nossas visitas têm custos associados que decidimos incluir para simplificar a vida aos nossos clientes: entradas em monumentos, transporte, comida e bebida, etc. Consulte as descrições de cada visita guiada para mais informações!\nPretendemos alargar o leque de serviços de Animação Turistica, e optimizar cada vez mais os serviços que já dispomos. Temos vindo por isso a fazer um investimento constante - desde 2012 - para proporcionar momentos únicos de lazer em usufruto do Património Português a quem nos visita!'
+    }
+] %>
+
+<!--COVER-->
+<header id="faq-cover" class="cover-background-small">
+    <div class="container-fluid transparent-layer">
+        <div class="row breakwords special-text-size">
+            <div class="header-text">
+                <h1> 
+					<%= t('general.faq') %>
+                </h1>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <% questions.each do |question| %>
+                    <div class="faq-question">
+                        <h2>
+                            <% if I18n.locale == :pt %>
+                                <%=raw question[:question_pt].gsub(/\n/, '<br/>') %>
+                            <% elsif I18n.locale == :esp %>
+                                <%=raw question[:question_esp].gsub(/\n/, '<br/>') %>
+                            <% else %>
+                                <%=raw question[:question_en].gsub(/\n/, '<br/>') %>
+                            <% end %>
+                        </h2>
+                        <p>
+                            <% if I18n.locale == :pt %>
+                                <%=raw question[:answer_pt].gsub(/\n/, '<br/>') %>
+                            <% elsif I18n.locale == :esp %>
+                                <%=raw question[:answer_esp].gsub(/\n/, '<br/>') %>
+                            <% else %>
+                                <%=raw question[:answer_en].gsub(/\n/, '<br/>') %>
+                            <% end %>
+                        </p>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>
